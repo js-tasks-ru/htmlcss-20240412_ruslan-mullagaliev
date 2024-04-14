@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Семантическая разметка страницы</title>
+    <style>
+      body {
+        color: white;
+        margin: 0;
+      }
+
+      .header {
+        background: #FF0000;
+        text-align: center;
+      }
+
+      .title {
+        font-size: 85px;
+        margin: 0;
+      }
+
+      .navigation {
+        background: #FF9900;
+        padding: 20px;
+      }
+
+      .link {
+        font-size: 40px;
+        color: white;
+        margin-right: 20px;
+      }
+
+      .main {
+        background: #05A143;
+        padding: 20px;
+      }
+
+      .article {
+        background: #001AFF;
+        padding: 20px;
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+
+      .footer {
+        background: #BD00FF;
+        text-align: center;
+        font-size: 85px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Header</h1>
+      <nav class="navigation">
+        <a class="link" href="#">Navigation 1</a>
+        <a class="link" href="#">Navigation 2</a>
+        <a class="link" href="#">Navigation 3</a>
+      </nav>
+    </header>
+    <main class="main">
+      <article class="article">
+        <h2>Article 1</h2>
+        <ul>
+          <li>Оригинальная трилогия</li>
+          <li>Трилогия приквелов</li>
+          <li>Трилогия сиквелов</li>
+        </ul>
+      </article>
+      <article class="article">
+        <h2>Article 2</h2>
+        <ol>
+          <li>Эпизод IV — Новая надежда</li>
+          <li>Эпизод V — Империя наносит ответный удар	</li>
+          <li>Эпизод VI — Возвращение джедая</li>
+        </ol>
+      </article>
+    </main>
+    <footer class="footer">Footer</footer>
+  </body>
+</html>
