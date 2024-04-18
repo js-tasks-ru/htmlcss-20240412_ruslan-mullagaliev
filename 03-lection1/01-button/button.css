@@ -2,7 +2,9 @@
 /* Button/Primary/Default */
 
 :root {
-  --blue: #4263eb;
+  --blue-2: #4263eb;
+  --blue-3: #2342c0;
+  --purple-2: #5028c6;
   --alternate: var(--grey-4);
 }
 
@@ -17,14 +19,23 @@
   text-align: center;
   border: none;
   color: var(--white);
+  cursor: pointer;
 }
 
 .button_primary {
-  background-color: var(--primary);
+  background-color: var(--blue-2);
+}
+
+.button_primary:hover {
+  background-color: var(--blue-3);
 }
 
 .button_secondary {
   background-color: var(--secondary);
+}
+
+.button_secondary:hover {
+  background-color: var(--purple-2);
 }
 
 .button_alternate {
@@ -33,10 +44,16 @@
   border: 1px solid var(--grey-3);
 }
 
+.button_alternate:hover {
+  border: 1px solid var(--black);
+}
+
 .button_disabled {
   opacity: 50%;
+  cursor: not-allowed;
 }
 
 .button_alternate_disabled {
   opacity: 30%;
+  cursor: not-allowed;
 }
