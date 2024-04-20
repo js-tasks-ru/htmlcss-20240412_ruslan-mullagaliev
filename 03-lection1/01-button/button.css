@@ -1,15 +1,7 @@
 /* Стилизация кнопки */
 /* Button/Primary/Default */
 
-:root {
-  --blue-2: #4263eb;
-  --blue-3: #2342c0;
-  --purple-2: #5028c6;
-  --alternate: var(--grey-4);
-}
-
 .button {
-  width: 189px;
   height: 48px;
   border-radius: 8px;
   font-style: normal;
@@ -20,10 +12,14 @@
   border: none;
   color: var(--white);
   cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  padding: 14px;
+  padding-top: 15px;
 }
 
 .button_primary {
   background-color: var(--blue-2);
+  transition: background-color 200ms ease-in-out;
 }
 
 .button_primary:hover {
@@ -32,6 +28,7 @@
 
 .button_secondary {
   background-color: var(--secondary);
+  transition: background-color 200ms ease-in-out;
 }
 
 .button_secondary:hover {
@@ -42,18 +39,18 @@
   background-color: var(--white);
   color: var(--alternate);
   border: 1px solid var(--grey-3);
+  transition: border-color 200ms ease-in-out;
 }
 
 .button_alternate:hover {
-  border: 1px solid var(--black);
+  border-color: var(--black);
 }
 
-.button_disabled {
+.button:disabled {
   opacity: 50%;
   cursor: not-allowed;
 }
 
-.button_alternate_disabled {
+.button_alternate:disabled {
   opacity: 30%;
-  cursor: not-allowed;
 }

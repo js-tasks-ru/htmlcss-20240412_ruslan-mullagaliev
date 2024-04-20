@@ -1,23 +1,25 @@
 @import '../fonts/fonts.css';
-@import './normalize.css';
+/* @import './normalize.css'; */
 
 :root {
   --white: #ffffff;
   --black: #212429;
   --pink: #f784ad;
   --purple: #7048e8;
+  --purple-2: #5028c6;
   --blue: #374fc7;
+  --blue-2: #4263eb;
+  --blue-3: #2342c0;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;
   --grey-4: #495057;
-
   --error: var(--red);
   --success: var(--blue);
-
   --primary: var(--blue);
   --secondary: var(--purple);
+  --alternate: var(--grey-4);
 }
 
 * {
