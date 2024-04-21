@@ -1,6 +1,5 @@
 /* Стилизация аккордеона */
 .accordion {
-  width: 730px;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -9,14 +8,13 @@
 
 .accordion__item {
   margin-bottom: 8px;
-  /* height: 72px; */
   border: 1px solid var(--grey-3);
   border-radius: 8px;
-  padding-top: 24px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  font-family: inherit;
+  padding: 24px 32px;
+}
+
+.accordion__item[open] {
+  padding-bottom: 32px;
 }
 
 .accordion__item:last-child {
@@ -25,19 +23,14 @@
 
 .accordion__summary {
   list-style: none;
-  font-family: inherit;
-  padding-bottom: 8px;
-}
-
-.accordion__hidden_text {
-  font-family: inherit;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
 }
 
 .accordion__summary::-webkit-details-marker {
   /* нестандартный псевдоэлемент Google Chrome */
   display: none;
+}
+
+.accordion__text {
+  margin-top: 16px;
+  margin-bottom: 0;
 }
