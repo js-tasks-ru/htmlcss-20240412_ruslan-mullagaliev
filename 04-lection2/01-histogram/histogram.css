@@ -10,11 +10,9 @@
 }
 
 .histogram__header {
-  height: 27px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 3px;
 }
 
 .histogram__title {
@@ -24,26 +22,20 @@
 }
 
 .histogram__link {
-  text-align: right;
   color: var(--blue-2);
-  align-self: flex-end;
-  min-width: 59px;
-}
-
-.histogram__link > a {
   text-decoration: none;
+  margin-top: 3px;
 }
 
 .histogram__total {
   font-size: 20px;
   line-height: 26px;
   color: var(--black);
-  margin: 0;
-  margin-bottom: 6px;
+  margin: 0 0 6px;
 }
 
 .histogram__chart {
-  height: 83px;
+  height: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -55,8 +47,7 @@
 
 .histogram__chart-item {
   flex: none;
-  width: 9px;
+  flex-basis: 9px;
   background-color: var(--blue-2);
   color: var(--blue-2);
-  font-size: 0px;
 }
