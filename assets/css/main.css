@@ -22,6 +22,6 @@
   --alternate: var(--grey-4);
 }
 
-* {
+body {
   font-family: 'Roboto', sans-serif;
 }

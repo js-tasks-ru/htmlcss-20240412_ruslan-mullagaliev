@@ -13,8 +13,7 @@
   color: var(--white);
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
-  padding: 14px;
-  padding-top: 15px;
+  padding: 15px 14px 14px;
 }
 
 .button_primary {
