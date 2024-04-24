@@ -2,3 +2,39 @@
   background: var(--grey-5);
   padding: 68px 0 204px;
 }
+
+.preview_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.preview__card {
+  width: 350px;
+  height: 257px;
+  background: var(--white);
+  box-shadow: 0px 2px 4px var(--black-2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.preview__image {
+  height: 157px;
+  width: 300px;
+}
+
+.preview__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
+  color: var(--black);
+}
