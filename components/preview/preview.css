@@ -10,7 +10,7 @@
 }
 
 .preview__card {
-  width: 350px;
+  width: 300px;
   height: 257px;
   background: var(--white);
   box-shadow: 0px 2px 4px var(--black-2);
@@ -19,8 +19,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  padding: 80px 25px 30px;
 }
 
 .preview__image {
@@ -34,7 +33,6 @@
   font-weight: 500;
   font-size: 21px;
   line-height: 25px;
-  /* identical to box height */
   text-align: center;
   color: var(--black);
 }
