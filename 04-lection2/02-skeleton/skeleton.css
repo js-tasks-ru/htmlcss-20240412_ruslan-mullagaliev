@@ -13,9 +13,10 @@
 }
 
 .skeleton__image {
-  width: 0px;
-  border: 32px solid var(--grey-2);
-  border-radius: 32px;
+  width: 64px;
+  height: 64px;
+  background-color: var(--grey-2);
+  border-radius: 50%;
 }
 
 .skeleton__content {
@@ -35,4 +36,12 @@
     var(--grey-8) 77.5%,
     var(--grey-2) 102.52%
   );
+}
+
+.skeleton__text_small {
+  width: 40%;
+}
+
+.skeleton__text_middle {
+  width: 59%;
 }
