@@ -1,0 +1,45 @@
+.skeleton {
+    border: 1px solid #ACB5BD;
+    padding: 24px 40px 32px 24px;
+    border-radius: 8px;
+}
+
+.skeleton__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.skeleton__circle {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #DDE2E5;
+}
+
+.skeleton__title {
+    flex-shrink: 1;
+    flex-basis: 100%;
+    margin-left: 16px;
+}
+
+.skeleton__line {
+    height: 20px;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 8px;
+    background: #DDE2E5;
+}
+
+.skeleton__line:last-child {
+    margin-bottom: 0;
+}
+
+.skeleton__line_name {
+    max-width: 172px;
+}
+
+.skeleton__line_date {
+    max-width: 257px;
+}
