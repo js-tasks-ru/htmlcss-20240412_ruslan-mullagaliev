@@ -1,25 +1,45 @@
 @import '../fonts/fonts.css';
 @import './normalize.css';
+@import '../../components/container/container.css';
+@import '../../components/footer/footer.css';
+@import '../../components/header/header.css';
+@import '../../components/page/page.css';
+@import '../../components/preview/preview.css';
+@import '../../04-lection2/01-histogram/histogram.css';
 
 :root {
   --white: #ffffff;
   --black: #212429;
+  --black-2: rgba(33, 36, 41, 0.05);
   --pink: #f784ad;
   --purple: #7048e8;
+  --purple-2: #5028c6;
   --blue: #374fc7;
+  --blue-2: #4263eb;
+  --blue-3: #2342c0;
+  --blue-4: #334d6e;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;
   --grey-4: #495057;
-
+  --grey-5: #f9fafc;
+  --grey-6: #e2e6e8;
+  --grey-7: #f3f5f5;
+  --grey-8: #e3e7ea;
+  --grey-9: #90a0b7;
   --error: var(--red);
   --success: var(--blue);
-
   --primary: var(--blue);
   --secondary: var(--purple);
+  --alternate: var(--grey-4);
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
 }
