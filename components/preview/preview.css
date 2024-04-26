@@ -10,8 +10,8 @@
 }
 
 .preview__card {
-  width: 300px;
-  height: 257px;
+  width: 350px;
+  height: 367px;
   background: var(--white);
   box-shadow: 0px 2px 4px var(--black-2);
   border-radius: 12px;
@@ -20,11 +20,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 80px 25px 30px;
+  box-sizing: border-box;
 }
 
 .preview__image {
   height: 157px;
-  width: 300px;
+  width: 100%;
 }
 
 .preview__title {
