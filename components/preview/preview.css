@@ -3,7 +3,7 @@
   padding: 68px 0 204px;
 }
 
-.preview_cards {
+.preview__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
