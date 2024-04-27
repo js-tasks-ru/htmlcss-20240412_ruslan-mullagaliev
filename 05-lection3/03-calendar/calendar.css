@@ -1,9 +1,10 @@
 .calendar {
-  height: 324px;
-  width: 252px;
+  box-sizing: border-box;
+  height: 360px;
+  width: 304px;
   border: 1px solid var(--grey-3);
   border-radius: 8px;
-  padding: 28px 26px 32px;
+  padding: 27px 25px 31px;
 }
 
 .calendar__title {
@@ -41,27 +42,23 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height, or 125% */
-  /* text-align: center; */
-
   color: var(--blue-4);
 }
 
-.calendar__item_day {
+.calendar__item_weekday {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  align-items: flex-end;
-  text-align: center;
   color: var(--grey-9);
 }
 
-/* 1 */
+.calendar__item_active {
+  background-color: var(--blue-2);
+  color: var(--white);
+}
 
-position: absolute;
-left: 60.86%;
-right: 36.51%;
-top: 37.04%;
-bottom: 56.79%;
+.calendar__item_between-active {
+  background-color: var(--blue-5);
+}
