@@ -25,7 +25,7 @@
 .modal__close {
   position: absolute;
   top: 12px;
-  left: calc(428px - 16px - 12px);
+  right: 12px;
   cursor: pointer;
 }
 
