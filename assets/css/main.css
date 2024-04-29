@@ -7,6 +7,13 @@
 @import '../../components/preview/preview.css';
 @import '../../04-lection2/01-histogram/histogram.css';
 @import '../../components/component/component.css';
+@import '../../components/container/container.css';
+@import '../../components/footer/footer.css';
+@import '../../components/header/header.css';
+@import '../../components/page/page.css';
+@import '../../components/preview/preview.css';
+@import '../../04-lection2/01-histogram/histogram.css';
+@import '../../components/component/component.css';
 
 :root {
   --white: #ffffff;

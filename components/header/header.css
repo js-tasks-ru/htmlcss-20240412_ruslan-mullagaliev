@@ -1,0 +1,34 @@
+.header {
+  background-color: var(--white);
+}
+
+.header__title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    padding: 96px 0 69px;
+  }
+
+  .header__title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--grey-4);
+  }
+}
+
+@media screen and (min-width: 375.01px) {
+  .header {
+    padding: 96px 0 77px;
+  }
+  .header__title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--black);
+  }
+}

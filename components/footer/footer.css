@@ -1,0 +1,27 @@
+@media screen and (max-width: 375px) {
+  .footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 375.01px) {
+  .footer {
+    padding: 71px 0 136px;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+  }
+
+  .footer__title {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .footer__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
