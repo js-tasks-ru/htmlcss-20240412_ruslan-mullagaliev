@@ -1,10 +1,9 @@
 .calendar {
   box-sizing: border-box;
-  height: 360px;
   width: 304px;
   border: 1px solid var(--grey-3);
   border-radius: 8px;
-  padding: 27px 25px 31px;
+  padding: 28px 26px 32px;
 }
 
 .calendar__title {
@@ -28,8 +27,8 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(7, 36px);
-  grid-template-rows: repeat(7, 36px);
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
 }
 
 .calendar__item {
