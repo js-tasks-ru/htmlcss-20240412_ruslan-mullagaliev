@@ -6,6 +6,7 @@
 @import '../../components/page/page.css';
 @import '../../components/preview/preview.css';
 @import '../../04-lection2/01-histogram/histogram.css';
+@import '../../components/component/component.css';
 
 :root {
   --white: #ffffff;
@@ -29,6 +30,7 @@
   --grey-7: #f3f5f5;
   --grey-8: #e3e7ea;
   --grey-9: #90a0b7;
+  --grey-10: rgba(196, 196, 196, 0.5);
   --error: var(--red);
   --success: var(--blue);
   --primary: var(--blue);
