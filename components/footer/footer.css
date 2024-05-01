@@ -1,9 +1,7 @@
-@media screen and (max-width: 375px) {
-  .footer {
-    display: none;
-  }
+.footer {
+  display: none;
 }
-@media screen and (min-width: 375.01px) {
+@media screen and (min-width: 375px) {
   .footer {
     padding: 71px 0 136px;
     background-color: var(--white);
