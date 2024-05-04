@@ -1,8 +1,10 @@
 .footer {
   display: none;
 }
+
 @media screen and (min-width: 375px) {
   .footer {
+    display: block;
     padding: 71px 0 136px;
     background-color: var(--white);
     color: var(--black);
@@ -12,11 +14,28 @@
     margin: 0;
   }
 
+  .footer_component {
+    padding: 56px 0;
+    background: var(--grey-5);
+  }
+
   .footer__title {
     font-weight: 500;
     font-size: 38px;
     line-height: 48px;
   }
+
+  .footer__title_component {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    margin: 0;
+    text-decoration: none;
+  }
+
   .footer__text {
     font-weight: 400;
     font-size: 16px;

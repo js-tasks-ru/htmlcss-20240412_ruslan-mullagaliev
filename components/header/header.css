@@ -3,9 +3,14 @@
   padding: 16px 0 69px;
 }
 
+.header_component {
+  background-color: var(--grey-5);
+  padding: 16px 0;
+}
+
 .header__logo {
   display: block;
-  margin: 0 auto 48px;
+  margin: 0 auto;
 }
 
 .header__title {
@@ -15,7 +20,7 @@
   font-size: 28px;
   line-height: 38px;
   color: var(--grey-4);
-  margin: 0;
+  margin: 48px 0 0;
 }
 
 @media screen and (min-width: 375px) {
@@ -32,5 +37,10 @@
     font-size: 50px;
     line-height: 64px;
     color: var(--black);
+  }
+
+  .header_component {
+    padding: 0;
+    height: 82px;
   }
 }

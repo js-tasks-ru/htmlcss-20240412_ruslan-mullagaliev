@@ -7,29 +7,43 @@
   </head>
   <body>
     <div class="page">
-      <header class="header component__header"></header>
+      <header class="header header_component">
+        <svg
+          class="header__logo"
+          width="110"
+          height="32"
+          viewBox="0 0 110 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_17869_6)">
+            <rect y="1" width="30" height="30" fill="#212429" />
+            <rect x="38" width="32" height="32" rx="16" fill="#212429" />
+            <path d="M78 0L110 32H78V0Z" fill="#212429" />
+          </g>
+          <defs>
+            <clipPath id="clip0_17869_6">
+              <rect width="110" height="32" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </header>
       <main class="component">
         <div class="container">
           <div class="component__wrapper">
-            <div class="component__sidebar">
-              <h4 class="component__sidebar-title">Components</h4>
-              <div class="component__sidebar-content">
-                <a class="component__sidebar-item" href="#">Modal</a>
-                <a class="component__sidebar-item" href="#">Tooltip</a>
-                <a class="component__sidebar-item" href="#">Avatar</a>
-                <a class="component__sidebar-item" href="#">Calendar</a>
-                <a
-                  class="component__sidebar-item component__sidebar-item_active"
-                >
-                  Histogram
-                </a>
-                <a class="component__sidebar-item" href="#"
-                  >Custom form elements</a
-                >
-                <a class="component__sidebar-item"></a>
-                <a class="component__sidebar-item" href="#">Main page</a>
+            <nav class="sidebar">
+              <h4 class="sidebar__title">Components</h4>
+              <div class="sidebar__content">
+                <a class="sidebar__item" href="#">Modal</a>
+                <a class="sidebar__item" href="#">Tooltip</a>
+                <a class="sidebar__item" href="#">Avatar</a>
+                <a class="sidebar__item" href="#">Calendar</a>
+                <a class="sidebar__item sidebar__item_active"> Histogram </a>
+                <a class="sidebar__item" href="#">Custom form elements</a>
+                <a class="sidebar__item"></a>
+                <a class="sidebar__item" href="#">Main page</a>
               </div>
-            </div>
+            </nav>
             <div class="component__content">
               <h3 class="component__content-title">Histogram</h3>
               <div class="component__preview">
@@ -163,9 +177,9 @@
           </div>
         </div>
       </main>
-      <footer class="footer component__footer">
+      <footer class="footer footer_component">
         <div class="container">
-          <a class="footer__title component__footer__title" href="#">
+          <a class="footer__title_component" href="#">
             Reusable component library
           </a>
         </div>
