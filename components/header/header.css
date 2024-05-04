@@ -12,3 +12,8 @@
   color: var(--black);
   margin: 0;
 }
+
+.header_component {
+  padding: 0;
+  height: 82px;
+}
