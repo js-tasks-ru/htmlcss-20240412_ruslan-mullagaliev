@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Checkbox -->
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./checkbox.css">
+    </head>
+    <body>
+        <form class="form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">CHECKBOX</legend>
+                <label class="checkbox form__control">
+                    <input type="checkbox" class="checkbox__input" name="checkbox" value="1">
+                    <div class="checkbox__state">
+                        <div class="checkbox__control">
+                            <svg class="checkbox__checked" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 7.5L5 11L13 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p class="checkbox__legend">Default</p>
+                    </div>
+                </label>
+                <label class="checkbox form__control">
+                    <input type="checkbox" class="checkbox__input" name="checkbox" value="2" checked>
+                    <div class="checkbox__state">
+                        <div class="checkbox__control">
+                            <svg class="checkbox__checked" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 7.5L5 11L13 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p class="checkbox__legend">Checked</p>
+                    </div>
+                </label>
+                <label class="checkbox form__control">
+                    <input type="checkbox" class="checkbox__input" name="checkbox" value="3" disabled>
+                    <div class="checkbox__state">
+                        <div class="checkbox__control">
+                            <svg class="checkbox__checked" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 7.5L5 11L13 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p class="checkbox__legend">Disabled</p>
+                    </div>
+                </label>
+                <label class="checkbox form__control">
+                    <input type="checkbox" class="checkbox__input" name="checkbox" value="4" disabled checked>
+                    <div class="checkbox__state">
+                        <div class="checkbox__control">
+                            <svg class="checkbox__checked" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 7.5L5 11L13 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p class="checkbox__legend">Checked disabled</p>
+                    </div>
+                </label>
+            </fieldset>
+        </form>
+    </body>
+</html>
