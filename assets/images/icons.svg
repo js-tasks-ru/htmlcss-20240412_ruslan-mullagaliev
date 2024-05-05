@@ -44,5 +44,15 @@
         fill="#212429"
       />
     </symbol>
+
+    <symbol id="check" fill="none">
+        <path
+          d="M1.5 7.5L5 11L13 2"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
   </defs>
 </svg>
