@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Страница радио -->
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./radio.css">
+    </head>
+    <body>
+        <form class="form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">radio</legend>
+                <label class="radio form__control">
+                    <input type="radio" class="radio__input" name="radio" value="1">
+                    <div class="radio__state">
+                        <div class="radio__control">
+                            <div class="radio__checked"></div>
+                        </div>
+                        <p class="radio__legend">Default</p>
+                    </div>
+                </label>
+                <label class="radio form__control">
+                    <input type="radio" class="radio__input" name="radio" value="2" checked>
+                    <div class="radio__state">
+                        <div class="radio__control">
+                            <div class="radio__checked"></div>
+                        </div>
+                        <p class="radio__legend">Checked</p>
+                    </div>
+                </label>
+                <label class="radio form__control">
+                    <input type="radio" class="radio__input" name="radio" value="3" disabled>
+                    <div class="radio__state">
+                        <div class="radio__control">
+                            <div class="radio__checked"></div>
+                        </div>
+                        <p class="radio__legend">Disabled</p>
+                    </div>
+                </label>
+                <label class="radio form__control">
+                    <input type="radio" class="radio__input" name="radio2" value="4" disabled checked>
+                    <div class="radio__state">
+                        <div class="radio__control">
+                            <div class="radio__checked"></div>
+                        </div>
+                        <p class="radio__legend">Checked disabled</p>
+                    </div>
+                </label>
+            </fieldset>
+        </form>
+    </body>
+</html>
