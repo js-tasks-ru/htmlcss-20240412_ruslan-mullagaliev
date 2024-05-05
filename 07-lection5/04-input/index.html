@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: column; gap: 20px">
+      <label class="input"
+        ><p class="input__label">Label</p>
+        <div class="input__wrapper">
+          <input type="text" class="input__control" placeholder="Placeholder" />
+          <svg class="input__icon_success" width="24" height="24">
+            <use href="../../assets/images/icons.svg#success" />
+          </svg>
+          <svg class="input__icon_error" width="24" height="24">
+            <use href="../../assets/images/icons.svg#error" />
+          </svg>
+        </div>
+      </label>
 
-    </body>
+      <label class="input input_success"
+        ><p class="input__label">Success</p>
+        <div class="input__wrapper">
+          <input type="text" class="input__control" placeholder="Success" />
+          <svg class="input__icon_success" width="24" height="24">
+            <use href="../../assets/images/icons.svg#success" />
+          </svg>
+          <svg class="input__icon_error" width="24" height="24">
+            <use href="../../assets/images/icons.svg#error" />
+          </svg>
+        </div>
+      </label>
+
+      <label class="input input_invalid"
+        ><p class="input__label">Error</p>
+        <div class="input__wrapper">
+          <input type="text" class="input__control" placeholder="Error" />
+          <svg class="input__icon_success" width="24" height="24">
+            <use href="../../assets/images/icons.svg#success" />
+          </svg>
+          <svg class="input__icon_error" width="24" height="24">
+            <use href="../../assets/images/icons.svg#error" />
+          </svg>
+        </div>
+      </label>
+    </div>
+  </body>
 </html>
