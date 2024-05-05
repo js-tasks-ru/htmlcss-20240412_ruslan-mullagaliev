@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Страница с кнопкой переключения -->
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./toggler.css">
+    </head>
+    <body>
+        <form class="form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">toggler</legend>
+                <label class="toggler form__control">
+                    <input type="checkbox" class="toggler__input" name="toggler" value="1">
+                    <div class="toggler__state">
+                        <div class="toggler__control">
+                            <div class="toggler__round"></div>
+                        </div>
+                        <p class="toggler__legend">Default</p>
+                    </div>
+                </label>
+                <label class="toggler form__control">
+                    <input type="checkbox" class="toggler__input" name="toggler" value="2" checked>
+                    <div class="toggler__state">
+                        <div class="toggler__control">
+                            <div class="toggler__round"></div>
+                        </div>
+                        <p class="toggler__legend">Checked</p>
+                    </div>
+                </label>
+                <label class="toggler form__control">
+                    <input type="checkbox" class="toggler__input" name="toggler" value="3" disabled>
+                    <div class="toggler__state">
+                        <div class="toggler__control">
+                            <div class="toggler__round"></div>
+                        </div>
+                        <p class="toggler__legend">Disabled</p>
+                    </div>
+                </label>
+                <label class="toggler form__control">
+                    <input type="checkbox" class="toggler__input" name="toggler2" value="4" disabled checked>
+                    <div class="toggler__state">
+                        <div class="toggler__control">
+                            <div class="toggler__round"></div>
+                        </div>
+                        <p class="toggler__legend">Checked disabled</p>
+                    </div>
+                </label>
+            </fieldset>
+        </form>
+    </body>
+</html>
