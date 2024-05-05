@@ -42,7 +42,7 @@
   border-color: var(--blue-2);
 }
 
-/* .checkbox__input:focus ~ .checkbox__state .checkbox__label {
+.checkbox__input:focus ~ .checkbox__state .checkbox__label {
   text-decoration: underline;
 }
 
@@ -52,4 +52,4 @@
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__label {
   color: var(--grey-2);
-} */
+}
