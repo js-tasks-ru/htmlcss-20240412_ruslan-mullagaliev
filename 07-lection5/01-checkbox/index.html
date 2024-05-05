@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <!-- Страница чекбокса -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./checkbox.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./checkbox.css" />
+  </head>
+  <body>
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" />
+      <div class="checkbox__state">
+        <div class="checkbox__control">
+          <svg class="checkbox__icon" width="15" height="13">
+            <use href="../../assets/images/icons.svg#check" />
+          </svg>
+        </div>
+        <p class="checkbox__label">Default</p>
+      </div>
+    </label>
+  </body>
 </html>
