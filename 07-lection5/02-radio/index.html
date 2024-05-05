@@ -6,14 +6,34 @@
     <link rel="stylesheet" href="./radio.css" />
   </head>
   <body>
-    <div class="radio">
-      <input type="radio" name="radio" id="1" class="radio__input" />
-      <div class="radio__state">
-        <div class="radio__control">
-          <div class="radio__control-inner"></div>
+    <div style="display: flex; flex-direction: column; gap: 20px">
+      <label class="radio">
+        <input type="radio" name="radio" id="1" class="radio__input" />
+        <div class="radio__state">
+          <div class="radio__control">
+            <div class="radio__control-inner"></div>
+          </div>
+          <p class="radio__label">Default</p>
         </div>
-        <p class="radio__label">Default</p>
-      </div>
+      </label>
+      <label class="radio">
+        <input type="radio" name="radio" id="2" class="radio__input" checked />
+        <div class="radio__state">
+          <div class="radio__control">
+            <div class="radio__control-inner"></div>
+          </div>
+          <p class="radio__label">Selected</p>
+        </div>
+      </label>
+      <label class="radio">
+        <input type="radio" name="radio" id="3" class="radio__input" disabled />
+        <div class="radio__state">
+          <div class="radio__control">
+            <div class="radio__control-inner"></div>
+          </div>
+          <p class="radio__label">Disabled</p>
+        </div>
+      </label>
     </div>
   </body>
 </html>
