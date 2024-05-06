@@ -1,0 +1,67 @@
+.toogle {
+  display: inline-block;
+  position: relative;
+}
+
+.toggle__input {
+  position: absolute;
+  opacity: 90;
+  left: -100vw;
+}
+
+.toggle__state {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggle__control {
+  box-sizing: border-box;
+  width: 52px;
+  height: 28px;
+  background: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 14px;
+  padding: 1px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.toggle__control-inner {
+  width: 24px;
+  height: 24px;
+  background: var(--grey-2);
+  border-radius: 50%;
+}
+
+.toggle__label {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+  margin: 0;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__control {
+  background: var(--blue-2);
+  border-color: var(--blue-2);
+  justify-content: flex-end;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__control-inner {
+  background: var(--white);
+}
+
+.toggle__input:focus ~ .toggle__state .toggle__label {
+  text-decoration: underline;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__control {
+  background: var(--grey-2);
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__control-inner {
+  background: var(--grey-3);
+}

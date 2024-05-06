@@ -23,6 +23,11 @@
 
 .accordion__summary {
   list-style: none;
+  position: relative;
+}
+
+.accordion__summary-text {
+  margin: 0;
 }
 
 .accordion__summary::-webkit-details-marker {
@@ -33,4 +38,15 @@
 .accordion__text {
   margin-top: 16px;
   margin-bottom: 0;
+}
+
+.accordion__arrow {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.accordion__item[open] .accordion__arrow {
+  transform: rotate(180deg);
 }
