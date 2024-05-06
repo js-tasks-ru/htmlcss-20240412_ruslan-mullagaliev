@@ -46,6 +46,7 @@
 }
 
 .input_invalid .input__control {
+  padding-right: 56px;
   border-color: var(--red);
   box-shadow: 0px 1px 1px var(--red-3);
 }
@@ -62,10 +63,11 @@
   right: 16px;
 }
 
-.input_success .input__icon_success {
+.input_success .input__icon_success,
+.input_invalid .input__icon_error {
   display: block;
 }
 
-.input_invalid .input__icon_error {
-  display: block;
+.input__control:disabled {
+  color: var(--grey-2);
 }
