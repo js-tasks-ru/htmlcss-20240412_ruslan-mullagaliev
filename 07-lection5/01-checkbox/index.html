@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Страница чекбокса -->
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./checkbox.css" />
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: column; gap: 20px">
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input" />
+        <div class="checkbox__state">
+          <div class="checkbox__control">
+            <svg class="checkbox__icon" width="15" height="13">
+              <use href="../../assets/images/icons.svg#check" />
+            </svg>
+          </div>
+          <p class="checkbox__label">Default</p>
+        </div>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input" checked />
+        <div class="checkbox__state">
+          <div class="checkbox__control">
+            <svg class="checkbox__icon" width="15" height="13">
+              <use href="../../assets/images/icons.svg#check" />
+            </svg>
+          </div>
+          <p class="checkbox__label">Checked</p>
+        </div>
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input" disabled />
+        <div class="checkbox__state">
+          <div class="checkbox__control">
+            <svg class="checkbox__icon" width="15" height="13">
+              <use href="../../assets/images/icons.svg#check" />
+            </svg>
+          </div>
+          <p class="checkbox__label">Disabled</p>
+        </div>
+      </label>
+    </div>
+  </body>
+</html>
