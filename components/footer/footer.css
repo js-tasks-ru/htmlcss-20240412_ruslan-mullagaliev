@@ -8,6 +8,11 @@
   margin: 0;
 }
 
+.footer_component {
+  padding: 56px 0;
+  background: var(--grey-5);
+}
+
 .footer__title {
   font-weight: 500;
   font-size: 38px;
@@ -19,12 +24,7 @@
   line-height: 24px;
 }
 
-.footer_component {
-  padding: 56px 0;
-  background: var(--grey-5);
-}
-
-.footer_component__title {
+.footer__link {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
