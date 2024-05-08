@@ -1,0 +1,28 @@
+.sidebar {
+  min-width: 229px;
+}
+.sidebar__title {
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black-3);
+  margin: 0 0 16px;
+}
+
+.sidebar__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar__item {
+  flex-basis: 22px;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--black);
+  margin: 0;
+  text-decoration: none;
+}
+
+.sidebar__item_active {
+  color: var(--red-2);
+}
