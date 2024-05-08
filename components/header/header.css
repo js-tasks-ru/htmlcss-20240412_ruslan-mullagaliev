@@ -9,8 +9,7 @@
 }
 
 .header__logo {
-  display: block;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .header__title {
@@ -20,16 +19,18 @@
   font-size: 28px;
   line-height: 38px;
   color: var(--grey-4);
-  margin: 48px 0 0;
+  margin-top: 48px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 767px) {
   .header {
-    padding: 96px 0 77px;
+    padding: 24px 0 77px;
   }
-
+  .header_component {
+    padding-bottom: 60px;
+  }
   .header__logo {
-    display: none;
+    justify-content: start;
   }
 
   .header__title {
@@ -37,10 +38,6 @@
     font-size: 50px;
     line-height: 64px;
     color: var(--black);
-  }
-
-  .header_component {
-    padding: 0;
-    height: 82px;
+    margin-top: 38px;
   }
 }

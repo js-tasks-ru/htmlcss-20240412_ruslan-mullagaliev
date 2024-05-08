@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 767px) {
   .sidebar {
     display: block;
     min-width: 229px;

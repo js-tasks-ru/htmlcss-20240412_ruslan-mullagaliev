@@ -24,7 +24,7 @@
   margin: 0 0 20px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 767px) {
   .component {
     background: var(--grey-5);
     padding: 36px 0;
