@@ -1,4 +1,4 @@
-.component {
+component {
   background: var(--white);
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -8,9 +8,6 @@
 }
 
 .component__wrapper {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 56px;
   height: 100%;
 }
 
@@ -40,7 +37,7 @@
   }
 
   .component__content {
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    box-shadow: 0px 2px 4px var(--black-2);
     border-radius: 12px;
     padding: 32px 48px;
   }

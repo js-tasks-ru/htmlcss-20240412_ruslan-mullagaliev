@@ -42,8 +42,7 @@
   --primary: var(--blue);
   --secondary: var(--purple);
   --alternate: var(--grey-4);
-  --md: 767px;
-}
+  
 
 body {
   font-family: 'Roboto', sans-serif;
