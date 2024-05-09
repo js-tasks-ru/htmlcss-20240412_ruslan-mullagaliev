@@ -14,7 +14,6 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--grey-3);
-  margin: 0;
 }
 
 .input__wrapper {
@@ -55,8 +54,7 @@
   padding-right: 56px;
 }
 
-.input__icon_success,
-.input__icon_error {
+.input__icon {
   display: none;
   position: absolute;
   top: 16px;

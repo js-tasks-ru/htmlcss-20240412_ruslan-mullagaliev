@@ -7,57 +7,62 @@
   </head>
   <body>
     <div style="display: flex; flex-direction: column; gap: 20px">
-      <label class="input"
-        ><p class="input__label">Label</p>
+      <div class="input">
+        <label class="input__label" for="default">Label</label>
         <div class="input__wrapper">
-          <input type="text" class="input__control" placeholder="Placeholder" />
-          <svg class="input__icon_success" width="24" height="24">
+          <input
+            type="text"
+            id="default"
+            class="input__control"
+            placeholder="Placeholder"
+          />
+          <svg class="input__icon input__icon_success" width="24" height="24">
             <use href="../../assets/images/icons.svg#success" />
           </svg>
-          <svg class="input__icon_error" width="24" height="24">
+          <svg class="input__icon input__icon_error" width="24" height="24">
             <use href="../../assets/images/icons.svg#error" />
           </svg>
         </div>
-      </label>
-
-      <label class="input input_success"
-        ><p class="input__label">Success</p>
+      </div>
+      <div class="input input_success">
+        <label class="input__label" for="success">Success</label>
         <div class="input__wrapper">
           <input
             type="text"
             class="input__control"
             placeholder="Placeholder"
             value="Success"
+            id="success"
           />
-          <svg class="input__icon_success" width="24" height="24">
+          <svg class="input__icon input__icon_success" width="24" height="24">
             <use href="../../assets/images/icons.svg#success" />
           </svg>
-          <svg class="input__icon_error" width="24" height="24">
+          <svg class="input__icon input__icon_error" width="24" height="24">
             <use href="../../assets/images/icons.svg#error" />
           </svg>
         </div>
-      </label>
-
-      <label class="input input_invalid"
-        ><p class="input__label">Error</p>
+      </div>
+      <div class="input input_invalid">
+        <label class="input__label" for="error">Error</label>
         <div class="input__wrapper">
           <input
             type="text"
             class="input__control"
             placeholder="Placeholder"
             value="Error"
+            id="error"
           />
-          <svg class="input__icon_success" width="24" height="24">
+          <svg class="input__icon input__icon_success" width="24" height="24">
             <use href="../../assets/images/icons.svg#success" />
           </svg>
-          <svg class="input__icon_error" width="24" height="24">
+          <svg class="input__icon input__icon_error" width="24" height="24">
             <use href="../../assets/images/icons.svg#error" />
           </svg>
         </div>
-      </label>
+      </div>
 
-      <label class="input"
-        ><p class="input__label">Disabled</p>
+      <div class="input">
+        <label class="input__label" for="disabled">Disabled</label>
         <div class="input__wrapper">
           <input
             type="text"
@@ -65,31 +70,32 @@
             placeholder="Placeholder"
             value="Disabled"
             disabled
+            id="disabled"
           />
-          <svg class="input__icon_success" width="24" height="24">
+          <svg class="input__icon input__icon_success" width="24" height="24">
             <use href="../../assets/images/icons.svg#success" />
           </svg>
-          <svg class="input__icon_error" width="24" height="24">
+          <svg class="input__icon input__icon_error" width="24" height="24">
             <use href="../../assets/images/icons.svg#error" />
           </svg>
         </div>
-      </label>
+      </div>
 
-      <label class="input">
+      <div class="input">
         <div class="input__wrapper">
           <input
             type="text"
             class="input__control"
             placeholder="Without LABEL"
           />
-          <svg class="input__icon_success" width="24" height="24">
+          <svg class="input__icon input__icon_success" width="24" height="24">
             <use href="../../assets/images/icons.svg#success" />
           </svg>
-          <svg class="input__icon_error" width="24" height="24">
+          <svg class="input__icon input__icon_error" width="24" height="24">
             <use href="../../assets/images/icons.svg#error" />
           </svg>
         </div>
-      </label>
+      </div>
     </div>
   </body>
 </html>
