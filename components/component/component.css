@@ -8,6 +8,9 @@
 }
 
 .component__wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 56px;
   height: 100%;
 }
 
