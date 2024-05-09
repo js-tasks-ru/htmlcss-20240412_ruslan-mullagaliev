@@ -12,3 +12,8 @@
   color: var(--black);
   margin: 0;
 }
+
+.header_component {
+  padding: 24px 0 60px;
+  background-color: var(--grey-5);
+}
