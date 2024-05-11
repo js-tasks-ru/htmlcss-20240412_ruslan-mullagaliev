@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+.form__control {
+    margin-bottom: 16px;
+}
+
+.form__fieldset {
+    border: none;
+    padding: 0;
+}
+
+.form__legend {
+    display: block;
+    margin-bottom: 13px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ACB5BD;
+}
