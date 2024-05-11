@@ -8,6 +8,7 @@
 @import '../../04-lection2/01-histogram/histogram.css';
 @import '../../components/sidebar/sidebar.css';
 @import '../../components/component/component.css';
+@import '../../components/logo/logo.css';
 
 :root {
   --white: #ffffff;
@@ -41,7 +42,7 @@
   --primary: var(--blue);
   --secondary: var(--purple);
   --alternate: var(--grey-4);
-}
+  
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -50,4 +51,5 @@ body {
 html,
 body {
   height: 100%;
+  font-size: 16px;
 }
