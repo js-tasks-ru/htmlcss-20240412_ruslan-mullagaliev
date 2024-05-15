@@ -7,11 +7,22 @@
     <script defer src="./burger-menu.js"></script>
   </head>
   <body>
-    <button id="burger-menu-open" style="margin: 10px">
-      <svg width="24" height="24">
-        <use href="../../assets/images/icons.svg#menu" />
-      </svg>
-    </button>
+    <header class="header header_component">
+      <div class="container">
+        <div class="header__inner">
+          <button class="header__burger-button" id="burger-menu-open">
+            <svg width="24" height="24">
+              <use href="../../assets/images/icons.svg#menu" />
+            </svg>
+          </button>
+          <div class="header__logo logo">
+            <div class="logo__box"></div>
+            <div class="logo__circle"></div>
+            <div class="logo__triangle"></div>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="modal burger-menu" id="burger-menu">
       <div class="modal__window burger-menu__window">
         <header class="header burger-menu__header">

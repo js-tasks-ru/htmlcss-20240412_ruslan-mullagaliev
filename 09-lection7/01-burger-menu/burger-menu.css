@@ -1,5 +1,5 @@
 .burger-menu {
-  transform: translateX(-100vw);
+  transform: translateX(-375px);
   transition: transform 250ms linear;
 }
 
@@ -54,6 +54,12 @@
 
 .burger-menu__content {
   gap: 16px;
+}
+
+@media screen and (min-width: 375px) {
+  .burger-menu {
+    transform: translateX(-100vw);
+  }
 }
 
 @media screen and (min-width: 767px) {
