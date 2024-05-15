@@ -3,10 +3,6 @@
   min-width: 229px;
 }
 
-.sidebar_burger-menu {
-  display: block;
-}
-
 .sidebar__title {
   font-size: 20px;
   line-height: 26px;
@@ -14,18 +10,10 @@
   margin: 0 0 16px;
 }
 
-.sidebar__title_burger-menu {
-  color: var(--grey-3);
-}
-
 .sidebar__content {
   display: flex;
   flex-direction: column;
   gap: 4px;
-}
-
-.sidebar__content_burger-menu {
-  gap: 16px;
 }
 
 .sidebar__item {

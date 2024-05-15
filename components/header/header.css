@@ -3,6 +3,12 @@
   padding: 16px 0 69px;
 }
 
+.header__inner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
 .header_component {
   background-color: var(--grey-5);
   padding: 16px 0;

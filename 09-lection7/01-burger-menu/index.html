@@ -7,50 +7,37 @@
     <script defer src="./burger-menu.js"></script>
   </head>
   <body>
-    <button
-      class="burger-menu__open"
-      id="burger-menu-open"
-      style="margin: 10px"
-    >
+    <button id="burger-menu-open" style="margin: 10px">
       <svg width="24" height="24">
         <use href="../../assets/images/icons.svg#menu" />
       </svg>
     </button>
-    <div class="burger-menu" id="burger-menu">
-      <header class="header header_component">
-        <div class="container">
-          <div class="burger-menu__header">
-            <button class="burger-menu__close" id="burger-menu-close">
-              <svg width="24" height="24">
-                <use href="../../assets/images/icons.svg#close" />
-              </svg>
-            </button>
-            <div class="header__logo logo">
-              <div class="logo__box"></div>
-              <div class="logo__circle"></div>
-              <div class="logo__triangle"></div>
+    <div class="modal burger-menu" id="burger-menu">
+      <div class="modal__window burger-menu__window">
+        <header class="header burger-menu__header">
+          <div class="container">
+            <div class="header__inner">
+              <button
+                class="burger-menu__close modal__close"
+                id="burger-menu-close"
+              >
+                <svg width="24" height="24">
+                  <use href="../../assets/images/icons.svg#close" />
+                </svg>
+              </button>
+              <div class="header__logo logo">
+                <div class="logo__box"></div>
+                <div class="logo__circle"></div>
+                <div class="logo__triangle"></div>
+              </div>
             </div>
           </div>
-          <div class="burger__theme">
-            <p class="burger__theme-text">Dark mode</p>
-            <label class="toggle">
-              <input type="checkbox" class="toggle__input" />
-              <div class="toggle__state">
-                <div class="toggle__control">
-                  <div class="toggle__control-inner"></div>
-                </div>
-              </div>
-            </label>
-          </div>
-        </div>
-      </header>
-      <main class="component component_burger-menu">
-        <div class="container">
-          <nav class="sidebar sidebar_burger-menu">
-            <h4 class="sidebar__title sidebar__title_burger-menu">
-              Components
-            </h4>
-            <div class="sidebar__content sidebar__content_burger-menu">
+        </header>
+        <div class="burger-menu__body container">
+          <div class="burger-menu__divider"></div>
+          <aside class="sidebar burger-menu__sidebar">
+            <h4 class="burger-menu__title sidebar__title">Components</h4>
+            <nav class="sidebar__content burger-menu__content">
               <a class="sidebar__item" href="#">Modal</a>
               <a class="sidebar__item" href="#">Tooltip</a>
               <a class="sidebar__item" href="#">Avatar</a>
@@ -59,10 +46,10 @@
               <a class="sidebar__item" href="#">Custom form elements</a>
               <a class="sidebar__item"></a>
               <a class="sidebar__item" href="#">Main page</a>
-            </div>
-          </nav>
+            </nav>
+          </aside>
         </div>
-      </main>
+      </div>
     </div>
   </body>
 </html>
