@@ -1,16 +1,10 @@
 .burger-menu {
-  transform: translateX(-375px);
-  transition: transform 250ms linear;
-}
-
-.burger-menu__window {
   position: fixed;
-  width: 375px;
   left: 0;
   top: 0;
-  transform: none;
-  border-radius: 0;
-  padding: 0;
+  transform: translateX(-100vw);
+  transition: transform 250ms linear;
+  width: 100vw;
   height: 100vh;
   background: var(--grey-5);
 }
@@ -54,12 +48,6 @@
 
 .burger-menu__content {
   gap: 16px;
-}
-
-@media screen and (min-width: 375px) {
-  .burger-menu {
-    transform: translateX(-100vw);
-  }
 }
 
 @media screen and (min-width: 767px) {
