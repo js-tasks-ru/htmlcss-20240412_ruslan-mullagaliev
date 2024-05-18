@@ -1,10 +1,14 @@
-component {
+.component {
   background: var(--white);
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   position: relative;
   color: var(--grey-4);
+}
+
+.component_burger-menu {
+  background: var(--grey-5);
 }
 
 .component__wrapper {

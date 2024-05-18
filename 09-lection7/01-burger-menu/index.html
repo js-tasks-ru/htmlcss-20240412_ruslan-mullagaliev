@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./burger-menu.css" />
+    <script defer src="./burger-menu.js"></script>
+  </head>
+  <body>
+    <header class="header header_component">
+      <div class="container">
+        <div class="header__inner">
+          <button class="header__burger-button" id="burger-menu-open">
+            <svg width="24" height="24">
+              <use href="../../assets/images/icons.svg#menu" />
+            </svg>
+          </button>
+          <div class="header__logo logo">
+            <div class="logo__box"></div>
+            <div class="logo__circle"></div>
+            <div class="logo__triangle"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="burger-menu" id="burger-menu">
+      <header class="header burger-menu__header">
+        <div class="container">
+          <div class="header__inner">
+            <button class="burger-menu__close" id="burger-menu-close">
+              <svg width="24" height="24">
+                <use href="../../assets/images/icons.svg#close" />
+              </svg>
+            </button>
+            <div class="header__logo logo">
+              <div class="logo__box"></div>
+              <div class="logo__circle"></div>
+              <div class="logo__triangle"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container burger-menu__body">
+        <div class="burger-menu__divider"></div>
+        <aside class="sidebar burger-menu__sidebar">
+          <h4 class="sidebar__title burger-menu__title">Components</h4>
+          <nav class="sidebar__content burger-menu__content">
+            <a class="sidebar__item" href="#">Modal</a>
+            <a class="sidebar__item" href="#">Tooltip</a>
+            <a class="sidebar__item" href="#">Avatar</a>
+            <a class="sidebar__item" href="#">Calendar</a>
+            <a class="sidebar__item sidebar__item_active"> Histogram </a>
+            <a class="sidebar__item" href="#">Custom form elements</a>
+            <a class="sidebar__item"></a>
+            <a class="sidebar__item" href="#">Main page</a>
+          </nav>
+        </aside>
+      </div>
+    </div>
+  </body>
 </html>

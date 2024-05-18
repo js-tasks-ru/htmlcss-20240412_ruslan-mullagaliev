@@ -3,6 +3,25 @@
   padding: 16px 0 69px;
 }
 
+.header__inner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header__burger-button {
+  position: absolute;
+  display: inline-flex;
+  left: 0;
+  right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
 .header_component {
   background-color: var(--grey-5);
   padding: 16px 0;
@@ -29,6 +48,11 @@
   .header_component {
     padding-bottom: 60px;
   }
+
+  .header__burger-button {
+    display: none;
+  }
+
   .header__logo {
     justify-content: start;
   }
@@ -40,9 +64,4 @@
     color: var(--black);
     margin-top: 38px;
   }
-}
-
-.header_component {
-  padding: 24px 0 60px;
-  background-color: var(--grey-5);
 }
