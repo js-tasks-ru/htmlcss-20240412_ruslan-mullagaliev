@@ -17,159 +17,189 @@
         </div>
       </header>
       <main class="preview">
-        <div class="container">
-          <div class="preview__cards">
-            <div class="preview__card">
-              <div class="preview__image"></div>
-              <div class="preview__title">Tooltip</div>
+        <div class="tabs">
+          <input
+            type="radio"
+            class="tabs__input"
+            name="tabs"
+            id="tab1"
+            checked
+          />
+          <input type="radio" class="tabs__input" name="tabs" id="tab2" />
+          <input type="radio" class="tabs__input" name="tabs" id="tab3" />
+          <input type="radio" class="tabs__input" name="tabs" id="tab4" />
+          <nav class="tabs__nav">
+            <div class="container">
+              <ul class="tabs__menu">
+                <li class="tabs__menu-item">
+                  <label class="tabs__control" for="tab1">All components</label>
+                </li>
+                <li class="tabs__menu-item">
+                  <label class="tabs__control" for="tab2">Elements</label>
+                </li>
+                <li class="tabs__menu-item">
+                  <label class="tabs__control" for="tab3">Containers</label>
+                </li>
+                <li class="tabs__menu-item">
+                  <label class="tabs__control" for="tab4">Templates</label>
+                </li>
+              </ul>
             </div>
-            <div class="preview__card">
-              <div class="preview__image"></div>
-              <div class="preview__title">Custom form elements</div>
-            </div>
-            <div class="preview__card">
-              <div class="preview__image"></div>
-              <div class="preview__title">Calendar</div>
-            </div>
-            <div class="preview__card">
-              <div class="preview__image"></div>
-              <div class="preview__title">Modal dialog</div>
-            </div>
-            <div class="preview__card">
-              <div class="preview__image">
-                <div class="histogram histogram_preview preview__component">
-                  <div class="histogram__header">
-                    <p class="histogram__title">Total orders</p>
-                    <a class="histogram__link">View all</a>
-                  </div>
-                  <h4 class="histogram__total">50254</h4>
-                  <div class="histogram__chart">
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 50px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 35px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 22px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 39px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 22px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 30px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 39px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 50px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 11px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 22px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 30px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 35px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 11px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 50px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 11px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 39px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 30px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 22px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 35px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 30px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 11px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 39px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 35px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 45px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 30px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 11px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 30px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 35px"
-                    ></div>
-                    <div
-                      class="histogram__chart-item"
-                      style="height: 17px"
-                    ></div>
+          </nav>
+          <section>
+            <div class="preview__cards tabs__tab tabs__tab-1">
+              <div class="preview__card">
+                <div class="preview__image"></div>
+                <div class="preview__title">Tooltip</div>
+              </div>
+              <div class="preview__card">
+                <div class="preview__image"></div>
+                <div class="preview__title">Custom form elements</div>
+              </div>
+              <div class="preview__card">
+                <div class="preview__image"></div>
+                <div class="preview__title">Calendar</div>
+              </div>
+              <div class="preview__card">
+                <div class="preview__image"></div>
+                <div class="preview__title">Modal dialog</div>
+              </div>
+              <div class="preview__card">
+                <div class="preview__image">
+                  <div class="histogram histogram_preview preview__component">
+                    <div class="histogram__header">
+                      <p class="histogram__title">Total orders</p>
+                      <a class="histogram__link">View all</a>
+                    </div>
+                    <h4 class="histogram__total">50254</h4>
+                    <div class="histogram__chart">
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 50px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 35px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 22px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 39px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 22px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 30px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 39px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 50px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 11px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 22px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 30px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 35px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 11px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 50px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 11px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 39px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 30px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 22px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 35px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 30px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 11px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 39px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 35px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 45px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 30px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 11px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 30px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 35px"
+                      ></div>
+                      <div
+                        class="histogram__chart-item"
+                        style="height: 17px"
+                      ></div>
+                    </div>
                   </div>
                 </div>
+                <div class="preview__title">Histogram</div>
               </div>
-              <div class="preview__title">Histogram</div>
+              <div class="preview__card">
+                <div class="preview__image"></div>
+                <div class="preview__title">Avatar</div>
+              </div>
             </div>
-            <div class="preview__card">
-              <div class="preview__image"></div>
-              <div class="preview__title">Avatar</div>
-            </div>
-          </div>
+          </section>
         </div>
       </main>
       <footer class="footer">
