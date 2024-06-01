@@ -1,8 +1,8 @@
-import { readFileSync } from 'fs';
-import gulp from 'gulp';
-import handlebars from 'gulp-compile-handlebars';
-import rename from 'gulp-rename';
-import prettier from 'gulp-prettier';
+const { readFileSync, writeFileSync } = require('fs');
+const gulp = require('gulp');
+const handlebars = require('gulp-compile-handlebars');
+const rename = require('gulp-rename');
+const prettier = require('prettier');
 
 gulp.task('preview-histogram', function () {
   const data = JSON.parse(readFileSync('./data/histogram/data.json', 'utf8'));
@@ -44,12 +44,13 @@ gulp.task('index', function () {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('format-index', function () {
+gulp.task('format-index', function (done) {
   const settings = JSON.parse(readFileSync('./.prettierrc', 'utf8'));
-  return gulp
-    .src('./dist/index.html')
-    .pipe(prettier(settings))
-    .pipe(gulp.dest('./'));
+  settings['parser'] = 'html';
+  const sourceHTML = readFileSync('./dist/index.html', 'utf8');
+  const formattedHTML = prettier.format(sourceHTML, settings);
+  writeFileSync('./index.html', formattedHTML);
+  done();
 });
 
 gulp.task(
