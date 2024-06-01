@@ -1,6 +1,6 @@
 .header {
   background-color: var(--white);
-  padding: 16px 0 69px;
+  padding: 16px 0 32px;
 }
 
 .header__inner {
@@ -43,7 +43,7 @@
 
 @media screen and (min-width: 767px) {
   .header {
-    padding: 24px 0 77px;
+    padding: 24px 0 40px;
   }
   .header_component {
     padding-bottom: 60px;

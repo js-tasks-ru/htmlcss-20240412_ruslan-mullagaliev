@@ -1,0 +1,145 @@
+<div class="tabs">
+  <input type="radio" class="tabs__input" name="tabs" id="tab1" checked />
+  <input type="radio" class="tabs__input" name="tabs" id="tab2"  />
+  <input type="radio" class="tabs__input" name="tabs" id="tab3"  />
+  <input type="radio" class="tabs__input" name="tabs" id="tab4"  />
+
+  <nav class="tabs__nav">
+    <div class="container">
+      <ul class="tabs__menu">
+
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab1">All components</label>
+        </li>
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab2">Elements</label>
+        </li>
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab3">Containers</label>
+        </li>
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab4">Templates</label>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <section>
+    <div class="tabs__tab tabs__tab-1">
+      <div class="container">
+        <div class="preview__cards">
+
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Tooltip</div>
+          </div>
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Custom form elements</div>
+          </div>
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Calendar</div>
+          </div>
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Modal dialog</div>
+          </div>
+          <div class="preview__card">
+            <div class="preview__image">
+              {{> preview-histogram}}
+            </div>
+            <div class="preview__title">Histogram</div>
+          </div>
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Avatar</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="tabs__tab tabs__tab-2">
+      <div class="container">
+        <div class="preview__cards">
+
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Tooltip</div>
+          </div>
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Custom form elements</div>
+          </div>
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Buttons</div>
+          </div>
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Avatar</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="tabs__tab tabs__tab-3">
+      <div class="container">
+        <div class="preview__cards">
+
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Custom form elements</div>
+          </div>
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Calendar</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="tabs__tab tabs__tab-4">
+      <div class="container">
+        <div class="preview__cards">
+
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Modal</div>
+          </div>
+          <div class="preview__card">
+            <div class="preview__image">
+              {{> preview-histogram}}
+            </div>
+            <div class="preview__title">Histogram</div>
+          </div>
+          <div class="preview__card">
+            <div class="preview__image">
+            </div>
+            <div class="preview__title">Accordion</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

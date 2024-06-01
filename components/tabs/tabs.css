@@ -1,6 +1,9 @@
 .tabs {
   position: relative;
 }
+.tabs__nav {
+  background: var(--white);
+}
 .tabs__menu {
   display: flex;
   flex-direction: row;
@@ -72,6 +75,7 @@
 
 .tabs__tab {
   display: none;
+  border-top: 1px solid var(--grey-2);
 }
 
 #tab1:checked ~ section .tabs__tab-1,

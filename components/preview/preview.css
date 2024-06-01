@@ -1,6 +1,5 @@
 .preview {
   background: var(--grey-5);
-  padding: 24px 0 61px;
 }
 
 .preview__cards {
@@ -8,6 +7,7 @@
   flex-wrap: wrap;
   column-gap: 16px;
   row-gap: 23px;
+  padding: 24px 0 61px;
 }
 
 .preview__card {
@@ -51,10 +51,11 @@
 
 @media screen and (min-width: 767px) {
   .preview {
-    padding: 68px 0 204px;
+    border-bottom: 1px solid var(--grey-2);
   }
   .preview__cards {
     gap: 30px;
+    padding: 68px 0 204px;
   }
 
   .preview__card {
