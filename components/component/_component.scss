@@ -1,0 +1,51 @@
+.component {
+  background: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  color: var(--grey-4);
+  &_burger-menu {
+    background: var(--grey-5);
+  }
+  @include respond(desktop) {
+    background: var(--grey-5);
+    padding: 36px 0;
+  }
+
+  &__wrapper {
+    height: 100%;
+    @include respond(desktop) {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 56px;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    background: var(--white);
+    box-sizing: border-box;
+    padding: 32px 16px;
+    @include respond(desktop) {
+      box-shadow: 0px 2px 4px var(--black-2);
+      border-radius: 12px;
+      padding: 32px 48px;
+    }
+  }
+
+  &__content-title {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 20px;
+    @include respond(desktop) {
+      font-size: 28px;
+      line-height: 38px;
+      margin: 0 0 24px;
+    }
+  }
+  .component__preview {
+    width: 300px;
+    height: 157px;
+  }
+}

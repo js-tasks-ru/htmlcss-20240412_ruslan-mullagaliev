@@ -1,0 +1,9 @@
+$mq-desktop: 768px;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==desktop {
+    @media screen and (min-width: $mq-desktop) {
+      @content;
+    }
+  }
+}

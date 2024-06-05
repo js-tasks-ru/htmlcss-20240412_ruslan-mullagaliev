@@ -1,0 +1,14 @@
+.typography {
+  font-family: 'Inter';
+  font-style: normal;
+  color: var(--black);
+  &_p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+    &-disabled {
+      color: var(--grey-2);
+    }
+  }
+}

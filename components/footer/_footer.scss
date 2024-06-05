@@ -1,9 +1,6 @@
 .footer {
   display: none;
-}
-
-@media screen and (min-width: 767px) {
-  .footer {
+  @include respond(desktop) {
     display: block;
     padding: 71px 0 136px;
     background-color: var(--white);
@@ -14,23 +11,23 @@
     margin: 0;
   }
 
-  .footer_component {
+  &_component {
     padding: 56px 0;
     background: var(--grey-5);
   }
 
-  .footer__title {
+  &__title {
     font-weight: 500;
     font-size: 38px;
     line-height: 48px;
   }
-  .footer__text {
+  &__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .footer__link {
+  &__link {
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
