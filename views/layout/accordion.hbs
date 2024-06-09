@@ -7,7 +7,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script defer src="../assets/js/burger-menu.js"></script>
   <link rel="stylesheet" href="../build/style.css" />
-  <title>Button</title>
+  <title>Accordion</title>
 </head>
 
 <body>
@@ -69,16 +69,16 @@
           <aside class="sidebar">
             <h4 class="sidebar__title">Components</h4>
             <nav class="sidebar__content">
-              <a class="sidebar__item sidebar__item_active" href="./button.html">Button</a>
-              <a class="sidebar__item " href="./accordion.html">Accordion</a>
+              <a class="sidebar__item " href="./button.html">Button</a>
+              <a class="sidebar__item sidebar__item_active" href="./accordion.html">Accordion</a>
               <a class="sidebar__item"></a>
               <a class="sidebar__item" href="/index.html">Main page</a>
             </nav>
           </aside>          <div class="inner-page__content">
             <div class="container container_inner-page-content">
-              <h3 class="inner-page__content-title">Button</h3>
+              <h3 class="inner-page__content-title">Accordion</h3>
               <div class="inner-page__content-component">
-                {{> button}}
+                {{> accordion}}
               </div>
             </div>
             <div class="tabs">
@@ -90,7 +90,7 @@
                   <ul class="tabs__menu">
             
                     <li class="tabs__menu-item">
-                      <label class="tabs__control" for="tab1">CSS</label>
+                      <label class="tabs__control" for="tab1">HTML</label>
                     </li>
                     <li class="tabs__menu-item">
                       <label class="tabs__control" for="tab2">CSS</label>
@@ -104,24 +104,49 @@
                 <div class="container container_inner-page-content">
                   <div class="tabs__tab tabs__tab-1">
                     <pre class="tabs__pre"><code class="tabs__code html">
-            &lt;section style&#x3D;&quot;
-                display: grid;
-                grid-template-columns: repeat(4, auto) 1fr;
-                grid-template-rows: repeat(2, 1fr);
-                column-gap: 16px;
-                row-gap: 16px;
-              &quot;&gt;
-              &lt;p class&#x3D;&quot;typography typography_p typography_upper&quot;&gt;DEFAULT&lt;/p&gt;
-              &lt;button class&#x3D;&quot;button button_primary&quot;&gt;Primary&lt;/button&gt;
-              &lt;button class&#x3D;&quot;button button_secondary&quot;&gt;Secondary&lt;/button&gt;
-              &lt;button class&#x3D;&quot;button button_alternate&quot;&gt;Alternate&lt;/button&gt;
-              &lt;div&gt;&lt;/div&gt;
-              &lt;p class&#x3D;&quot;typography typography_p-disabled typography_upper&quot;&gt;disabled&lt;/p&gt;
-              &lt;button class&#x3D;&quot;button button_primary&quot; disabled&gt;Primary&lt;/button&gt;
-              &lt;button class&#x3D;&quot;button button_secondary&quot; disabled&gt;Secondary&lt;/button&gt;
-              &lt;button class&#x3D;&quot;button button_alternate&quot; disabled&gt;Alternate&lt;/button&gt;
-              &lt;div&gt;&lt;/div&gt;
-            &lt;/section&gt;</code></pre>
+            &lt;div class&#x3D;&quot;accordion&quot;&gt;
+              &lt;details class&#x3D;&quot;accordion__item&quot; open&gt;
+                &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
+                  &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 1&lt;/p&gt;
+                  &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
+                    &lt;svg width&#x3D;&quot;26&quot; height&#x3D;&quot;26&quot;&gt;
+                      &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
+                    &lt;/svg&gt;
+                  &lt;/div&gt;
+                &lt;/summary&gt;
+                &lt;p class&#x3D;&quot;accordion__text&quot;&gt;
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                  sint. Velit officia consequat duis enim velit mollit. Exercitation
+                  veniam consequat sunt nostrud amet.
+                &lt;/p&gt;
+              &lt;/details&gt;
+              &lt;details class&#x3D;&quot;accordion__item&quot;&gt;
+                &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
+                  &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 2&lt;/p&gt;
+                  &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
+                    &lt;svg width&#x3D;&quot;26&quot; height&#x3D;&quot;26&quot;&gt;
+                      &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
+                    &lt;/svg&gt;
+                  &lt;/div&gt;
+                &lt;/summary&gt;
+                &lt;p class&#x3D;&quot;accordion__text&quot;&gt;hidden_text&lt;/p&gt;
+              &lt;/details&gt;
+              &lt;details class&#x3D;&quot;accordion__item&quot;&gt;
+                &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
+                  &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 3&lt;/p&gt;
+                  &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
+                    &lt;svg width&#x3D;&quot;26&quot; height&#x3D;&quot;26&quot;&gt;
+                      &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
+                    &lt;/svg&gt;
+                  &lt;/div&gt;
+                &lt;/summary&gt;
+                &lt;p class&#x3D;&quot;accordion__text&quot;&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit
+                  voluptas voluptatum minima nulla laborum quaerat optio magnam ex
+                  nobis.
+                &lt;/p&gt;
+              &lt;/details&gt;
+            &lt;/div&gt;</code></pre>
                   </div>
                 </div>
               </section>
@@ -129,60 +154,57 @@
                 <div class="container container_inner-page-content">
                   <div class="tabs__tab tabs__tab-2">
                     <pre class="tabs__pre"><code class="tabs__code css">
-            /* Стилизация кнопки */
-            /* Button/Primary/Default */
-            
-            .button {
-              height: 48px;
-              border-radius: 8px;
-              font-style: normal;
-              font-weight: 500;
+            /* Стилизация аккордеона */
+            .accordion {
+              font-family: &#x27;Inter&#x27;, sans-serif;
               font-size: 16px;
-              line-height: 18.75px;
-              text-align: center;
-              border: none;
-              color: var(--white);
-              cursor: pointer;
-              font-family: &#x27;Roboto&#x27;, sans-serif;
-              padding: 15px 14px 14px;
+              font-weight: 400;
+              line-height: 24px;
             }
             
-            .button_primary {
-              background-color: var(--blue-2);
-              transition: background-color 200ms ease-in-out;
-            }
-            
-            .button_primary:hover {
-              background-color: var(--blue-3);
-            }
-            
-            .button_secondary {
-              background-color: var(--secondary);
-              transition: background-color 200ms ease-in-out;
-            }
-            
-            .button_secondary:hover {
-              background-color: var(--purple-2);
-            }
-            
-            .button_alternate {
-              background-color: var(--white);
-              color: var(--alternate);
+            .accordion__item {
+              margin-bottom: 8px;
               border: 1px solid var(--grey-3);
-              transition: border-color 200ms ease-in-out;
+              border-radius: 8px;
+              padding: 24px 32px;
             }
             
-            .button_alternate:hover {
-              border-color: var(--black);
+            .accordion__item[open] {
+              padding-bottom: 32px;
             }
             
-            .button:disabled {
-              opacity: 50%;
-              cursor: not-allowed;
+            .accordion__item:last-child {
+              margin-bottom: 0;
             }
             
-            .button_alternate:disabled {
-              opacity: 30%;
+            .accordion__summary {
+              list-style: none;
+              position: relative;
+            }
+            
+            .accordion__summary-text {
+              margin: 0;
+            }
+            
+            .accordion__summary::-webkit-details-marker {
+              /* нестандартный псевдоэлемент Google Chrome */
+              display: none;
+            }
+            
+            .accordion__text {
+              margin-top: 16px;
+              margin-bottom: 0;
+            }
+            
+            .accordion__arrow {
+              position: absolute;
+              top: 0px;
+              right: 0px;
+              cursor: pointer;
+            }
+            
+            .accordion__item[open] .accordion__arrow {
+              transform: rotate(180deg);
             }
             </code></pre>
                   </div>

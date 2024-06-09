@@ -54,13 +54,19 @@ gulp.task('format-index', function (done) {
 });
 
 // Сборка компонентов
-const componets = JSON.parse(
-  readFileSync('./data/component-page/data.json', 'utf8'),
+const innerPages = JSON.parse(
+  readFileSync('./data/inner-page/data.json', 'utf8'),
 );
 
-componets.forEach((item) => {
+innerPages.forEach((item) => {
+  item.tabs.forEach((tab) => {
+    tab['code'] = readFileSync(tab.codePath, 'utf8');
+  });
+});
+
+innerPages.forEach((item) => {
   gulp.task(`pre-${item.url}`, function () {
-    console.log('item', item);
+    // console.log('item', item);
     const options = {
       batch: ['./views/partials'],
       helpers: {
@@ -70,7 +76,7 @@ componets.forEach((item) => {
       },
     };
     return gulp
-      .src('./views/template/component-page.hbs')
+      .src('./views/template/inner-page.hbs')
       .pipe(handlebars(item, options))
       .pipe(rename(`${item.url}.hbs`))
       .pipe(gulp.dest('./views/layout'));
@@ -84,7 +90,7 @@ componets.forEach((item) => {
       .src(`./views/layout/${item.url}.hbs`)
       .pipe(handlebars(null, options))
       .pipe(rename(`${item.url}.html`))
-      .pipe(gulp.dest('./dist'));
+      .pipe(gulp.dest('./pages'));
   });
 
   gulp.task(`format-${item.url}`, function (done) {
@@ -92,7 +98,7 @@ componets.forEach((item) => {
     settings['parser'] = 'html';
     const sourceHTML = readFileSync(`./dist/${item.url}.html`, 'utf8');
     const formattedHTML = prettier.format(sourceHTML, settings);
-    writeFileSync(`./${item.url}.html`, formattedHTML);
+    writeFileSync(`./pages/${item.url}.html`, formattedHTML);
     done();
   });
 });
@@ -100,4 +106,13 @@ componets.forEach((item) => {
 gulp.task(
   'default',
   gulp.series('preview-histogram', 'preview-tabs', 'index', 'format-index'),
+);
+
+const innerPagesPreTasks = innerPages.map((item) => `pre-${item.url}`);
+const innerPagesProcessTasks = innerPages.map((item) => item.url);
+const innerPagesFormatTasks = innerPages.map((item) => `format-${item.url}`);
+
+gulp.task(
+  'inner-pages',
+  gulp.series(...innerPagesPreTasks, ...innerPagesProcessTasks),
 );

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Button",
+    "url": "button",
+    "image": "button",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "CSS",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/button.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": "03-lection1/01-button/button.css"
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button", "active": true },
+      { "name": "Accordion", "path": "accordion" }
+    ]
+  },
+  {
+    "name": "Accordion",
+    "url": "accordion",
+    "image": "accordion",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/accordion.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": "03-lection1/02-accordion/accordion.css"
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button" },
+      { "name": "Accordion", "path": "accordion", "active": true }
+    ]
+  }
+]

@@ -2,20 +2,22 @@
 @import './normalize.css';
 @import 'variables';
 @import 'mixins';
-@import '../../components/typography/typography';
-@import '../../components/container/container';
-@import '../../components/footer/footer';
-@import '../../components/header/header';
-@import '../../components/page/page';
-@import '../../components/preview/preview';
-@import '../../03-lection1/01-button/button';
+@import 'blocks/typography';
+@import 'blocks/container';
+@import 'blocks/footer';
+@import 'blocks/header';
+@import 'blocks/page';
+@import 'blocks/preview';
+@import './components/button';
+@import './components/accordion';
 @import '../../04-lection2/01-histogram/histogram';
-@import '../../components/sidebar/sidebar';
-@import '../../components/component/component';
-@import '../../components/logo/logo';
+@import 'blocks/sidebar';
+@import 'blocks/inner-page';
+@import 'blocks/logo';
+@import './components/burger-menu';
 @import '../../07-lection5/03-toggler/toggler';
 @import '../../05-lection3/02-modal/modal';
-@import '../../components/tabs/_tabs';
+@import 'blocks/tabs';
 
 body {
   font-family: 'Roboto', sans-serif;

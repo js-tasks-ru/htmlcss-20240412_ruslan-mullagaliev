@@ -1,0 +1,22 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  @include respond(desktop) {
+    max-width: 1110px;
+  }
+
+  &_inner-page {
+    // margin: 0 auto;
+    padding: 0;
+    @include respond(desktop) {
+      // margin: 0 auto;
+      padding: 0 15px;
+    }
+  }
+
+  &_inner-page-content {
+    @include respond(desktop) {
+      padding: 0 48px;
+    }
+  }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="build/style.css" />
+    <title>Accordion</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <div class="header__logo logo">
+            <div class="logo__box"></div>
+            <div class="logo__circle"></div>
+            <div class="logo__triangle"></div>
+          </div>
+          <h1 class="header__title">Reusable component library</h1>
+        </div>
+      </header>
+      <main class="component">
+        <div class="container component__container">
+          <div class="component__wrapper">
+            <aside class="sidebar">
+              <h4 class="sidebar__title">Components</h4>
+              <nav class="sidebar__content">
+                <a class="sidebar__item" href="./button.html">Button</a>
+                <a
+                  class="sidebar__item sidebar__item_active"
+                  href="./accordion.html"
+                  >Accordion</a
+                >
+                <a class="sidebar__item"></a>
+                <a class="sidebar__item" href="index.html">Main page</a>
+              </nav>
+            </aside>
+            <div class="component__content">
+              <div class="container container_component">
+                <h3 class="component__content-title">Accordion</h3>
+                <div class="component__content-component">
+                  <div class="accordion">
+                    <details class="accordion__item" open>
+                      <summary class="accordion__summary">
+                        <p class="accordion__summary-text">Accordion item 1</p>
+                        <div class="accordion__arrow">
+                          <svg width="26" height="26">
+                            <use href="assets/images/icons.svg#arrow" />
+                          </svg>
+                        </div>
+                      </summary>
+                      <p class="accordion__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </p>
+                    </details>
+                    <details class="accordion__item">
+                      <summary class="accordion__summary">
+                        <p class="accordion__summary-text">Accordion item 2</p>
+                        <div class="accordion__arrow">
+                          <svg width="26" height="26">
+                            <use href="assets/images/icons.svg#arrow" />
+                          </svg>
+                        </div>
+                      </summary>
+                      <p class="accordion__text">hidden_text</p>
+                    </details>
+                    <details class="accordion__item">
+                      <summary class="accordion__summary">
+                        <p class="accordion__summary-text">Accordion item 3</p>
+                        <div class="accordion__arrow">
+                          <svg width="26" height="26">
+                            <use href="assets/images/icons.svg#arrow" />
+                          </svg>
+                        </div>
+                      </summary>
+                      <p class="accordion__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quis fugit voluptas voluptatum minima nulla laborum
+                        quaerat optio magnam ex nobis.
+                      </p>
+                    </details>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs">
+                <input
+                  type="radio"
+                  class="tabs__input"
+                  name="tabs"
+                  id="tab1"
+                  checked
+                />
+                <input type="radio" class="tabs__input" name="tabs" id="tab2" />
+
+                <nav class="tabs__nav">
+                  <div class="container container_component">
+                    <ul class="tabs__menu">
+                      <li class="tabs__menu-item">
+                        <label class="tabs__control" for="tab1">HTML</label>
+                      </li>
+                      <li class="tabs__menu-item">
+                        <label class="tabs__control" for="tab2">CSS</label>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                <div class="tabs__divider"></div>
+                <section>
+                  <div class="container container_component">
+                    <div class="tabs__tab tabs__tab-1">
+                      <pre
+                        class="tabs__pre"
+                      ><code class="language-html">&lt;div class&#x3D;&quot;accordion&quot;&gt;
+              &lt;details class&#x3D;&quot;accordion__item&quot; open&gt;
+                &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
+                  &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 1&lt;/p&gt;
+                  &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
+                    &lt;svg width&#x3D;&quot;26&quot; height&#x3D;&quot;26&quot;&gt;
+                      &lt;use href&#x3D;&quot;assets/images/icons.svg#arrow&quot; /&gt;
+                    &lt;/svg&gt;
+                  &lt;/div&gt;
+                &lt;/summary&gt;
+                &lt;p class&#x3D;&quot;accordion__text&quot;&gt;
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                  sint. Velit officia consequat duis enim velit mollit. Exercitation
+                  veniam consequat sunt nostrud amet.
+                &lt;/p&gt;
+              &lt;/details&gt;
+              &lt;details class&#x3D;&quot;accordion__item&quot;&gt;
+                &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
+                  &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 2&lt;/p&gt;
+                  &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
+                    &lt;svg width&#x3D;&quot;26&quot; height&#x3D;&quot;26&quot;&gt;
+                      &lt;use href&#x3D;&quot;assets/images/icons.svg#arrow&quot; /&gt;
+                    &lt;/svg&gt;
+                  &lt;/div&gt;
+                &lt;/summary&gt;
+                &lt;p class&#x3D;&quot;accordion__text&quot;&gt;hidden_text&lt;/p&gt;
+              &lt;/details&gt;
+              &lt;details class&#x3D;&quot;accordion__item&quot;&gt;
+                &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
+                  &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 3&lt;/p&gt;
+                  &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
+                    &lt;svg width&#x3D;&quot;26&quot; height&#x3D;&quot;26&quot;&gt;
+                      &lt;use href&#x3D;&quot;assets/images/icons.svg#arrow&quot; /&gt;
+                    &lt;/svg&gt;
+                  &lt;/div&gt;
+                &lt;/summary&gt;
+                &lt;p class&#x3D;&quot;accordion__text&quot;&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit
+                  voluptas voluptatum minima nulla laborum quaerat optio magnam ex
+                  nobis.
+                &lt;/p&gt;
+              &lt;/details&gt;
+            &lt;/div&gt;</code></pre>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="container container_component">
+                    <div class="tabs__tab tabs__tab-2">
+                      <pre
+                        class="tabs__pre"
+                      ><code class="language-html">.button { height: 48px; border-radius: 8px; font-style: normal; font-weight: 500; font-size: 16px; line-height: 18.75px; text-align: center; border: none; color: var(--white); cursor: pointer; font-family: &#x27;Roboto&#x27;, sans-serif; padding: 15px 14px 14px; }</code></pre>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer footer_component">
+        <div class="container">
+          <a class="footer__link" href="#"> Reusable component library </a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

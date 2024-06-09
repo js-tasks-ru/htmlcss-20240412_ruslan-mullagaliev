@@ -2,6 +2,7 @@
   position: relative;
   &__nav {
     background: var(--white);
+    overflow-x: hidden;
   }
   &__menu {
     display: flex;
@@ -74,7 +75,7 @@
 
   &__tab {
     display: none;
-    border-top: 1px solid var(--grey-2);
+    // border-top: 1px solid var(--grey-2);
   }
 
   #tab1:checked ~ section &__tab-1,
@@ -82,5 +83,28 @@
   #tab3:checked ~ section &__tab-3,
   #tab4:checked ~ section &__tab-4 {
     display: block;
+  }
+
+  &__divider {
+    width: 100%;
+    height: 1px;
+    background: var(--grey-2);
+  }
+
+  &__pre {
+    overflow-x: auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 22px;
+    padding-bottom: 15px;
+    @include respond(desktop) {
+      padding: 50px 0;
+    }
+  }
+
+  &__code {
+    box-sizing: border-box;
+    padding: 0 !important;
+    background-color: transparent !important;
   }
 }
