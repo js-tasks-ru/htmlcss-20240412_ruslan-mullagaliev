@@ -6,7 +6,8 @@
     "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
     "scss": "npx sass assets/css/main.scss dist/style.css",
     "postcss": "npx postcss assets/css/main.scss -o build/style.css",
-    "inner-pages": "npx gulp inner-pages"
+    "inner-pages": "npx gulp inner-pages",
+    "index-page": "npx gulp"
   },
   "husky": {
     "hooks": {

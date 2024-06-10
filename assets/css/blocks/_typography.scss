@@ -2,13 +2,19 @@
   font-family: 'Inter';
   font-style: normal;
   color: var(--black);
+  margin: 0;
   &_p {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 8px;
+    line-height: 12px;
     color: var(--grey-4);
+
     &-disabled {
       color: var(--grey-2);
+    }
+    @include respond(desktop) {
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 

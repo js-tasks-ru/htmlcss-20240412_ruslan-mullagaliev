@@ -1,7 +1,7 @@
-<aside class="sidebar">
-  <h4 class="sidebar__title">Components</h4>
-  <nav class="sidebar__content">
-    {{#each this}}
+<aside class="sidebar {{#if burger}}burger-menu__sidebar {{/if}}">
+  <h4 class="sidebar__title {{#if burger}}burger-menu__title {{/if}}">Components</h4>
+  <nav class="sidebar__content {{#if burger}}burger-menu__content {{/if}}">
+    {{#each sidebar}}
     <a class="sidebar__item {{#if active}}sidebar__item_active{{/if}}" href="./{{path}}.html">{{name}}</a>
     {{/each}}
     <a class="sidebar__item"></a>

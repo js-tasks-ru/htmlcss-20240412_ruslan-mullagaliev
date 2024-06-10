@@ -16,16 +16,11 @@ gulp.task('preview-histogram', function () {
 });
 
 gulp.task('preview-tabs', function () {
-  const data = JSON.parse(
-    readFileSync('./data/preview-tabs/data.json', 'utf8'),
-  );
+  const data = JSON.parse(readFileSync('./data/preview/data.json', 'utf8'))[
+    'tabs'
+  ];
   const options = {
     batch: ['./views/partials'],
-    helpers: {
-      partialStr: function (str) {
-        return new handlebars.Handlebars.SafeString('{{> ' + str + '}}');
-      },
-    },
   };
   return gulp
     .src('./views/template/preview-tabs.hbs')
@@ -34,12 +29,13 @@ gulp.task('preview-tabs', function () {
 });
 
 gulp.task('index', function () {
+  const data = JSON.parse(readFileSync('./data/preview/data.json', 'utf8'));
   const options = {
     batch: ['./views/partials'],
   };
   return gulp
     .src('./views/layout/index.hbs')
-    .pipe(handlebars(null, options))
+    .pipe(handlebars(data, options))
     .pipe(rename('index.html'))
     .pipe(gulp.dest('./dist'));
 });
@@ -69,11 +65,6 @@ innerPages.forEach((item) => {
     // console.log('item', item);
     const options = {
       batch: ['./views/partials'],
-      helpers: {
-        partialStr: function (str) {
-          return new handlebars.Handlebars.SafeString('{{> ' + str + '}}');
-        },
-      },
     };
     return gulp
       .src('./views/template/inner-page.hbs')

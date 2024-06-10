@@ -35,7 +35,7 @@
             <div class="header__inner">
               <button class="burger-menu__close" id="burger-menu-close">
                 <svg width="24" height="24">
-                  <use href="../../assets/images/icons.svg#close" />
+                  <use href="../assets/images/icons.svg#close" />
                 </svg>
               </button>
               <div class="header__logo logo">
@@ -48,27 +48,22 @@
         </header>
         <div class="container burger-menu__body">
           <div class="burger-menu__divider"></div>
-          <aside class="sidebar burger-menu__sidebar">
-            <h4 class="sidebar__title burger-menu__title">Components</h4>
-            <nav class="sidebar__content burger-menu__content">
-              <a class="sidebar__item" href="#">Modal</a>
-              <a class="sidebar__item" href="#">Tooltip</a>
-              <a class="sidebar__item" href="#">Avatar</a>
-              <a class="sidebar__item" href="#">Calendar</a>
-              <a class="sidebar__item sidebar__item_active"> Histogram </a>
-              <a class="sidebar__item" href="#">Custom form elements</a>
+          <aside class="sidebar burger-menu__sidebar ">
+            <h4 class="sidebar__title burger-menu__title ">Components</h4>
+            <nav class="sidebar__content burger-menu__content ">
+              <a class="sidebar__item " href="./button.html">Button</a>
+              <a class="sidebar__item sidebar__item_active" href="./accordion.html">Accordion</a>
               <a class="sidebar__item"></a>
-              <a class="sidebar__item" href="#">Main page</a>
+              <a class="sidebar__item" href="/index.html">Main page</a>
             </nav>
-          </aside>
-        </div>
+          </aside>    </div>
       </div>
     </header>    <main class="inner-page">
       <div class="container container_inner-page">
         <div class="inner-page__wrapper">
-          <aside class="sidebar">
-            <h4 class="sidebar__title">Components</h4>
-            <nav class="sidebar__content">
+          <aside class="sidebar ">
+            <h4 class="sidebar__title ">Components</h4>
+            <nav class="sidebar__content ">
               <a class="sidebar__item " href="./button.html">Button</a>
               <a class="sidebar__item sidebar__item_active" href="./accordion.html">Accordion</a>
               <a class="sidebar__item"></a>
@@ -122,136 +117,136 @@
                   </details>
                 </div>              </div>
             </div>
-            <div class="tabs">
-              <input type="radio" class="tabs__input" name="tabs" id="tab1" checked />
-              <input type="radio" class="tabs__input" name="tabs" id="tab2"  />
-            
-              <nav class="tabs__nav">
-                <div class="container container_inner-page-content">
-                  <ul class="tabs__menu">
-            
-                    <li class="tabs__menu-item">
-                      <label class="tabs__control" for="tab1">HTML</label>
-                    </li>
-                    <li class="tabs__menu-item">
-                      <label class="tabs__control" for="tab2">CSS</label>
-                    </li>
-            
-                  </ul>
-                </div>
-              </nav>
-              <div class="tabs__divider"></div>
-              <section>
-                <div class="container container_inner-page-content">
-                  <div class="tabs__tab tabs__tab-1">
-                    <pre class="tabs__pre"><code class="tabs__code html">
-            &lt;div class&#x3D;&quot;accordion&quot;&gt;
-              &lt;details class&#x3D;&quot;accordion__item&quot; open&gt;
-                &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
-                  &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 1&lt;/p&gt;
-                  &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
-                    &lt;svg width&#x3D;&quot;26&quot; height&#x3D;&quot;26&quot;&gt;
-                      &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
-                    &lt;/svg&gt;
-                  &lt;/div&gt;
-                &lt;/summary&gt;
-                &lt;p class&#x3D;&quot;accordion__text&quot;&gt;
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                  sint. Velit officia consequat duis enim velit mollit. Exercitation
-                  veniam consequat sunt nostrud amet.
-                &lt;/p&gt;
-              &lt;/details&gt;
-              &lt;details class&#x3D;&quot;accordion__item&quot;&gt;
-                &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
-                  &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 2&lt;/p&gt;
-                  &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
-                    &lt;svg width&#x3D;&quot;26&quot; height&#x3D;&quot;26&quot;&gt;
-                      &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
-                    &lt;/svg&gt;
-                  &lt;/div&gt;
-                &lt;/summary&gt;
-                &lt;p class&#x3D;&quot;accordion__text&quot;&gt;hidden_text&lt;/p&gt;
-              &lt;/details&gt;
-              &lt;details class&#x3D;&quot;accordion__item&quot;&gt;
-                &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
-                  &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 3&lt;/p&gt;
-                  &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
-                    &lt;svg width&#x3D;&quot;26&quot; height&#x3D;&quot;26&quot;&gt;
-                      &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
-                    &lt;/svg&gt;
-                  &lt;/div&gt;
-                &lt;/summary&gt;
-                &lt;p class&#x3D;&quot;accordion__text&quot;&gt;
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit
-                  voluptas voluptatum minima nulla laborum quaerat optio magnam ex
-                  nobis.
-                &lt;/p&gt;
-              &lt;/details&gt;
-            &lt;/div&gt;</code></pre>
-                  </div>
-                </div>
-              </section>
-              <section>
-                <div class="container container_inner-page-content">
-                  <div class="tabs__tab tabs__tab-2">
-                    <pre class="tabs__pre"><code class="tabs__code css">
-            /* Стилизация аккордеона */
-            .accordion {
-              font-family: &#x27;Inter&#x27;, sans-serif;
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 24px;
-            }
-            
-            .accordion__item {
-              margin-bottom: 8px;
-              border: 1px solid var(--grey-3);
-              border-radius: 8px;
-              padding: 24px 32px;
-            }
-            
-            .accordion__item[open] {
-              padding-bottom: 32px;
-            }
-            
-            .accordion__item:last-child {
-              margin-bottom: 0;
-            }
-            
-            .accordion__summary {
-              list-style: none;
-              position: relative;
-            }
-            
-            .accordion__summary-text {
-              margin: 0;
-            }
-            
-            .accordion__summary::-webkit-details-marker {
-              /* нестандартный псевдоэлемент Google Chrome */
-              display: none;
-            }
-            
-            .accordion__text {
-              margin-top: 16px;
-              margin-bottom: 0;
-            }
-            
-            .accordion__arrow {
-              position: absolute;
-              top: 0px;
-              right: 0px;
-              cursor: pointer;
-            }
-            
-            .accordion__item[open] .accordion__arrow {
-              transform: rotate(180deg);
-            }
-            </code></pre>
-                  </div>
-                </div>
-              </section>
-            </div>          </div>
+<div class="tabs">
+  <input type="radio" class="tabs__input" name="tabs" id="tab1" checked />
+  <input type="radio" class="tabs__input" name="tabs" id="tab2"  />
+
+  <nav class="tabs__nav">
+    <div class="container container_inner-page-content">
+      <ul class="tabs__menu">
+
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab1">HTML</label>
+        </li>
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab2">CSS</label>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <div class="tabs__divider"></div>
+  <section>
+    <div class="container container_inner-page-content">
+      <div class="tabs__tab tabs__tab-1">
+        <pre class="tabs__pre"><code class="tabs__code html">
+&lt;div class&#x3D;&quot;accordion&quot;&gt;
+  &lt;details class&#x3D;&quot;accordion__item&quot; open&gt;
+    &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
+      &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 1&lt;/p&gt;
+      &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
+        &lt;svg width&#x3D;&quot;26&quot; height&#x3D;&quot;26&quot;&gt;
+          &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+    &lt;/summary&gt;
+    &lt;p class&#x3D;&quot;accordion__text&quot;&gt;
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+      sint. Velit officia consequat duis enim velit mollit. Exercitation
+      veniam consequat sunt nostrud amet.
+    &lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details class&#x3D;&quot;accordion__item&quot;&gt;
+    &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
+      &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 2&lt;/p&gt;
+      &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
+        &lt;svg width&#x3D;&quot;26&quot; height&#x3D;&quot;26&quot;&gt;
+          &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+    &lt;/summary&gt;
+    &lt;p class&#x3D;&quot;accordion__text&quot;&gt;hidden_text&lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details class&#x3D;&quot;accordion__item&quot;&gt;
+    &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
+      &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 3&lt;/p&gt;
+      &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
+        &lt;svg width&#x3D;&quot;26&quot; height&#x3D;&quot;26&quot;&gt;
+          &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+    &lt;/summary&gt;
+    &lt;p class&#x3D;&quot;accordion__text&quot;&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit
+      voluptas voluptatum minima nulla laborum quaerat optio magnam ex
+      nobis.
+    &lt;/p&gt;
+  &lt;/details&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container container_inner-page-content">
+      <div class="tabs__tab tabs__tab-2">
+        <pre class="tabs__pre"><code class="tabs__code css">
+/* Стилизация аккордеона */
+.accordion {
+  font-family: &#x27;Inter&#x27;, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.accordion__item {
+  margin-bottom: 8px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 24px 32px;
+}
+
+.accordion__item[open] {
+  padding-bottom: 32px;
+}
+
+.accordion__item:last-child {
+  margin-bottom: 0;
+}
+
+.accordion__summary {
+  list-style: none;
+  position: relative;
+}
+
+.accordion__summary-text {
+  margin: 0;
+}
+
+.accordion__summary::-webkit-details-marker {
+  /* нестандартный псевдоэлемент Google Chrome */
+  display: none;
+}
+
+.accordion__text {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.accordion__arrow {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.accordion__item[open] .accordion__arrow {
+  transform: rotate(180deg);
+}
+</code></pre>
+      </div>
+    </div>
+  </section>
+</div>          </div>
         </div>
       </div>
     </main>

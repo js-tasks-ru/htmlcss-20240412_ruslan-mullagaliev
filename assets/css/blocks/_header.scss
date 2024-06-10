@@ -47,6 +47,7 @@
     line-height: 38px;
     color: var(--grey-4);
     margin-top: 48px;
+    margin-bottom: 0;
     @include respond(desktop) {
       font-weight: 500;
       font-size: 50px;

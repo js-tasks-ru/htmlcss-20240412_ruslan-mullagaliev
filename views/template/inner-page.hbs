@@ -12,16 +12,16 @@
 
 <body>
   <div class="page">
-    {{> header name}}
+    {{> header this innerPage='innerPage'}}
     <main class="inner-page">
       <div class="container container_inner-page">
         <div class="inner-page__wrapper">
-          {{>sidebar sidebar}}
+          {{>sidebar this}}
           <div class="inner-page__content">
             <div class="container container_inner-page-content">
               <h3 class="inner-page__content-title">{{name}}</h3>
               <div class="inner-page__content-component">
-                {{partialStr image}}
+                {{> (lookup . 'image') }}
               </div>
             </div>
             {{>inner-page-tabs tabs}}

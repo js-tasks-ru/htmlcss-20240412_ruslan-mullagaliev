@@ -24,7 +24,7 @@
       </ul>
     </div>
   </nav>
-
+  <div class="tabs__divider"></div>
   <section>
     <div class="tabs__tab tabs__tab-1">
       <div class="container">
@@ -52,8 +52,39 @@
           </div>
           <div class="preview__card">
             <div class="preview__image">
-              {{> preview-histogram}}
-            </div>
+              <div class="histogram histogram_preview preview__component">
+                <div class="histogram__header">
+                  <p class="histogram__title">Total orders</p>
+                  <a class="histogram__link">View all</a>
+                </div>
+                <h4 class="histogram__total">50254</h4>
+                <div class="histogram__chart">
+                  <div class="histogram__chart-item" style="height: 100%"></div>
+                  <div class="histogram__chart-item" style="height: 70%"></div>
+                  <div class="histogram__chart-item" style="height: 44%"></div>
+                  <div class="histogram__chart-item" style="height: 78%"></div>
+                  <div class="histogram__chart-item" style="height: 44%"></div>
+                  <div class="histogram__chart-item" style="height: 60%"></div>
+                  <div class="histogram__chart-item" style="height: 78%"></div>
+                  <div class="histogram__chart-item" style="height: 100%"></div>
+                  <div class="histogram__chart-item" style="height: 22%"></div>
+                  <div class="histogram__chart-item" style="height: 44%"></div>
+                  <div class="histogram__chart-item" style="height: 60%"></div>
+                  <div class="histogram__chart-item" style="height: 70%"></div>
+                  <div class="histogram__chart-item" style="height: 22%"></div>
+                  <div class="histogram__chart-item" style="height: 100%"></div>
+                  <div class="histogram__chart-item" style="height: 22%"></div>
+                  <div class="histogram__chart-item" style="height: 78%"></div>
+                  <div class="histogram__chart-item" style="height: 60%"></div>
+                  <div class="histogram__chart-item" style="height: 44%"></div>
+                  <div class="histogram__chart-item" style="height: 70%"></div>
+                  <div class="histogram__chart-item" style="height: 60%"></div>
+                  <div class="histogram__chart-item" style="height: 22%"></div>
+                  <div class="histogram__chart-item" style="height: 60%"></div>
+                  <div class="histogram__chart-item" style="height: 70%"></div>
+                  <div class="histogram__chart-item" style="height: 34%"></div>
+                </div>
+              </div>            </div>
             <div class="preview__title">Histogram</div>
           </div>
           <div class="preview__card">
@@ -83,7 +114,23 @@
           </div>
           <div class="preview__card">
             <div class="preview__image">
-            </div>
+              <section style="
+                  display: grid;
+                  grid-template-columns: repeat(2, auto);
+                  grid-template-rows: repeat(2, auto);
+                  column-gap: 8px;
+                  row-gap: 8px;
+                ">
+                <p class="typography typography_p typography_upper">DEFAULT</p>
+                <div></div>
+                <button class="button button_primary">Primary</button>
+                <button class="button button_alternate">Alternate</button>
+                <p class="typography typography_p typography_p-disabled typography_upper">disabled</p>
+                <div></div>
+                <button class="button button_primary" disabled>Primary</button>
+                <button class="button button_alternate" disabled>Alternate</button>
+              
+              </section>            </div>
             <div class="preview__title">Buttons</div>
           </div>
           <div class="preview__card">
@@ -128,13 +175,71 @@
           </div>
           <div class="preview__card">
             <div class="preview__image">
-              {{> preview-histogram}}
-            </div>
+              <div class="histogram histogram_preview preview__component">
+                <div class="histogram__header">
+                  <p class="histogram__title">Total orders</p>
+                  <a class="histogram__link">View all</a>
+                </div>
+                <h4 class="histogram__total">50254</h4>
+                <div class="histogram__chart">
+                  <div class="histogram__chart-item" style="height: 100%"></div>
+                  <div class="histogram__chart-item" style="height: 70%"></div>
+                  <div class="histogram__chart-item" style="height: 44%"></div>
+                  <div class="histogram__chart-item" style="height: 78%"></div>
+                  <div class="histogram__chart-item" style="height: 44%"></div>
+                  <div class="histogram__chart-item" style="height: 60%"></div>
+                  <div class="histogram__chart-item" style="height: 78%"></div>
+                  <div class="histogram__chart-item" style="height: 100%"></div>
+                  <div class="histogram__chart-item" style="height: 22%"></div>
+                  <div class="histogram__chart-item" style="height: 44%"></div>
+                  <div class="histogram__chart-item" style="height: 60%"></div>
+                  <div class="histogram__chart-item" style="height: 70%"></div>
+                  <div class="histogram__chart-item" style="height: 22%"></div>
+                  <div class="histogram__chart-item" style="height: 100%"></div>
+                  <div class="histogram__chart-item" style="height: 22%"></div>
+                  <div class="histogram__chart-item" style="height: 78%"></div>
+                  <div class="histogram__chart-item" style="height: 60%"></div>
+                  <div class="histogram__chart-item" style="height: 44%"></div>
+                  <div class="histogram__chart-item" style="height: 70%"></div>
+                  <div class="histogram__chart-item" style="height: 60%"></div>
+                  <div class="histogram__chart-item" style="height: 22%"></div>
+                  <div class="histogram__chart-item" style="height: 60%"></div>
+                  <div class="histogram__chart-item" style="height: 70%"></div>
+                  <div class="histogram__chart-item" style="height: 34%"></div>
+                </div>
+              </div>            </div>
             <div class="preview__title">Histogram</div>
           </div>
           <div class="preview__card">
             <div class="preview__image">
-            </div>
+              <div class="accordion">
+                <details class="accordion__item" open>
+                  <summary class="accordion__summary">
+                    <p class="accordion__summary-text">Item</p>
+                    <div class="accordion__arrow">
+                      <svg width="26" height="26">
+                        <use href="./assets/images/icons.svg#arrow" />
+                      </svg>
+                    </div>
+                  </summary>
+                  <p class="accordion__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </details>
+                <details class="accordion__item">
+                  <summary class="accordion__summary">
+                    <p class="accordion__summary-text">Item</p>
+                    <div class="accordion__arrow">
+                      <svg width="26" height="26">
+                        <use href="./assets/images/icons.svg#arrow" />
+                      </svg>
+                    </div>
+                  </summary>
+                  <p class="accordion__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </details>
+              </div>            </div>
             <div class="preview__title">Accordion</div>
           </div>
 

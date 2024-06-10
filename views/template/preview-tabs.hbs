@@ -16,7 +16,7 @@
       </ul>
     </div>
   </nav>
-
+  <div class="tabs__divider"></div>
   {{#each this}}
   <section>
     <div class="tabs__tab tabs__tab-{{controlNumber}}">
@@ -27,7 +27,7 @@
           <div class="preview__card">
             <div class="preview__image">
               {{#if preview__image}}
-              {{partialStr preview__image}}
+              {{> (lookup . 'preview__image') }}
               {{/if}}
             </div>
             <div class="preview__title">{{preview__title}}</div>
