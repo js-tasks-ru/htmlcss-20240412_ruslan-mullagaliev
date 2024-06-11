@@ -4,6 +4,8 @@
   font-size: 8px;
   font-weight: 400;
   line-height: 12px;
+
+  color: var(--grey-4);
   @include respond(desktop) {
     font-size: 16px;
     line-height: 24px;
@@ -63,5 +65,11 @@
 
   &__item[open] &__arrow {
     transform: rotate(180deg);
+  }
+
+  &__item[disabled] &__summary,
+  &__details.disabled &__summary {
+    pointer-events: none; /* prevents click events */
+    user-select: none; /* prevents text selection */
   }
 }

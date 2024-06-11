@@ -25,7 +25,7 @@
   &__content {
     height: 100%;
     background: var(--white);
-    box-sizing: border-box;
+    // box-sizing: border-box;
     padding: 32px 0;
     overflow-x: hidden;
     @include respond(desktop) {

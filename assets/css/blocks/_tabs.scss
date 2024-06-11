@@ -12,7 +12,7 @@
     padding: 0 0 5px;
     margin: 0;
     overflow-x: visible;
-    box-sizing: border-box;
+    // box-sizing: border-box;
   }
 
   &__input {
@@ -93,7 +93,7 @@
 
   &__pre {
     overflow-x: auto;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     margin: 0;
     padding-top: 22px;
     padding-bottom: 15px;
@@ -103,7 +103,7 @@
   }
 
   &__code {
-    box-sizing: border-box;
+    // box-sizing: border-box;
     padding: 0 !important;
     background-color: transparent !important;
   }

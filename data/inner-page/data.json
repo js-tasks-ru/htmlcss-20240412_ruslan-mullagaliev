@@ -20,7 +20,8 @@
     ],
     "sidebar": [
       { "name": "Button", "path": "button", "active": true },
-      { "name": "Accordion", "path": "accordion" }
+      { "name": "Accordion", "path": "accordion" },
+      { "name": "Skeleton", "path": "skeleton" }
     ]
   },
   {
@@ -44,7 +45,33 @@
     ],
     "sidebar": [
       { "name": "Button", "path": "button" },
-      { "name": "Accordion", "path": "accordion", "active": true }
+      { "name": "Accordion", "path": "accordion", "active": true },
+      { "name": "Skeleton", "path": "skeleton" }
+    ]
+  },
+  {
+    "name": "Skeleton",
+    "url": "skeleton",
+    "image": "skeleton",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/skeleton.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": "04-lection2/02-skeleton/skeleton.css"
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button" },
+      { "name": "Accordion", "path": "accordion" },
+      { "name": "Skeleton", "path": "skeleton", "active": true }
     ]
   }
 ]

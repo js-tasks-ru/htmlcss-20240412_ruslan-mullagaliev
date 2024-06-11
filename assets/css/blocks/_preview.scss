@@ -21,15 +21,18 @@
     box-shadow: 0px 2px 4px var(--black-2);
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     width: 164px;
     height: 231px;
     border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
     @include respond(desktop) {
       width: 350px;
       height: 367px;
       border-radius: 12px;
-      padding: 80px 25px 30px;
+      padding-left: 25px;
+      padding-right: 25px;
     }
   }
 
@@ -43,6 +46,7 @@
     border-bottom: 1px solid var(--grey-2);
     @include respond(desktop) {
       border-bottom: none;
+      height: 250px;
     }
   }
 

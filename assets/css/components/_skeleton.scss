@@ -1,0 +1,66 @@
+.skeleton {
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 12px 20px 16px 12px;
+  width: 100%;
+
+  @include respond(desktop) {
+    padding: 24px 40px 32px 24px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    @include respond(desktop) {
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__image {
+    width: 32px;
+    height: 32px;
+    background-color: var(--grey-2);
+    border-radius: 50%;
+    @include respond(desktop) {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    @include respond(desktop) {
+      gap: 8px;
+    }
+  }
+
+  &__text {
+    height: 10px;
+    background: linear-gradient(
+      92.51deg,
+      var(--grey-2) 6.44%,
+      var(--grey-6) 38.47%,
+      var(--grey-7) 56.48%,
+      var(--grey-8) 77.5%,
+      var(--grey-2) 102.52%
+    );
+    @include respond(desktop) {
+      height: 20px;
+    }
+  }
+
+  &__text_small {
+    width: 40%;
+  }
+
+  &__text_middle {
+    width: 59%;
+  }
+}

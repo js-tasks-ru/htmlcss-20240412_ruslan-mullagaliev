@@ -1,23 +1,27 @@
 @import '../fonts/fonts.css';
-@import './normalize.css';
+@import './_normalize.css';
+@import './_reset.css';
 @import 'variables';
 @import 'mixins';
-@import 'blocks/typography';
+
 @import 'blocks/container';
 @import 'blocks/footer';
 @import 'blocks/header';
-@import 'blocks/page';
-@import 'blocks/preview';
-@import './components/button';
-@import './components/accordion';
-@import '../../04-lection2/01-histogram/histogram';
-@import 'blocks/sidebar';
 @import 'blocks/inner-page';
 @import 'blocks/logo';
-@import 'blocks/burger-menu';
-@import '../../07-lection5/03-toggler/toggler';
-@import '../../05-lection3/02-modal/modal';
+@import 'blocks/page';
+@import 'blocks/preview';
+@import 'blocks/sidebar';
 @import 'blocks/tabs';
+@import 'blocks/typography';
+@import 'blocks/burger-menu';
+
+@import './components/button';
+@import './components/accordion';
+@import './components/histogram';
+@import './components/skeleton';
+// @import '../../07-lection5/03-toggler/toggler';
+// @import '../../05-lection3/02-modal/modal';
 
 body {
   font-family: 'Roboto', sans-serif;

@@ -14,13 +14,6 @@
     line-height: 24px;
   }
 
-  &_preview {
-    border: none;
-    @include respond(desktop) {
-      border: 1px solid var(--grey-3);
-    }
-  }
-
   &__header {
     display: flex;
     flex-direction: row;

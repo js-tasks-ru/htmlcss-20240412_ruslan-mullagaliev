@@ -22,9 +22,15 @@
         { "preview__title": "Modal dialog" },
         {
           "preview__title": "Histogram",
-          "preview__image": "preview-histogram"
+          "preview__image": "preview-histogram",
+          "path": "histogram"
         },
-        { "preview__title": "Avatar" }
+        { "preview__title": "Avatar" },
+        {
+          "preview__title": "Skeleton",
+          "preview__image": "preview-skeleton",
+          "path": "skeleton"
+        }
       ]
     },
     {
@@ -33,7 +39,11 @@
       "cards": [
         { "preview__title": "Tooltip" },
         { "preview__title": "Custom form elements" },
-        { "preview__title": "Buttons", "preview__image": "preview-button" },
+        {
+          "preview__title": "Buttons",
+          "preview__image": "preview-button",
+          "path": "button"
+        },
         { "preview__title": "Avatar" }
       ]
     },
@@ -52,9 +62,14 @@
         { "preview__title": "Modal" },
         {
           "preview__title": "Histogram",
-          "preview__image": "preview-histogram"
+          "preview__image": "preview-histogram",
+          "path": "histogram"
         },
-        { "preview__title": "Accordion", "preview__image": "preview-accordion" }
+        {
+          "preview__title": "Accordion",
+          "preview__image": "preview-accordion",
+          "path": "accordion"
+        }
       ]
     }
   ]

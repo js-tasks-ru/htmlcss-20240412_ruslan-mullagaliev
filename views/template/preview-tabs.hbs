@@ -24,14 +24,14 @@
         <div class="preview__cards">
 
           {{#each cards}}
-          <div class="preview__card">
+          <a href="pages/{{path}}.html" class="preview__card">
             <div class="preview__image">
               {{#if preview__image}}
               {{> (lookup . 'preview__image') }}
               {{/if}}
             </div>
             <div class="preview__title">{{preview__title}}</div>
-          </div>
+          </a>
           {{/each}}
 
         </div>
