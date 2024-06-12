@@ -45,7 +45,7 @@
           </header>
           <div class="container burger-menu__body">
             <div class="burger-menu__divider"></div>
-            <aside class="sidebar burger-menu__sidebar">
+            <aside class="sidebar sidebar_burger-menu">
               <h4 class="sidebar__title burger-menu__title">Components</h4>
               <nav class="sidebar__content burger-menu__content">
                 <a class="sidebar__item" href="./button.html">Button</a>
@@ -102,20 +102,128 @@
             <div class="tabs__tab tabs__tab-1">
               <div class="container">
                 <div class="preview__cards">
-                  <a href="pages/.html" class="preview__card">
-                    <div class="preview__image"></div>
+                  <a href="pages/tooltip.html" class="preview__card">
+                    <div class="preview__image">
+                      <div class="tooltip">
+                        <div
+                          class="tooltip__trigger tooltip__trigger_force-show-buble"
+                        >
+                          <svg width="24" height="24">
+                            <use href="/assets/images/icons.svg#help" />
+                          </svg>
+                        </div>
+                        <div class="tooltip__bubble">Helper&nbsp;Text</div>
+                      </div>
+                    </div>
                     <div class="preview__title">Tooltip</div>
                   </a>
                   <a href="pages/.html" class="preview__card">
                     <div class="preview__image"></div>
                     <div class="preview__title">Custom form elements</div>
                   </a>
-                  <a href="pages/.html" class="preview__card">
-                    <div class="preview__image"></div>
+                  <a href="pages/calendar.html" class="preview__card">
+                    <div class="preview__image">
+                      <div class="calendar calendar_preview">
+                        <div class="calendar__title">October 2019</div>
+                        <div class="calendar__wrapper">
+                          <div class="calendar__inner">
+                            <span class="calendar__item calendar__item_weekday"
+                              >Mon</span
+                            >
+                            <span class="calendar__item calendar__item_weekday"
+                              >Tue</span
+                            >
+                            <span class="calendar__item calendar__item_weekday"
+                              >Wed</span
+                            >
+                            <span class="calendar__item calendar__item_weekday"
+                              >Thu</span
+                            >
+                            <span class="calendar__item calendar__item_weekday"
+                              >Fri</span
+                            >
+                            <span class="calendar__item calendar__item_weekday"
+                              >Sat</span
+                            >
+                            <span class="calendar__item calendar__item_weekday"
+                              >Sun</span
+                            >
+                            <span class="calendar__item"></span>
+                            <span class="calendar__item"></span>
+                            <span class="calendar__item"></span>
+                            <span class="calendar__item"></span>
+                            <span class="calendar__item">1</span>
+                            <span class="calendar__item">2</span>
+                            <span class="calendar__item">3</span>
+                            <span class="calendar__item">4</span>
+                            <span class="calendar__item">5</span>
+                            <span class="calendar__item">6</span>
+                            <span class="calendar__item">7</span>
+                            <span class="calendar__item">8</span>
+                            <span class="calendar__item">9</span>
+                            <span class="calendar__item">10</span>
+                            <span class="calendar__item">11</span>
+                            <span class="calendar__item">12</span>
+                            <span class="calendar__item">13</span>
+                            <span class="calendar__item">14</span>
+                            <span class="calendar__item">15</span>
+                            <span class="calendar__item">16</span>
+                            <span class="calendar__item">17</span>
+                            <span class="calendar__item calendar__item_active"
+                              >18</span
+                            >
+                            <span
+                              class="calendar__item calendar__item_between-active"
+                              >19</span
+                            >
+                            <span
+                              class="calendar__item calendar__item_between-active"
+                              >20</span
+                            >
+                            <span
+                              class="calendar__item calendar__item_between-active"
+                              >21</span
+                            >
+                            <span
+                              class="calendar__item calendar__item_between-active"
+                              >22</span
+                            >
+                            <span class="calendar__item calendar__item_active"
+                              >23</span
+                            >
+                            <span class="calendar__item">24</span>
+                            <span class="calendar__item">25</span>
+                            <span class="calendar__item">26</span>
+                            <span class="calendar__item">27</span>
+                            <span class="calendar__item">28</span>
+                            <span class="calendar__item">29</span>
+                            <span class="calendar__item">30</span>
+                            <span class="calendar__item">31</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="preview__title">Calendar</div>
                   </a>
-                  <a href="pages/.html" class="preview__card">
-                    <div class="preview__image"></div>
+                  <a href="pages/modal.html" class="preview__card">
+                    <div class="preview__image">
+                      <div class="modal modal_preview" id="modal">
+                        <div class="modal__window modal__window_preview">
+                          <div class="modal__close" id="modal-close">
+                            <svg width="24" height="24">
+                              <use href="/assets/images/icons.svg#close" />
+                            </svg>
+                          </div>
+                          <h1 class="modal__title">Modal title</h1>
+                          <div class="modal__body">
+                            <p class="modal__text">Amet minim mollit non .</p>
+                            <p class="modal__text">
+                              Amet minim mollit non deserunt.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="preview__title">Modal dialog</div>
                   </a>
                   <a href="pages/histogram.html" class="preview__card">
@@ -262,8 +370,19 @@
             <div class="tabs__tab tabs__tab-2">
               <div class="container">
                 <div class="preview__cards">
-                  <a href="pages/.html" class="preview__card">
-                    <div class="preview__image"></div>
+                  <a href="pages/tooltip.html" class="preview__card">
+                    <div class="preview__image">
+                      <div class="tooltip">
+                        <div
+                          class="tooltip__trigger tooltip__trigger_force-show-buble"
+                        >
+                          <svg width="24" height="24">
+                            <use href="/assets/images/icons.svg#help" />
+                          </svg>
+                        </div>
+                        <div class="tooltip__bubble">Helper&nbsp;Text</div>
+                      </div>
+                    </div>
                     <div class="preview__title">Tooltip</div>
                   </a>
                   <a href="pages/.html" class="preview__card">
@@ -275,32 +394,38 @@
                       <section
                         style="
                           display: grid;
-                          grid-template-columns: repeat(2, auto);
-                          grid-template-rows: repeat(2, auto);
-                          column-gap: 8px;
-                          row-gap: 8px;
+                          grid-template-columns: repeat(4, auto) 1fr;
+                          grid-template-rows: repeat(2, 1fr);
+                          column-gap: 16px;
+                          row-gap: 16px;
                         "
                       >
                         <p class="typography typography_p typography_upper">
                           DEFAULT
                         </p>
-                        <div></div>
                         <button class="button button_primary">Primary</button>
+                        <button class="button button_secondary">
+                          Secondary
+                        </button>
                         <button class="button button_alternate">
                           Alternate
                         </button>
+                        <div></div>
                         <p
-                          class="typography typography_p typography_p-disabled typography_upper"
+                          class="typography typography_p-disabled typography_upper"
                         >
                           disabled
                         </p>
-                        <div></div>
                         <button class="button button_primary" disabled>
                           Primary
+                        </button>
+                        <button class="button button_secondary" disabled>
+                          Secondary
                         </button>
                         <button class="button button_alternate" disabled>
                           Alternate
                         </button>
+                        <div></div>
                       </section>
                     </div>
                     <div class="preview__title">Buttons</div>
@@ -321,8 +446,88 @@
                     <div class="preview__image"></div>
                     <div class="preview__title">Custom form elements</div>
                   </a>
-                  <a href="pages/.html" class="preview__card">
-                    <div class="preview__image"></div>
+                  <a href="pages/calendar.html" class="preview__card">
+                    <div class="preview__image">
+                      <div class="calendar calendar_preview">
+                        <div class="calendar__title">October 2019</div>
+                        <div class="calendar__wrapper">
+                          <div class="calendar__inner">
+                            <span class="calendar__item calendar__item_weekday"
+                              >Mon</span
+                            >
+                            <span class="calendar__item calendar__item_weekday"
+                              >Tue</span
+                            >
+                            <span class="calendar__item calendar__item_weekday"
+                              >Wed</span
+                            >
+                            <span class="calendar__item calendar__item_weekday"
+                              >Thu</span
+                            >
+                            <span class="calendar__item calendar__item_weekday"
+                              >Fri</span
+                            >
+                            <span class="calendar__item calendar__item_weekday"
+                              >Sat</span
+                            >
+                            <span class="calendar__item calendar__item_weekday"
+                              >Sun</span
+                            >
+                            <span class="calendar__item"></span>
+                            <span class="calendar__item"></span>
+                            <span class="calendar__item"></span>
+                            <span class="calendar__item"></span>
+                            <span class="calendar__item">1</span>
+                            <span class="calendar__item">2</span>
+                            <span class="calendar__item">3</span>
+                            <span class="calendar__item">4</span>
+                            <span class="calendar__item">5</span>
+                            <span class="calendar__item">6</span>
+                            <span class="calendar__item">7</span>
+                            <span class="calendar__item">8</span>
+                            <span class="calendar__item">9</span>
+                            <span class="calendar__item">10</span>
+                            <span class="calendar__item">11</span>
+                            <span class="calendar__item">12</span>
+                            <span class="calendar__item">13</span>
+                            <span class="calendar__item">14</span>
+                            <span class="calendar__item">15</span>
+                            <span class="calendar__item">16</span>
+                            <span class="calendar__item">17</span>
+                            <span class="calendar__item calendar__item_active"
+                              >18</span
+                            >
+                            <span
+                              class="calendar__item calendar__item_between-active"
+                              >19</span
+                            >
+                            <span
+                              class="calendar__item calendar__item_between-active"
+                              >20</span
+                            >
+                            <span
+                              class="calendar__item calendar__item_between-active"
+                              >21</span
+                            >
+                            <span
+                              class="calendar__item calendar__item_between-active"
+                              >22</span
+                            >
+                            <span class="calendar__item calendar__item_active"
+                              >23</span
+                            >
+                            <span class="calendar__item">24</span>
+                            <span class="calendar__item">25</span>
+                            <span class="calendar__item">26</span>
+                            <span class="calendar__item">27</span>
+                            <span class="calendar__item">28</span>
+                            <span class="calendar__item">29</span>
+                            <span class="calendar__item">30</span>
+                            <span class="calendar__item">31</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="preview__title">Calendar</div>
                   </a>
                 </div>
@@ -333,8 +538,25 @@
             <div class="tabs__tab tabs__tab-4">
               <div class="container">
                 <div class="preview__cards">
-                  <a href="pages/.html" class="preview__card">
-                    <div class="preview__image"></div>
+                  <a href="pages/modal.html" class="preview__card">
+                    <div class="preview__image">
+                      <div class="modal modal_preview" id="modal">
+                        <div class="modal__window modal__window_preview">
+                          <div class="modal__close" id="modal-close">
+                            <svg width="24" height="24">
+                              <use href="/assets/images/icons.svg#close" />
+                            </svg>
+                          </div>
+                          <h1 class="modal__title">Modal title</h1>
+                          <div class="modal__body">
+                            <p class="modal__text">Amet minim mollit non .</p>
+                            <p class="modal__text">
+                              Amet minim mollit non deserunt.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="preview__title">Modal</div>
                   </a>
                   <a href="pages/histogram.html" class="preview__card">
@@ -450,31 +672,52 @@
                   <a href="pages/accordion.html" class="preview__card">
                     <div class="preview__image">
                       <div class="accordion">
-                        <details class="accordion__item" open disabled>
+                        <details class="accordion__item" open>
                           <summary class="accordion__summary">
-                            <p class="accordion__summary-text">Item</p>
+                            <p class="accordion__summary-text">
+                              Accordion item 1
+                            </p>
                             <div class="accordion__arrow">
                               <svg width="26" height="26">
-                                <use href="./assets/images/icons.svg#arrow" />
+                                <use href="/assets/images/icons.svg#arrow" />
                               </svg>
                             </div>
                           </summary>
                           <p class="accordion__text">
-                            Lorem ipsum dolor sit amet.
+                            Amet minim mollit non deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat
+                            duis enim velit mollit. Exercitation veniam
+                            consequat sunt nostrud amet.
                           </p>
                         </details>
-                        <details class="accordion__item" disabled>
+                        <details class="accordion__item">
                           <summary class="accordion__summary">
-                            <p class="accordion__summary-text">Item</p>
+                            <p class="accordion__summary-text">
+                              Accordion item 2
+                            </p>
                             <div class="accordion__arrow">
                               <svg width="26" height="26">
-                                <use href="./assets/images/icons.svg#arrow" />
+                                <use href="/assets/images/icons.svg#arrow" />
+                              </svg>
+                            </div>
+                          </summary>
+                          <p class="accordion__text">hidden_text</p>
+                        </details>
+                        <details class="accordion__item">
+                          <summary class="accordion__summary">
+                            <p class="accordion__summary-text">
+                              Accordion item 3
+                            </p>
+                            <div class="accordion__arrow">
+                              <svg width="26" height="26">
+                                <use href="/assets/images/icons.svg#arrow" />
                               </svg>
                             </div>
                           </summary>
                           <p class="accordion__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
+                            elit. Quis fugit voluptas voluptatum minima nulla
+                            laborum quaerat optio magnam ex nobis.
                           </p>
                         </details>
                       </div>

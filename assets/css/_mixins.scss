@@ -1,9 +1,12 @@
-$mq-desktop: 768px;
+$breakpoints: (
+  desktop: 768px,
+  desktopLarge: 1140px
+);
 
 @mixin respond($breakpoint) {
-  @if $breakpoint==desktop {
-    @media screen and (min-width: $mq-desktop) {
-      @content;
-    }
+  $size: map-get($breakpoints, $breakpoint);
+
+  @media screen and (min-width: $size) {
+    @content;
   }
 }

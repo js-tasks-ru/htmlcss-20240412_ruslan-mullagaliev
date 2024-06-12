@@ -1,0 +1,80 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--grey-10);
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  z-index: 1;
+  display: none;
+
+  &_preview {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    // top: 0;
+    // left: 0;
+    padding: 15px;
+    margin: 15px 0;
+    display: block;
+    z-index: 0;
+  }
+
+  &__window {
+    position: absolute;
+    box-sizing: border-box;
+    width: 428px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background: var(--white);
+    border-radius: 8px;
+    padding: 30px 40px 33px;
+
+    &_preview {
+      width: 100%;
+      position: relative;
+      padding: 15px 20px;
+      @include respond(desktop) {
+        padding: 30px 40px 33px;
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--blue-4);
+    margin: 0 0 14px;
+    @include respond(desktop) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__body {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    color: var(--grey-4);
+    @include respond(desktop) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

@@ -4,6 +4,10 @@
   @include respond(desktop) {
     max-width: 1110px;
   }
+  @include respond(desktopLarge) {
+    max-width: 1110px;
+    padding: 0;
+  }
 
   &_inner-page {
     // margin: 0 auto;

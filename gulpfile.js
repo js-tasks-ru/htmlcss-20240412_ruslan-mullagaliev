@@ -4,15 +4,33 @@ const handlebars = require('gulp-compile-handlebars');
 const rename = require('gulp-rename');
 const prettier = require('prettier');
 
-gulp.task('preview-histogram', function () {
-  const data = JSON.parse(readFileSync('./data/histogram/data.json', 'utf8'));
-  const options = {
-    batch: ['./views/partials'],
-  };
-  return gulp
-    .src('./views/template/preview-histogram.hbs')
-    .pipe(handlebars(data, options))
-    .pipe(gulp.dest('./views/partials'));
+// layout types for components
+const pageTypes = ['preview', 'inner-page'];
+
+const innerPages = JSON.parse(
+  readFileSync('./data/inner-page/data.json', 'utf8'),
+);
+
+const components = innerPages.map((item) => item.url);
+
+pageTypes.forEach((pageType) => {
+  components.forEach((component) => {
+    gulp.task(`${pageType}-${component}`, function () {
+      let data = {};
+      if (['histogram', 'calendar'].includes(component)) {
+        data = JSON.parse(
+          readFileSync(`./data/${component}/data.json`, 'utf8'),
+        );
+      }
+      data[pageType] = pageType;
+      const options = {};
+      return gulp
+        .src(`./views/template/${component}.hbs`)
+        .pipe(handlebars(data, options))
+        .pipe(rename(`${pageType}-${component}.hbs`))
+        .pipe(gulp.dest('./views/partials'));
+    });
+  });
 });
 
 gulp.task('preview-tabs', function () {
@@ -50,9 +68,6 @@ gulp.task('format-index', function (done) {
 });
 
 // Сборка компонентов
-const innerPages = JSON.parse(
-  readFileSync('./data/inner-page/data.json', 'utf8'),
-);
 
 innerPages.forEach((item) => {
   item.tabs.forEach((tab) => {
@@ -94,16 +109,30 @@ innerPages.forEach((item) => {
   });
 });
 
+const previewComponentsTasks = components.map((item) => `preview-${item}`);
+
 gulp.task(
   'default',
-  gulp.series('preview-histogram', 'preview-tabs', 'index', 'format-index'),
+  gulp.series(
+    ...previewComponentsTasks,
+    'preview-tabs',
+    'index',
+    'format-index',
+  ),
 );
 
+const innerPagesComponentsTasks = components.map(
+  (item) => `inner-page-${item}`,
+);
 const innerPagesPreTasks = innerPages.map((item) => `pre-${item.url}`);
 const innerPagesProcessTasks = innerPages.map((item) => item.url);
 const innerPagesFormatTasks = innerPages.map((item) => `format-${item.url}`);
 
 gulp.task(
   'inner-pages',
-  gulp.series(...innerPagesPreTasks, ...innerPagesProcessTasks),
+  gulp.series(
+    ...innerPagesComponentsTasks,
+    ...innerPagesPreTasks,
+    ...innerPagesProcessTasks,
+  ),
 );

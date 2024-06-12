@@ -14,10 +14,6 @@
     display: none;
   }
 
-  &__sidebar {
-    display: block;
-  }
-
   &[data-open] {
     transform: translateX(0);
     visibility: visible;
