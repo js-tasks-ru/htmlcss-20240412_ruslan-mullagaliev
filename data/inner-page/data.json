@@ -22,7 +22,14 @@
       { "name": "Button", "path": "button", "active": true },
       { "name": "Accordion", "path": "accordion" },
       { "name": "Histogram", "path": "histogram" },
-      { "name": "Skeleton", "path": "skeleton" }
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      }
     ]
   },
   {
@@ -48,7 +55,14 @@
       { "name": "Button", "path": "button" },
       { "name": "Accordion", "path": "accordion", "active": true },
       { "name": "Histogram", "path": "histogram" },
-      { "name": "Skeleton", "path": "skeleton" }
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      }
     ]
   },
   {
@@ -74,7 +88,14 @@
       { "name": "Button", "path": "button" },
       { "name": "Accordion", "path": "accordion" },
       { "name": "Histogram", "path": "histogram", "active": true },
-      { "name": "Skeleton", "path": "skeleton" }
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      }
     ]
   },
   {
@@ -100,7 +121,14 @@
       { "name": "Button", "path": "button" },
       { "name": "Accordion", "path": "accordion" },
       { "name": "Histogram", "path": "histogram" },
-      { "name": "Skeleton", "path": "skeleton", "active": true }
+      { "name": "Skeleton", "path": "skeleton", "active": true },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      }
     ]
   },
   {
@@ -128,7 +156,12 @@
       { "name": "Histogram", "path": "histogram" },
       { "name": "Skeleton", "path": "skeleton" },
       { "name": "Tooltip", "path": "tooltip", "active": true },
-      { "name": "Modal", "path": "modal" }
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      }
     ]
   },
   {
@@ -156,7 +189,12 @@
       { "name": "Histogram", "path": "histogram" },
       { "name": "Skeleton", "path": "skeleton" },
       { "name": "Tooltip", "path": "tooltip" },
-      { "name": "Modal", "path": "modal", "active": true }
+      { "name": "Modal", "path": "modal", "active": true },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      }
     ]
   },
   {
@@ -185,7 +223,50 @@
       { "name": "Skeleton", "path": "skeleton" },
       { "name": "Tooltip", "path": "tooltip" },
       { "name": "Modal", "path": "modal" },
-      { "name": "Calendar", "path": "calendar", "active": true }
+      { "name": "Calendar", "path": "calendar", "active": true },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      }
+    ]
+  },
+  {
+    "name": "Custom form elements",
+    "url": "custom-form-elements",
+    "image": "inner-page-custom-form-elements",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/inner-page-custom-form-elements.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": [
+          "07-lection5/01-checkbox/checkbox.css",
+          "07-lection5/02-radio/radio.css",
+          "07-lection5/03-toggler/toggler.css",
+          "07-lection5/04-input/input.css"
+        ]
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button" },
+      { "name": "Accordion", "path": "accordion" },
+      { "name": "Histogram", "path": "histogram" },
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements",
+        "active": true
+      }
     ]
   }
 ]

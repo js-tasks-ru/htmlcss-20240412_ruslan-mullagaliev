@@ -21,7 +21,11 @@
           "preview__image": "preview-tooltip",
           "path": "tooltip"
         },
-        { "preview__title": "Custom form elements" },
+        {
+          "preview__title": "Custom form elements",
+          "preview__image": "preview-custom-form-elements",
+          "path": "custom-form-elements"
+        },
         {
           "preview__title": "Calendar",
           "preview__image": "preview-calendar",
@@ -54,7 +58,11 @@
           "preview__image": "preview-tooltip",
           "path": "tooltip"
         },
-        { "preview__title": "Custom form elements" },
+        {
+          "preview__title": "Custom form elements",
+          "preview__image": "preview-custom-form-elements",
+          "path": "custom-form-elements"
+        },
         {
           "preview__title": "Buttons",
           "preview__image": "preview-button",
@@ -67,7 +75,11 @@
       "controlNumber": "3",
       "controlName": "Containers",
       "cards": [
-        { "preview__title": "Custom form elements" },
+        {
+          "preview__title": "Custom form elements",
+          "preview__image": "preview-custom-form-elements",
+          "path": "custom-form-elements"
+        },
         {
           "preview__title": "Calendar",
           "preview__image": "preview-calendar",

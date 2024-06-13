@@ -71,7 +71,14 @@ gulp.task('format-index', function (done) {
 
 innerPages.forEach((item) => {
   item.tabs.forEach((tab) => {
-    tab['code'] = readFileSync(tab.codePath, 'utf8');
+    if (Array.isArray(tab.codePath)) {
+      const code = tab.codePath.map((item) => {
+        return readFileSync(item, 'utf8');
+      });
+      tab['code'] = code.join(' ');
+    } else {
+      tab['code'] = readFileSync(tab.codePath, 'utf8');
+    }
   });
 });
 

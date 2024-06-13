@@ -1,5 +1,5 @@
-<div class="accordion">
-  <details class="accordion__item" open>
+<div class="accordion {{#if preview}} accordion_preview{{/if}}">
+  <details class="accordion__item" open {{#if preview}}disabled{{/if}}>
     <summary class="accordion__summary">
       <p class="accordion__summary-text">Accordion item 1</p>
       <div class="accordion__arrow">
@@ -9,9 +9,9 @@
       </div>
     </summary>
     <p class="accordion__text">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+      Amet minim mollit non deserunt {{#unless preview}}ullamco est sit aliqua dolor do amet
       sint. Velit officia consequat duis enim velit mollit. Exercitation
-      veniam consequat sunt nostrud amet.
+      veniam consequat sunt nostrud amet{{/unless}}.
     </p>
   </details>
   <details class="accordion__item">
@@ -25,6 +25,7 @@
     </summary>
     <p class="accordion__text">hidden_text</p>
   </details>
+  {{#unless preview}}
   <details class="accordion__item">
     <summary class="accordion__summary">
       <p class="accordion__summary-text">Accordion item 3</p>
@@ -40,4 +41,5 @@
       nobis.
     </p>
   </details>
+  {{/unless}}
 </div>

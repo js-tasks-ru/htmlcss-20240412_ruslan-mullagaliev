@@ -6,20 +6,25 @@
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 18.75px;
+  padding: 15px 14px 14px;
 
-  height: 24px;
-  border-radius: 4px;
-  font-size: 8px;
-  line-height: 9px;
-  padding: 7px 7px;
-
-  @include respond(desktop) {
-    height: 48px;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18.75px;
-    padding: 15px 14px 14px;
+  &_preview {
+    height: 24px;
+    border-radius: 4px;
+    font-size: 8px;
+    line-height: 9px;
+    padding: 7px 7px;
+    @include respond(desktop) {
+      height: 48px;
+      border-radius: 8px;
+      font-size: 16px;
+      line-height: 18.75px;
+      padding: 15px 14px 14px;
+    }
   }
 
   &_primary {
