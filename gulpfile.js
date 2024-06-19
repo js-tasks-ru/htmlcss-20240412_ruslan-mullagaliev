@@ -133,7 +133,7 @@ const innerPagesComponentsTasks = components.map(
 );
 const innerPagesPreTasks = innerPages.map((item) => `pre-${item.url}`);
 const innerPagesProcessTasks = innerPages.map((item) => item.url);
-const innerPagesFormatTasks = innerPages.map((item) => `format-${item.url}`);
+// const innerPagesFormatTasks = innerPages.map((item) => `format-${item.url}`);
 
 gulp.task(
   'inner-pages',

@@ -14,8 +14,8 @@ module.exports = {
     }),
     require('postcss-import')({ path: ['./'] }),
     require('postcss-map-get'),
-    // require('postcss-nested'),
-    // require('autoprefixer'),
-    // require('cssnano'),
+    require('postcss-nested'),
+    require('autoprefixer'),
+    require('cssnano'),
   ],
 };
