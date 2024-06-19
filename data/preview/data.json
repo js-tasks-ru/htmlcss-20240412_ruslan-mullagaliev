@@ -41,7 +41,11 @@
           "preview__image": "preview-histogram",
           "path": "histogram"
         },
-        { "preview__title": "Avatar" },
+        {
+          "preview__title": "Avatar",
+          "preview__image": "preview-avatar",
+          "path": "avatar"
+        },
         {
           "preview__title": "Skeleton",
           "preview__image": "preview-skeleton",
@@ -68,7 +72,11 @@
           "preview__image": "preview-button",
           "path": "button"
         },
-        { "preview__title": "Avatar" }
+        {
+          "preview__title": "Avatar",
+          "preview__image": "preview-avatar",
+          "path": "avatar"
+        }
       ]
     },
     {

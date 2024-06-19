@@ -29,7 +29,8 @@
       {
         "name": "Custom form elements",
         "path": "custom-form-elements"
-      }
+      },
+      { "name": "Avatar", "path": "avatar" }
     ]
   },
   {
@@ -62,7 +63,8 @@
       {
         "name": "Custom form elements",
         "path": "custom-form-elements"
-      }
+      },
+      { "name": "Avatar", "path": "avatar" }
     ]
   },
   {
@@ -95,7 +97,8 @@
       {
         "name": "Custom form elements",
         "path": "custom-form-elements"
-      }
+      },
+      { "name": "Avatar", "path": "avatar" }
     ]
   },
   {
@@ -128,7 +131,8 @@
       {
         "name": "Custom form elements",
         "path": "custom-form-elements"
-      }
+      },
+      { "name": "Avatar", "path": "avatar" }
     ]
   },
   {
@@ -161,7 +165,8 @@
       {
         "name": "Custom form elements",
         "path": "custom-form-elements"
-      }
+      },
+      { "name": "Avatar", "path": "avatar" }
     ]
   },
   {
@@ -194,7 +199,8 @@
       {
         "name": "Custom form elements",
         "path": "custom-form-elements"
-      }
+      },
+      { "name": "Avatar", "path": "avatar" }
     ]
   },
   {
@@ -227,7 +233,8 @@
       {
         "name": "Custom form elements",
         "path": "custom-form-elements"
-      }
+      },
+      { "name": "Avatar", "path": "avatar" }
     ]
   },
   {
@@ -265,6 +272,45 @@
       {
         "name": "Custom form elements",
         "path": "custom-form-elements",
+        "active": true
+      },
+      { "name": "Avatar", "path": "avatar" }
+    ]
+  },
+  {
+    "name": "Avatar",
+    "url": "avatar",
+    "image": "inner-page-avatar",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/inner-page-avatar.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": "06-lection4/01-avatar/avatar.css"
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button" },
+      { "name": "Accordion", "path": "accordion" },
+      { "name": "Histogram", "path": "histogram" },
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      },
+      {
+        "name": "Avatar",
+        "path": "avatar",
         "active": true
       }
     ]

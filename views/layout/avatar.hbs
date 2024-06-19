@@ -8,7 +8,7 @@
   <script defer src="/assets/js/burger-menu.js"></script>
   <script defer src="/assets/js/modal.js"></script>
   <link rel="stylesheet" href="/build/style.css" />
-  <title>Tooltip</title>
+  <title>Avatar</title>
 </head>
 
 <body>
@@ -56,11 +56,11 @@
               <a class="sidebar__item " href="./accordion.html">Accordion</a>
               <a class="sidebar__item " href="./histogram.html">Histogram</a>
               <a class="sidebar__item " href="./skeleton.html">Skeleton</a>
-              <a class="sidebar__item sidebar__item_active" href="./tooltip.html">Tooltip</a>
+              <a class="sidebar__item " href="./tooltip.html">Tooltip</a>
               <a class="sidebar__item " href="./modal.html">Modal</a>
               <a class="sidebar__item " href="./calendar.html">Calendar</a>
               <a class="sidebar__item " href="./custom-form-elements.html">Custom form elements</a>
-              <a class="sidebar__item " href="./avatar.html">Avatar</a>
+              <a class="sidebar__item sidebar__item_active" href="./avatar.html">Avatar</a>
               <a class="sidebar__item"></a>
               <a class="sidebar__item" href="/index.html">Main page</a>
             </nav>
@@ -76,25 +76,20 @@
               <a class="sidebar__item " href="./accordion.html">Accordion</a>
               <a class="sidebar__item " href="./histogram.html">Histogram</a>
               <a class="sidebar__item " href="./skeleton.html">Skeleton</a>
-              <a class="sidebar__item sidebar__item_active" href="./tooltip.html">Tooltip</a>
+              <a class="sidebar__item " href="./tooltip.html">Tooltip</a>
               <a class="sidebar__item " href="./modal.html">Modal</a>
               <a class="sidebar__item " href="./calendar.html">Calendar</a>
               <a class="sidebar__item " href="./custom-form-elements.html">Custom form elements</a>
-              <a class="sidebar__item " href="./avatar.html">Avatar</a>
+              <a class="sidebar__item sidebar__item_active" href="./avatar.html">Avatar</a>
               <a class="sidebar__item"></a>
               <a class="sidebar__item" href="/index.html">Main page</a>
             </nav>
           </aside>          <div class="inner-page__content">
             <div class="container container_inner-page-content">
-              <h3 class="inner-page__content-title">Tooltip</h3>
+              <h3 class="inner-page__content-title">Avatar</h3>
               <div class="inner-page__content-component">
-                <div class="tooltip" style="margin: 100px" >
-                  <div class="tooltip__trigger ">
-                    <svg width="24" height="24">
-                      <use href="/assets/images/icons.svg#help" />
-                    </svg>
-                  </div>
-                  <div class="tooltip__bubble">Helper&nbsp;Text</div>
+                <div class="avatar">
+                  <img class="avatar__img" src="/assets/images/avatar.png" alt="avatar" title="avatar" />
                 </div>              </div>
             </div>
 <div class="tabs">
@@ -120,13 +115,8 @@
     <div class="container container_inner-page-content">
       <div class="tabs__tab tabs__tab-1">
         <pre class="tabs__pre"><code class="tabs__code html">
-&lt;div class&#x3D;&quot;tooltip&quot; style&#x3D;&quot;margin: 100px&quot; &gt;
-  &lt;div class&#x3D;&quot;tooltip__trigger &quot;&gt;
-    &lt;svg width&#x3D;&quot;24&quot; height&#x3D;&quot;24&quot;&gt;
-      &lt;use href&#x3D;&quot;/assets/images/icons.svg#help&quot; /&gt;
-    &lt;/svg&gt;
-  &lt;/div&gt;
-  &lt;div class&#x3D;&quot;tooltip__bubble&quot;&gt;Helper&amp;nbsp;Text&lt;/div&gt;
+&lt;div class&#x3D;&quot;avatar&quot;&gt;
+  &lt;img class&#x3D;&quot;avatar__img&quot; src&#x3D;&quot;/assets/images/avatar.png&quot; alt&#x3D;&quot;avatar&quot; title&#x3D;&quot;avatar&quot; /&gt;
 &lt;/div&gt;</code></pre>
       </div>
     </div>
@@ -135,41 +125,17 @@
     <div class="container container_inner-page-content">
       <div class="tabs__tab tabs__tab-2">
         <pre class="tabs__pre"><code class="tabs__code css">
-.tooltip {
-  display: inline-block;
-  position: relative;
+.avatar {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.tooltip__bubble {
-  display: none;
-  background: var(--blue-2);
-  border-radius: 10px;
-  padding: 13px 21px 8px;
-  font-family: &#x27;Inter&#x27;;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: var(--grey-2);
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.tooltip__bubble:before {
-  content: &#x27;&#x27;;
-  position: absolute;
-  border: 7px solid transparent;
-  border-top-color: var(--blue-2);
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.tooltip__trigger:hover + .tooltip__bubble {
-  display: block;
+.avatar__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 </code></pre>
       </div>
