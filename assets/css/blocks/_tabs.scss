@@ -1,9 +1,11 @@
 .tabs {
   position: relative;
+
   &__nav {
     background: var(--white);
     overflow-x: hidden;
   }
+
   &__menu {
     display: flex;
     flex-direction: row;
@@ -12,7 +14,6 @@
     padding: 0 0 5px;
     margin: 0;
     overflow-x: visible;
-    // box-sizing: border-box;
   }
 
   &__input {
@@ -20,6 +21,7 @@
     left: -100vw;
     opacity: 0;
   }
+
   &__menu-item {
     list-style-type: none;
   }
@@ -30,7 +32,7 @@
     display: inline-flex;
     transition: 250ms all;
     white-space: nowrap;
-    font-family: 'Inter';
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -55,7 +57,7 @@
     color: var(--black);
   }
 
-  &__control:hover:after {
+  &__control:hover::after {
     transform: scaleX(1);
   }
 
@@ -75,7 +77,6 @@
 
   &__tab {
     display: none;
-    // border-top: 1px solid var(--grey-2);
   }
 
   #tab1:checked ~ section &__tab-1,
@@ -93,17 +94,16 @@
 
   &__pre {
     overflow-x: auto;
-    // box-sizing: border-box;
     margin: 0;
     padding-top: 22px;
     padding-bottom: 15px;
+
     @include respond(desktop) {
       padding: 50px 0;
     }
   }
 
   &__code {
-    // box-sizing: border-box;
     padding: 0 !important;
     background-color: transparent !important;
   }

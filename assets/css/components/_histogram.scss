@@ -4,7 +4,7 @@
   padding: 8px 14px 14px;
   font-size: 8px;
   line-height: 12px;
-  font-family: 'Inter';
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
 
@@ -37,6 +37,7 @@
     font-size: 10px;
     line-height: 14px;
     margin: 0 0 3px;
+
     @include respond(desktop) {
       font-size: 20px;
       line-height: 26px;
@@ -47,8 +48,7 @@
   &__chart {
     height: 50px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     overflow: hidden;
     justify-content: flex-start;
     gap: 1px;
@@ -60,6 +60,7 @@
     background-color: var(--blue-2);
     color: var(--blue-2);
     flex-basis: 5px;
+
     @include respond(desktop) {
       flex-basis: 9px;
     }

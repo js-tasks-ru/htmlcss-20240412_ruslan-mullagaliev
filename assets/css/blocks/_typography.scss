@@ -1,8 +1,9 @@
 .typography {
-  font-family: 'Inter';
+  font-family: Inter, sans-serif;
   font-style: normal;
   color: var(--black);
   margin: 0;
+
   &_p {
     font-weight: 400;
     font-size: 8px;
@@ -12,6 +13,7 @@
     &-disabled {
       color: var(--grey-2);
     }
+
     @include respond(desktop) {
       font-size: 16px;
       line-height: 24px;

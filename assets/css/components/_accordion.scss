@@ -1,6 +1,6 @@
 /* Стилизация аккордеона */
 .accordion {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -17,6 +17,7 @@
     border-radius: 8px;
     padding: 24px 32px;
   }
+
   &_preview &__item {
     margin-bottom: 4px;
     border-radius: 4px;
@@ -60,8 +61,8 @@
 
   &__arrow {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     cursor: pointer;
   }
 

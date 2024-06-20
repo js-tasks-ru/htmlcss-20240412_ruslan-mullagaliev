@@ -1,19 +1,20 @@
 .container {
   margin: 0 auto;
   padding: 0 15px;
+
   @include respond(desktop) {
     max-width: 1110px;
   }
-  @include respond(desktopLarge) {
+
+  @include respond(desktop-large) {
     max-width: 1110px;
     padding: 0;
   }
 
   &_inner-page {
-    // margin: 0 auto;
     padding: 0;
+
     @include respond(desktop) {
-      // margin: 0 auto;
       padding: 0 15px;
     }
   }

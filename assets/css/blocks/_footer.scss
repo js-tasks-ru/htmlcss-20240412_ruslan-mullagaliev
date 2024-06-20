@@ -1,11 +1,12 @@
 .footer {
   display: none;
+
   @include respond(desktop) {
     display: block;
     padding: 71px 0 136px;
     background-color: var(--white);
     color: var(--black);
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
     font-style: normal;
     text-align: center;
     margin: 0;
@@ -21,6 +22,7 @@
     font-size: 38px;
     line-height: 48px;
   }
+
   &__text {
     font-weight: 400;
     font-size: 16px;

@@ -29,6 +29,7 @@
   &_preview &__control {
     width: 14px;
     height: 14px;
+
     @include respond(desktop) {
       width: 28px;
       height: 28px;
@@ -36,7 +37,7 @@
   }
 
   &__label {
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -48,6 +49,7 @@
   &_preview &__label {
     font-size: 8px;
     line-height: 12px;
+
     @include respond(desktop) {
       font-size: 16px;
       line-height: 24px;
@@ -68,6 +70,7 @@
   &_preview &__input:checked ~ &__state &__control-inner {
     width: 9px;
     height: 9px;
+
     @include respond(desktop) {
       width: 18px;
       height: 18px;

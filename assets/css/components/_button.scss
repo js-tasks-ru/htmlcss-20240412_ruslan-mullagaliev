@@ -3,7 +3,7 @@
   border: none;
   color: var(--white);
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   height: 48px;
@@ -17,7 +17,8 @@
     border-radius: 4px;
     font-size: 8px;
     line-height: 9px;
-    padding: 7px 7px;
+    padding: 7px;
+
     @include respond(desktop) {
       height: 48px;
       border-radius: 8px;
@@ -57,11 +58,11 @@
   }
 
   &:disabled {
-    opacity: 50%;
+    opacity: 0.5;
     cursor: not-allowed;
   }
 
   &_alternate:disabled {
-    opacity: 30%;
+    opacity: 0.3;
   }
 }

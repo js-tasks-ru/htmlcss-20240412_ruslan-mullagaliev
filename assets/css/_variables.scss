@@ -1,8 +1,8 @@
 :root {
-  --white: #ffffff;
+  --white: #fff;
   --black: #212429;
-  --black-2: rgba(33, 36, 41, 0.05);
-  --black-3: #000000;
+  --black-2: rgb(33 36 41 / 5%);
+  --black-3: #000;
   --pink: #f784ad;
   --purple: #7048e8;
   --purple-2: #5028c6;
@@ -11,10 +11,10 @@
   --blue-3: #2342c0;
   --blue-4: #334d6e;
   --blue-5: #a0b1f5;
-  --blue-6: rgba(51, 154, 240, 0.1);
+  --blue-6: rgb(51 154 240 / 10%);
   --red: #f03d3e;
   --red-2: #d84910;
-  --red-3: rgba(240, 61, 62, 0.1);
+  --red-3: rgb(240 61 62 / 10%);
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;
@@ -24,7 +24,7 @@
   --grey-7: #f3f5f5;
   --grey-8: #e3e7ea;
   --grey-9: #90a0b7;
-  --grey-10: rgba(196, 196, 196, 0.5);
+  --grey-10: rgb(196 196 196 / 50%);
   --error: var(--red);
   --success: var(--blue);
   --primary: var(--blue);

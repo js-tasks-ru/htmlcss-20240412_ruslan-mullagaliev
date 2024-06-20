@@ -1,6 +1,7 @@
 .sidebar {
   display: none;
   min-width: 229px;
+
   @include respond(desktop) {
     display: block;
   }

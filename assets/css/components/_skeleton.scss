@@ -14,6 +14,7 @@
     align-items: center;
     gap: 8px;
     margin-bottom: 12px;
+
     @include respond(desktop) {
       gap: 16px;
       margin-bottom: 24px;
@@ -25,6 +26,7 @@
     height: 32px;
     background-color: var(--grey-2);
     border-radius: 50%;
+
     @include respond(desktop) {
       width: 64px;
       height: 64px;
@@ -36,6 +38,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+
     @include respond(desktop) {
       gap: 8px;
     }
@@ -51,6 +54,7 @@
       var(--grey-8) 77.5%,
       var(--grey-2) 102.52%
     );
+
     @include respond(desktop) {
       height: 20px;
     }

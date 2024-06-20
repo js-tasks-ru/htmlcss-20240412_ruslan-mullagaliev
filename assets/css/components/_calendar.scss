@@ -1,5 +1,4 @@
 .calendar {
-  // box-sizing: border-box;
   max-width: 304px;
   border: 1px solid var(--grey-3);
   border-radius: 8px;
@@ -9,13 +8,14 @@
     max-width: 200px;
     min-width: 130px;
     padding: 14px 13px 16px;
+
     @include respond(desktop) {
       min-width: 200px;
     }
   }
 
   &__title {
-    font-family: 'Inter';
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -49,8 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -64,13 +63,14 @@
   }
 
   &__item_weekday {
-    font-family: 'Inter';
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: var(--grey-9);
   }
+
   &_preview &__item_weekday {
     font-size: 7px;
     line-height: 10px;

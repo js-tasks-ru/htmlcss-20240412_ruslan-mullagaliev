@@ -1,5 +1,6 @@
 .preview {
   background: var(--grey-5);
+
   @include respond(desktop) {
     border-bottom: 1px solid var(--grey-2);
   }
@@ -7,9 +8,9 @@
   &__cards {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 16px;
-    row-gap: 23px;
+    gap: 23px 16px;
     padding: 24px 0 61px;
+
     @include respond(desktop) {
       gap: 30px;
       padding: 68px 0 204px;
@@ -18,14 +19,14 @@
 
   &__card {
     background: var(--white);
-    box-shadow: 0px 2px 4px var(--black-2);
+    box-shadow: 0 2px 4px var(--black-2);
     display: flex;
     flex-direction: column;
-    // box-sizing: border-box;
     width: 164px;
     height: 231px;
     border-radius: 8px;
     padding: 8px;
+
     @include respond(desktop) {
       width: 350px;
       height: 367px;
@@ -42,6 +43,7 @@
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid var(--grey-2);
+
     @include respond(desktop) {
       border-bottom: none;
       height: 250px;
@@ -57,15 +59,16 @@
     text-align: center;
     color: var(--black);
     flex-grow: 1;
-    font-family: 'Inter';
+    font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     @include respond(desktop) {
-      font-family: 'Roboto';
+      font-family: Roboto, sans-serif;
       font-weight: 500;
       font-size: 21px;
       line-height: 25px;

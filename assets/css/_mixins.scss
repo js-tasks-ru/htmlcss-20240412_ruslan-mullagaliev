@@ -1,6 +1,6 @@
 $breakpoints: (
   desktop: 768px,
-  desktopLarge: 1140px
+  desktop-large: 1140px
 );
 
 @mixin respond($breakpoint) {

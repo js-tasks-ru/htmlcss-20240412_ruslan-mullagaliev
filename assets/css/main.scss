@@ -1,36 +1,34 @@
-@import '../fonts/fonts.css';
-@import './_normalize.css';
-@import './_reset.css';
-@import 'variables';
-@import 'mixins';
-
-@import 'blocks/container';
-@import 'blocks/footer';
-@import 'blocks/header';
-@import 'blocks/inner-page';
-@import 'blocks/logo';
-@import 'blocks/page';
-@import 'blocks/preview';
-@import 'blocks/sidebar';
-@import 'blocks/tabs';
-@import 'blocks/typography';
-@import 'blocks/burger-menu';
-
-@import './components/button';
-@import './components/accordion';
-@import './components/histogram';
-@import './components/skeleton';
-@import './components/tooltip';
-@import './components/modal';
-@import './components/calendar';
-@import './components/checkbox';
-@import './components/input';
-@import './components/radio';
-@import './components/toggler';
-@import './components/avatar';
+@import url('../fonts/fonts.css');
+@import url('./_normalize.css');
+@import url('./_reset.css');
+@import url('variables');
+@import url('mixins');
+@import url('blocks/container');
+@import url('blocks/footer');
+@import url('blocks/header');
+@import url('blocks/inner-page');
+@import url('blocks/logo');
+@import url('blocks/page');
+@import url('blocks/preview');
+@import url('blocks/sidebar');
+@import url('blocks/tabs');
+@import url('blocks/typography');
+@import url('blocks/burger-menu');
+@import url('./components/button');
+@import url('./components/accordion');
+@import url('./components/histogram');
+@import url('./components/skeleton');
+@import url('./components/tooltip');
+@import url('./components/modal');
+@import url('./components/calendar');
+@import url('./components/checkbox');
+@import url('./components/input');
+@import url('./components/radio');
+@import url('./components/toggler');
+@import url('./components/avatar');
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 html,

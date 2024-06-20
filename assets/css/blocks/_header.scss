@@ -1,6 +1,7 @@
 .header {
   background-color: var(--white);
   padding: 16px 0 32px;
+
   @include respond(desktop) {
     padding: 24px 0 40px;
   }
@@ -9,6 +10,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+
     @include respond(desktop) {
       justify-content: start;
     }
@@ -25,6 +27,7 @@
     background-color: transparent;
     padding: 0;
     cursor: pointer;
+
     @include respond(desktop) {
       display: none;
     }
@@ -40,7 +43,7 @@
   }
 
   &__title {
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -48,6 +51,7 @@
     color: var(--grey-4);
     margin-top: 48px;
     margin-bottom: 0;
+
     @include respond(desktop) {
       font-weight: 500;
       font-size: 50px;
