@@ -11,6 +11,7 @@
 @import '../../components/logo/logo.css';
 @import '../../07-lection5/03-toggler/toggler.css';
 @import '../../05-lection3/02-modal/modal.css';
+@import '../../components/tabs/tabs.css';
 
 :root {
   --white: #ffffff;

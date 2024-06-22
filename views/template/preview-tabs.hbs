@@ -1,0 +1,42 @@
+<div class="tabs">
+  {{#each this}}
+  <input type="radio" class="tabs__input" name="tabs" id="tab{{controlNumber}}" {{#if checked}}checked{{/if}} />
+  {{/each}}
+
+  <nav class="tabs__nav">
+    <div class="container">
+      <ul class="tabs__menu">
+
+        {{#each this}}
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab{{controlNumber}}">{{controlName}}</label>
+        </li>
+        {{/each}}
+
+      </ul>
+    </div>
+  </nav>
+
+  {{#each this}}
+  <section>
+    <div class="tabs__tab tabs__tab-{{controlNumber}}">
+      <div class="container">
+        <div class="preview__cards">
+
+          {{#each cards}}
+          <div class="preview__card">
+            <div class="preview__image">
+              {{#if preview__image}}
+              {{partialStr preview__image}}
+              {{/if}}
+            </div>
+            <div class="preview__title">{{preview__title}}</div>
+          </div>
+          {{/each}}
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {{/each}}
+</div>
