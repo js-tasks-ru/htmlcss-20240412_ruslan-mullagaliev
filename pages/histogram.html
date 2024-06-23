@@ -140,153 +140,153 @@
                   </div>
                 </div>              </div>
             </div>
-            <div class="tabs">
-              <input type="radio" class="tabs__input" name="tabs" id="tab1" checked />
-              <input type="radio" class="tabs__input" name="tabs" id="tab2"  />
-            
-              <nav class="tabs__nav">
-                <div class="container container_inner-page-content">
-                  <ul class="tabs__menu">
-            
-                    <li class="tabs__menu-item">
-                      <label class="tabs__control" for="tab1">HTML</label>
-                    </li>
-                    <li class="tabs__menu-item">
-                      <label class="tabs__control" for="tab2">CSS</label>
-                    </li>
-            
-                  </ul>
-                </div>
-              </nav>
-              <div class="tabs__divider"></div>
-              <section>
-                <div class="container container_inner-page-content">
-                  <div class="tabs__tab tabs__tab-1">
-                    <pre class="tabs__pre"><code class="tabs__code html">
-            &lt;div class&#x3D;&quot;histogram &quot;&gt;
-              &lt;div class&#x3D;&quot;histogram__header&quot;&gt;
-                &lt;p class&#x3D;&quot;histogram__title&quot;&gt;Total orders&lt;/p&gt;
-                &lt;div class&#x3D;&quot;histogram__link&quot;&gt;View all&lt;/div&gt;
-              &lt;/div&gt;
-              &lt;h4 class&#x3D;&quot;histogram__total&quot;&gt;50254&lt;/h4&gt;
-              &lt;div class&#x3D;&quot;histogram__chart&quot;&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 100%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 70%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 44%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 78%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 44%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 60%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 78%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 100%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 22%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 44%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 60%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 70%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 22%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 100%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 22%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 78%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 60%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 44%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 70%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 60%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 22%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 60%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 70%&quot;&gt;&lt;/div&gt;
-                &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 34%&quot;&gt;&lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;</code></pre>
-                  </div>
-                </div>
-              </section>
-              <section>
-                <div class="container container_inner-page-content">
-                  <div class="tabs__tab tabs__tab-2">
-                    <pre class="tabs__pre"><code class="tabs__code css">
-            .histogram {
-              border: 1px solid var(--grey-3);
-              border-radius: 8px;
-              padding: 8px 14px 14px;
-              font-size: 8px;
-              line-height: 12px;
-              font-family: &#x27;Inter&#x27;;
-              font-style: normal;
-              font-weight: 400;
-            }
-            
-            .histogram_preview {
-              border: none;
-            }
-            
-            .histogram__header {
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-            }
-            
-            .histogram__title {
-              color: var(--black);
-              opacity: 0.8;
-              margin: 0;
-            }
-            
-            .histogram__link {
-              color: var(--blue-2);
-              text-decoration: none;
-              margin-top: 3px;
-            }
-            
-            .histogram__total {
-              color: var(--black);
-              font-size: 10px;
-              line-height: 14px;
-              margin: 0 0 3px;
-            }
-            
-            .histogram__chart {
-              height: 50px;
-              display: flex;
-              flex-direction: row;
-              flex-wrap: nowrap;
-              overflow: hidden;
-              justify-content: flex-start;
-              gap: 1px;
-              align-items: flex-end;
-            }
-            
-            .histogram__chart-item {
-              flex: none;
-              background-color: var(--blue-2);
-              color: var(--blue-2);
-              flex-basis: 5px;
-            }
-            
-            @media screen and (min-width: 767px) {
-              .histogram {
-                padding: 16px 24px 24px;
-                font-size: 16px;
-                line-height: 24px;
-              }
-            
-              .histogram_preview {
-                border: 1px solid var(--grey-3);
-              }
-            
-              .histogram__total {
-                font-size: 20px;
-                line-height: 26px;
-                margin: 0 0 6px;
-              }
-            
-              .histogram__chart-item {
-                flex-basis: 9px;
-              }
-            }
-            </code></pre>
-                  </div>
-                </div>
-              </section>
-            </div>          </div>
+<div class="tabs">
+  <input type="radio" class="tabs__input" name="tabs" id="tab1" checked />
+  <input type="radio" class="tabs__input" name="tabs" id="tab2"  />
+
+  <nav class="tabs__nav">
+    <div class="container container_inner-page-content">
+      <ul class="tabs__menu">
+
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab1">HTML</label>
+        </li>
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab2">CSS</label>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <div class="tabs__divider"></div>
+  <section>
+    <div class="container container_inner-page-content">
+      <div class="tabs__tab tabs__tab-1">
+        <pre class="tabs__pre"><code class="tabs__code html">
+&lt;div class&#x3D;&quot;histogram &quot;&gt;
+  &lt;div class&#x3D;&quot;histogram__header&quot;&gt;
+    &lt;p class&#x3D;&quot;histogram__title&quot;&gt;Total orders&lt;/p&gt;
+    &lt;div class&#x3D;&quot;histogram__link&quot;&gt;View all&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;h4 class&#x3D;&quot;histogram__total&quot;&gt;50254&lt;/h4&gt;
+  &lt;div class&#x3D;&quot;histogram__chart&quot;&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 100%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 70%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 44%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 78%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 44%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 60%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 78%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 100%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 22%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 44%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 60%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 70%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 22%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 100%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 22%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 78%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 60%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 44%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 70%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 60%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 22%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 60%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 70%&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;histogram__chart-item&quot; style&#x3D;&quot;height: 34%&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container container_inner-page-content">
+      <div class="tabs__tab tabs__tab-2">
+        <pre class="tabs__pre"><code class="tabs__code css">
+.histogram {
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 8px 14px 14px;
+  font-size: 8px;
+  line-height: 12px;
+  font-family: &#x27;Inter&#x27;;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.histogram_preview {
+  border: none;
+}
+
+.histogram__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.histogram__title {
+  color: var(--black);
+  opacity: 0.8;
+  margin: 0;
+}
+
+.histogram__link {
+  color: var(--blue-2);
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+.histogram__total {
+  color: var(--black);
+  font-size: 10px;
+  line-height: 14px;
+  margin: 0 0 3px;
+}
+
+.histogram__chart {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  justify-content: flex-start;
+  gap: 1px;
+  align-items: flex-end;
+}
+
+.histogram__chart-item {
+  flex: none;
+  background-color: var(--blue-2);
+  color: var(--blue-2);
+  flex-basis: 5px;
+}
+
+@media screen and (min-width: 767px) {
+  .histogram {
+    padding: 16px 24px 24px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .histogram_preview {
+    border: 1px solid var(--grey-3);
+  }
+
+  .histogram__total {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 6px;
+  }
+
+  .histogram__chart-item {
+    flex-basis: 9px;
+  }
+}
+</code></pre>
+      </div>
+    </div>
+  </section>
+</div>          </div>
         </div>
       </div>
     </main>

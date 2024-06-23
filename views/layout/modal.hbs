@@ -124,107 +124,107 @@
                   </div>
                 </div>              </div>
             </div>
-            <div class="tabs">
-              <input type="radio" class="tabs__input" name="tabs" id="tab1" checked />
-              <input type="radio" class="tabs__input" name="tabs" id="tab2"  />
-            
-              <nav class="tabs__nav">
-                <div class="container container_inner-page-content">
-                  <ul class="tabs__menu">
-            
-                    <li class="tabs__menu-item">
-                      <label class="tabs__control" for="tab1">HTML</label>
-                    </li>
-                    <li class="tabs__menu-item">
-                      <label class="tabs__control" for="tab2">CSS</label>
-                    </li>
-            
-                  </ul>
-                </div>
-              </nav>
-              <div class="tabs__divider"></div>
-              <section>
-                <div class="container container_inner-page-content">
-                  <div class="tabs__tab tabs__tab-1">
-                    <pre class="tabs__pre"><code class="tabs__code html">
-            &lt;button class&#x3D;&quot;button button_primary&quot; id&#x3D;&quot;modal-open&quot;&gt;Open
-              modal&lt;/button&gt;
-            
-            &lt;div class&#x3D;&quot;modal &quot; id&#x3D;&quot;modal&quot;&gt;
-              &lt;div class&#x3D;&quot;modal__window &quot;&gt;
-                &lt;div class&#x3D;&quot;modal__close&quot; id&#x3D;&quot;modal-close&quot;&gt;
-                  &lt;svg width&#x3D;&quot;24&quot; height&#x3D;&quot;24&quot;&gt;
-                    &lt;use href&#x3D;&quot;./assets/images/icons.svg#close&quot; /&gt;
-                  &lt;/svg&gt;
-                &lt;/div&gt;
-                &lt;h1 class&#x3D;&quot;modal__title&quot;&gt;Modal title&lt;/h1&gt;
-                &lt;div class&#x3D;&quot;modal__body&quot;&gt;
-                  &lt;p class&#x3D;&quot;modal__text&quot;&gt;Amet minim mollit non .&lt;/p&gt;
-                  &lt;p class&#x3D;&quot;modal__text&quot;&gt;Amet minim mollit non deserunt.&lt;/p&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;</code></pre>
-                  </div>
-                </div>
-              </section>
-              <section>
-                <div class="container container_inner-page-content">
-                  <div class="tabs__tab tabs__tab-2">
-                    <pre class="tabs__pre"><code class="tabs__code css">
-            .modal {
-              height: 100vh;
-              width: 100vw;
-              background-color: var(--grey-10);
-              position: fixed;
-              top: 0;
-              left: 0;
-              font-family: &#x27;Inter&#x27;;
-              font-style: normal;
-            }
-            
-            .modal__window {
-              position: absolute;
-              box-sizing: border-box;
-              width: 428px;
-              left: 50%;
-              top: 50%;
-              transform: translate(-50%, -50%);
-            
-              background: var(--white);
-              border-radius: 8px;
-              padding: 30px 40px 33px;
-            }
-            
-            .modal__close {
-              position: absolute;
-              top: 12px;
-              right: 12px;
-              cursor: pointer;
-            }
-            
-            .modal__title {
-              font-weight: 600;
-              font-size: 20px;
-              line-height: 24px;
-              color: var(--blue-4);
-              margin: 0 0 14px;
-            }
-            
-            .modal__body {
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 24px;
-              color: var(--grey-4);
-            }
-            
-            .modal__text {
-              margin: 0;
-            }
-            </code></pre>
-                  </div>
-                </div>
-              </section>
-            </div>          </div>
+<div class="tabs">
+  <input type="radio" class="tabs__input" name="tabs" id="tab1" checked />
+  <input type="radio" class="tabs__input" name="tabs" id="tab2"  />
+
+  <nav class="tabs__nav">
+    <div class="container container_inner-page-content">
+      <ul class="tabs__menu">
+
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab1">HTML</label>
+        </li>
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab2">CSS</label>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <div class="tabs__divider"></div>
+  <section>
+    <div class="container container_inner-page-content">
+      <div class="tabs__tab tabs__tab-1">
+        <pre class="tabs__pre"><code class="tabs__code html">
+&lt;button class&#x3D;&quot;button button_primary&quot; id&#x3D;&quot;modal-open&quot;&gt;Open
+  modal&lt;/button&gt;
+
+&lt;div class&#x3D;&quot;modal &quot; id&#x3D;&quot;modal&quot;&gt;
+  &lt;div class&#x3D;&quot;modal__window &quot;&gt;
+    &lt;div class&#x3D;&quot;modal__close&quot; id&#x3D;&quot;modal-close&quot;&gt;
+      &lt;svg width&#x3D;&quot;24&quot; height&#x3D;&quot;24&quot;&gt;
+        &lt;use href&#x3D;&quot;../assets/images/icons.svg#close&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h1 class&#x3D;&quot;modal__title&quot;&gt;Modal title&lt;/h1&gt;
+    &lt;div class&#x3D;&quot;modal__body&quot;&gt;
+      &lt;p class&#x3D;&quot;modal__text&quot;&gt;Amet minim mollit non .&lt;/p&gt;
+      &lt;p class&#x3D;&quot;modal__text&quot;&gt;Amet minim mollit non deserunt.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container container_inner-page-content">
+      <div class="tabs__tab tabs__tab-2">
+        <pre class="tabs__pre"><code class="tabs__code css">
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--grey-10);
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: &#x27;Inter&#x27;;
+  font-style: normal;
+}
+
+.modal__window {
+  position: absolute;
+  box-sizing: border-box;
+  width: 428px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background: var(--white);
+  border-radius: 8px;
+  padding: 30px 40px 33px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--blue-4);
+  margin: 0 0 14px;
+}
+
+.modal__body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+}
+
+.modal__text {
+  margin: 0;
+}
+</code></pre>
+      </div>
+    </div>
+  </section>
+</div>          </div>
         </div>
       </div>
     </main>
