@@ -5,27 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  <script defer src="/assets/js/burger-menu.js"></script>
-  <script defer src="/assets/js/modal.js"></script>
-  <link rel="stylesheet" href="/build/style.css" />
+  <script defer src="../assets/js/burger-menu.js"></script>
+  <script defer src="../assets/js/modal.js"></script>
+  <link rel="stylesheet" href="../build/style.css" />
   <title>{{name}}</title>
 </head>
 
 <body>
   <div class="page">
-    {{> header this innerPage='innerPage'}}
+    {{> header this inner-page='inner-page'}}
     <main class="inner-page">
       <div class="container container_inner-page">
         <div class="inner-page__wrapper">
-          {{>sidebar this}}
+          {{>sidebar this inner-page='inner-page'}}
           <div class="inner-page__content">
             <div class="container container_inner-page-content">
               <h3 class="inner-page__content-title">{{name}}</h3>
               <div class="inner-page__content-component">
-                {{> (lookup . 'image') }}
+                {{> (lookup . 'image')}}
               </div>
             </div>
-{{>inner-page-tabs tabs}}
+            {{>inner-page-tabs tabs}}
           </div>
         </div>
       </div>
