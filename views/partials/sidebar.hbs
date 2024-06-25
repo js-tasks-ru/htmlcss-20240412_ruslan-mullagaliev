@@ -6,6 +6,7 @@
       href="{{#if ../inner-page}}.{{/if}}./pages/{{path}}.html">{{name}}</a>
     {{/each}}
     <a class="sidebar__item"></a>
-    <a class="sidebar__item" href="{{#if inner-page}}.{{/if}}./index.html">Main page</a>
+    <a class="sidebar__item {{#unless inner-page}}sidebar__item_active{{/unless}}"
+      href="{{#if inner-page}}.{{/if}}./index.html">Main page</a>
   </nav>
 </aside>

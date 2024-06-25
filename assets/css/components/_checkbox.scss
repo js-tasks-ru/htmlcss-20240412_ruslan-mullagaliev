@@ -26,6 +26,10 @@
     align-items: center;
   }
 
+  &_preview {
+    pointer-events: none;
+  }
+
   &_preview &__control {
     width: 14px;
     height: 14px;

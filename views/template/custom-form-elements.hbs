@@ -96,7 +96,7 @@ grid-template-columns: {{#if preview}}repeat(2, auto){{/if}}{{#unless preview}}r
     </div>
     <div style="display: flex; flex-direction: column; gap: 20px">
       <label class="radio {{#if preview}}radio_preview{{/if}}">
-        <input type="radio" name="radio" id="1" class="radio__input" />
+        <input type="radio" name="radio{{#if preview}}{{suffix}}{{/if}}" id="1" class="radio__input" />
         <div class="radio__state">
           <div class="radio__control">
             <div class="radio__control-inner"></div>
@@ -105,7 +105,7 @@ grid-template-columns: {{#if preview}}repeat(2, auto){{/if}}{{#unless preview}}r
         </div>
       </label>
       <label class="radio {{#if preview}}radio_preview{{/if}}">
-        <input type="radio" name="radio" id="2" class="radio__input" checked />
+        <input type="radio" name="radio{{#if preview}}{{suffix}}{{/if}}" id="2" class="radio__input" checked />
         <div class="radio__state">
           <div class="radio__control">
             <div class="radio__control-inner"></div>

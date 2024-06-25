@@ -44,9 +44,22 @@
 
   &__close {
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 6px;
+    right: 6px;
     cursor: pointer;
+    @include respond(desktop) {
+      top: 12px;
+      right: 12px;
+    }
+  }
+
+  &__close svg {
+    width: 12px;
+    height: 12px;
+    @include respond(desktop) {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   &__title {
