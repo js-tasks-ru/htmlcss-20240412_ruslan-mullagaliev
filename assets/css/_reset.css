@@ -136,3 +136,10 @@ table {
 a {
   text-decoration: none;
 }
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
