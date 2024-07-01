@@ -7,25 +7,25 @@
         background: #000;
       }
     </style>
-    <link rel="stylesheet" href="/build/style.css" />
+    <link rel="stylesheet" href="../../build/style.css" />
     <script defer src="./theme-changer.js"></script>
   </head>
   <body>
-    <div class="burger__theme">
-      <svg width="24" height="24">
-        <use href="/assets/images/icons.svg#sun" />
-      </svg>
-      <label class="toggle">
+    <div>
+      <label class="toggle theme-changer">
         <input type="checkbox" class="toggle__input" id="theme-changer" />
+        <svg class="theme-changer__icon">
+          <use href="../../assets/images/icons.svg#sun" />
+        </svg>
         <div class="toggle__state">
           <div class="toggle__control">
             <div class="toggle__control-inner"></div>
           </div>
         </div>
+        <svg class="theme-changer__icon">
+          <use href="../../assets/images/icons.svg#moon" />
+        </svg>
       </label>
-      <svg width="24" height="24">
-        <use href="/assets/images/icons.svg#moon" />
-      </svg>
     </div>
   </body>
 </html>

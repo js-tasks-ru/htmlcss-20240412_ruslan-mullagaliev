@@ -24,6 +24,7 @@
     padding: 1px;
     display: flex;
     justify-content: flex-start;
+    transition: all 250ms linear;
   }
 
   &__control-inner {
