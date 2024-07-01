@@ -6,7 +6,9 @@
   &__nav {
     background: var(--white);
     overflow: hidden;
-    width: 100vw;
+    &_preview {
+      width: 100vw;
+    }
   }
 
   &__menu {
