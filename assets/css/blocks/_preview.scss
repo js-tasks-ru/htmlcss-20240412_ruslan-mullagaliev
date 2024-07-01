@@ -1,0 +1,80 @@
+.preview {
+  background: var(--grey-5);
+
+  @include respond(desktop) {
+    border-bottom: 1px solid var(--grey-2);
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(164px, auto));
+    gap: 23px 16px;
+    padding: 24px 0 61px;
+
+    @include respond(desktop) {
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 30px;
+      padding: 68px 0 204px;
+    }
+
+    @include respond(desktop-large) {
+      grid-template-columns: repeat(3, 350px);
+    }
+  }
+
+  &__card {
+    background: var(--white);
+    box-shadow: 0 2px 4px var(--black-2);
+    display: flex;
+    flex-direction: column;
+    height: 231px;
+    border-radius: 8px;
+    padding: 8px;
+
+    @include respond(desktop) {
+      height: 367px;
+      border-radius: 12px;
+      padding: 25px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 164px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--grey-2);
+
+    @include respond(desktop) {
+      border-bottom: none;
+      height: 250px;
+    }
+  }
+
+  &__component {
+    width: 100%;
+  }
+
+  &__title {
+    font-style: normal;
+    text-align: center;
+    color: var(--black);
+    flex-grow: 1;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(desktop) {
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.avatar {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  @include respond(desktop) {
+    width: 204px;
+    height: 204px;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

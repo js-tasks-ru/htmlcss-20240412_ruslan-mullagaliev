@@ -1,0 +1,19 @@
+{{#unless preview}}
+<button class="button button_primary" id="modal-open">Open
+  modal</button>
+{{/unless}}
+
+<div class="modal {{#if preview}} modal_preview{{/if}}" id="modal">
+  <div class="modal__window {{#if preview}} modal__window_preview{{/if}}">
+    <div class="modal__close" id="modal-close">
+      <svg viewBox="0 0 24 24">
+        <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#close" />
+      </svg>
+    </div>
+    <h1 class="modal__title">Modal title</h1>
+    <div class="modal__body">
+      <p class="modal__text">Amet minim mollit non .</p>
+      <p class="modal__text">Amet minim mollit non deserunt.</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+.tooltip {
+  display: inline-block;
+  position: relative;
+
+  &__bubble {
+    display: none;
+    background: var(--blue-2);
+    border-radius: 10px;
+    padding: 13px 21px 8px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--grey-2);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__bubble::before {
+    content: '';
+    position: absolute;
+    border: 7px solid transparent;
+    border-top-color: var(--blue-2);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__trigger:hover + &__bubble,
+  &__trigger_force-show-buble + &__bubble {
+    display: block;
+  }
+}

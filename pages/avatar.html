@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script defer src="../assets/js/burger-menu.js"></script>
+  <script defer src="../assets/js/modal.js"></script>
+  <link rel="stylesheet" href="../build/style.css" />
+  <title>Avatar</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header header_inner-page">
+      <div class="container">
+        <div class="header__inner">
+          <button class="header__burger-button" id="burger-menu-open">
+            <svg width="24" height="24">
+              <use href="../assets/images/icons.svg#menu" />
+            </svg>
+          </button>
+          <a href="../index.html" class="header__logo logo">
+            <div class="logo__box"></div>
+            <div class="logo__circle"></div>
+            <div class="logo__triangle"></div>
+          </a>
+        </div>
+        <h1 class="header__title header__title_inner-page">Reusable component library</h1>
+      </div>
+    
+      <div class="burger-menu" id="burger-menu">
+        <header class="header burger-menu__header">
+          <div class="container">
+            <div class="header__inner">
+              <button class="burger-menu__close" id="burger-menu-close">
+                <svg width="24" height="24">
+                  <use href="../assets/images/icons.svg#close" />
+                </svg>
+              </button>
+              <a href="../index.html" class="header__logo logo">
+                <div class="logo__box"></div>
+                <div class="logo__circle"></div>
+                <div class="logo__triangle"></div>
+              </a>
+            </div>
+          </div>
+        </header>
+        <div class="container burger-menu__body">
+          <div class="burger-menu__divider"></div>
+          <aside class="sidebar sidebar_burger-menu">
+            <h4 class="sidebar__title burger-menu__title ">Components</h4>
+            <nav class="sidebar__content burger-menu__content ">
+              <a class="sidebar__item "
+                href="../pages/button.html">Button</a>
+              <a class="sidebar__item "
+                href="../pages/accordion.html">Accordion</a>
+              <a class="sidebar__item "
+                href="../pages/histogram.html">Histogram</a>
+              <a class="sidebar__item "
+                href="../pages/skeleton.html">Skeleton</a>
+              <a class="sidebar__item "
+                href="../pages/tooltip.html">Tooltip</a>
+              <a class="sidebar__item "
+                href="../pages/modal.html">Modal</a>
+              <a class="sidebar__item "
+                href="../pages/calendar.html">Calendar</a>
+              <a class="sidebar__item "
+                href="../pages/custom-form-elements.html">Custom form elements</a>
+              <a class="sidebar__item sidebar__item_active"
+                href="../pages/avatar.html">Avatar</a>
+              <a class="sidebar__item"></a>
+              <a class="sidebar__item "
+                href="../index.html">Main page</a>
+            </nav>
+          </aside>    </div>
+      </div>
+    </header>    <main class="inner-page">
+      <div class="container container_inner-page">
+        <div class="inner-page__wrapper">
+          <aside class="sidebar ">
+            <h4 class="sidebar__title ">Components</h4>
+            <nav class="sidebar__content ">
+              <a class="sidebar__item "
+                href="../pages/button.html">Button</a>
+              <a class="sidebar__item "
+                href="../pages/accordion.html">Accordion</a>
+              <a class="sidebar__item "
+                href="../pages/histogram.html">Histogram</a>
+              <a class="sidebar__item "
+                href="../pages/skeleton.html">Skeleton</a>
+              <a class="sidebar__item "
+                href="../pages/tooltip.html">Tooltip</a>
+              <a class="sidebar__item "
+                href="../pages/modal.html">Modal</a>
+              <a class="sidebar__item "
+                href="../pages/calendar.html">Calendar</a>
+              <a class="sidebar__item "
+                href="../pages/custom-form-elements.html">Custom form elements</a>
+              <a class="sidebar__item sidebar__item_active"
+                href="../pages/avatar.html">Avatar</a>
+              <a class="sidebar__item"></a>
+              <a class="sidebar__item "
+                href="../index.html">Main page</a>
+            </nav>
+          </aside>          <div class="inner-page__content">
+            <div class="container container_inner-page-content">
+              <h3 class="inner-page__content-title">Avatar</h3>
+              <div class="inner-page__content-component">
+                <div class="avatar">
+                  <img class="avatar__img" src="../assets/images/avatar.png" alt="avatar" title="avatar" />
+                </div>              </div>
+            </div>
+<div class="tabs">
+  <input type="radio" class="tabs__input" name="tabs" id="tab1" checked />
+  <input type="radio" class="tabs__input" name="tabs" id="tab2"  />
+
+  <nav class="tabs__nav">
+    <div class="container container_inner-page-content">
+      <ul class="tabs__menu">
+
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab1">HTML</label>
+        </li>
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab2">CSS</label>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <div class="tabs__divider"></div>
+  <section>
+    <div class="container container_inner-page-content">
+      <div class="tabs__tab tabs__tab-1">
+        <pre class="tabs__pre"><code class="tabs__code html">
+&lt;div class&#x3D;&quot;avatar&quot;&gt;
+  &lt;img class&#x3D;&quot;avatar__img&quot; src&#x3D;&quot;../assets/images/avatar.png&quot; alt&#x3D;&quot;avatar&quot; title&#x3D;&quot;avatar&quot; /&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container container_inner-page-content">
+      <div class="tabs__tab tabs__tab-2">
+        <pre class="tabs__pre"><code class="tabs__code css">
+.avatar {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+</code></pre>
+      </div>
+    </div>
+  </section>
+</div>          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer_inner-page">
+      <div class="container">
+        <a class="footer__link" href="#"> Reusable component library </a>
+      </div>
+    </footer>
+  </div>
+  <script>hljs.highlightAll();</script>
+</body>
+
+</html>

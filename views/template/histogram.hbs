@@ -1,7 +1,7 @@
-<div class="histogram histogram_preview preview__component">
+<div class="histogram {{#if preview}}preview__component{{/if}}">
   <div class="histogram__header">
     <p class="histogram__title">{{title}}</p>
-    <a class="histogram__link">{{link}}</a>
+    <div class="histogram__link">{{link}}</div>
   </div>
   <h4 class="histogram__total">{{total}}</h4>
   <div class="histogram__chart">

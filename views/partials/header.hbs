@@ -1,10 +1,42 @@
-<header class="header">
+<header class="header {{#if inner-page}}header_inner-page{{/if}}">
   <div class="container">
-    <div class="header__logo logo">
-      <div class="logo__box"></div>
-      <div class="logo__circle"></div>
-      <div class="logo__triangle"></div>
+    <div class="header__inner">
+      {{!-- {{#if sidebar}} --}}
+      <button class="header__burger-button" id="burger-menu-open">
+        <svg width="24" height="24">
+          <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#menu" />
+        </svg>
+      </button>
+      {{!-- {{/if}} --}}
+      <a href="{{#if inner-page}}.{{/if}}./index.html" class="header__logo logo">
+        <div class="logo__box"></div>
+        <div class="logo__circle"></div>
+        <div class="logo__triangle"></div>
+      </a>
     </div>
-    <h1 class="header__title">Reusable component library</h1>
+    <h1 class="header__title {{#if inner-page}}header__title_inner-page{{/if}}">Reusable component library</h1>
+  </div>
+
+  <div class="burger-menu" id="burger-menu">
+    <header class="header burger-menu__header">
+      <div class="container">
+        <div class="header__inner">
+          <button class="burger-menu__close" id="burger-menu-close">
+            <svg width="24" height="24">
+              <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#close" />
+            </svg>
+          </button>
+          <a href="{{#if inner-page}}.{{/if}}./index.html" class="header__logo logo">
+            <div class="logo__box"></div>
+            <div class="logo__circle"></div>
+            <div class="logo__triangle"></div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="container burger-menu__body">
+      <div class="burger-menu__divider"></div>
+      {{>sidebar this burger='burger'}}
+    </div>
   </div>
 </header>

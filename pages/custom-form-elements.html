@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script defer src="../assets/js/burger-menu.js"></script>
+  <script defer src="../assets/js/modal.js"></script>
+  <link rel="stylesheet" href="../build/style.css" />
+  <title>Custom form elements</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header header_inner-page">
+      <div class="container">
+        <div class="header__inner">
+          <button class="header__burger-button" id="burger-menu-open">
+            <svg width="24" height="24">
+              <use href="../assets/images/icons.svg#menu" />
+            </svg>
+          </button>
+          <a href="../index.html" class="header__logo logo">
+            <div class="logo__box"></div>
+            <div class="logo__circle"></div>
+            <div class="logo__triangle"></div>
+          </a>
+        </div>
+        <h1 class="header__title header__title_inner-page">Reusable component library</h1>
+      </div>
+    
+      <div class="burger-menu" id="burger-menu">
+        <header class="header burger-menu__header">
+          <div class="container">
+            <div class="header__inner">
+              <button class="burger-menu__close" id="burger-menu-close">
+                <svg width="24" height="24">
+                  <use href="../assets/images/icons.svg#close" />
+                </svg>
+              </button>
+              <a href="../index.html" class="header__logo logo">
+                <div class="logo__box"></div>
+                <div class="logo__circle"></div>
+                <div class="logo__triangle"></div>
+              </a>
+            </div>
+          </div>
+        </header>
+        <div class="container burger-menu__body">
+          <div class="burger-menu__divider"></div>
+          <aside class="sidebar sidebar_burger-menu">
+            <h4 class="sidebar__title burger-menu__title ">Components</h4>
+            <nav class="sidebar__content burger-menu__content ">
+              <a class="sidebar__item "
+                href="../pages/button.html">Button</a>
+              <a class="sidebar__item "
+                href="../pages/accordion.html">Accordion</a>
+              <a class="sidebar__item "
+                href="../pages/histogram.html">Histogram</a>
+              <a class="sidebar__item "
+                href="../pages/skeleton.html">Skeleton</a>
+              <a class="sidebar__item "
+                href="../pages/tooltip.html">Tooltip</a>
+              <a class="sidebar__item "
+                href="../pages/modal.html">Modal</a>
+              <a class="sidebar__item "
+                href="../pages/calendar.html">Calendar</a>
+              <a class="sidebar__item sidebar__item_active"
+                href="../pages/custom-form-elements.html">Custom form elements</a>
+              <a class="sidebar__item "
+                href="../pages/avatar.html">Avatar</a>
+              <a class="sidebar__item"></a>
+              <a class="sidebar__item "
+                href="../index.html">Main page</a>
+            </nav>
+          </aside>    </div>
+      </div>
+    </header>    <main class="inner-page">
+      <div class="container container_inner-page">
+        <div class="inner-page__wrapper">
+          <aside class="sidebar ">
+            <h4 class="sidebar__title ">Components</h4>
+            <nav class="sidebar__content ">
+              <a class="sidebar__item "
+                href="../pages/button.html">Button</a>
+              <a class="sidebar__item "
+                href="../pages/accordion.html">Accordion</a>
+              <a class="sidebar__item "
+                href="../pages/histogram.html">Histogram</a>
+              <a class="sidebar__item "
+                href="../pages/skeleton.html">Skeleton</a>
+              <a class="sidebar__item "
+                href="../pages/tooltip.html">Tooltip</a>
+              <a class="sidebar__item "
+                href="../pages/modal.html">Modal</a>
+              <a class="sidebar__item "
+                href="../pages/calendar.html">Calendar</a>
+              <a class="sidebar__item sidebar__item_active"
+                href="../pages/custom-form-elements.html">Custom form elements</a>
+              <a class="sidebar__item "
+                href="../pages/avatar.html">Avatar</a>
+              <a class="sidebar__item"></a>
+              <a class="sidebar__item "
+                href="../index.html">Main page</a>
+            </nav>
+          </aside>          <div class="inner-page__content">
+            <div class="container container_inner-page-content">
+              <h3 class="inner-page__content-title">Custom form elements</h3>
+              <div class="inner-page__content-component">
+                <div style="display: flex; flex-direction: column; gap:16px">
+                  <div style="display: grid; 
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(2, 1fr);
+                 gap: 16px">
+                    <div class="input">
+                      <label class="input__label" for="default">Label</label>
+                      <div class="input__wrapper">
+                        <input type="text" id="default" class="input__control" placeholder="Placeholder" />
+                        <svg class="input__icon input__icon_success" width="24" height="24">
+                          <use href="./assets/images/icons.svg#success" />
+                        </svg>
+                        <svg class="input__icon input__icon_error" width="24" height="24">
+                          <use href="./assets/images/icons.svg#error" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="input input_success">
+                      <label class="input__label" for="success">Success</label>
+                      <div class="input__wrapper">
+                        <input type="text" class="input__control" placeholder="Placeholder" value="Success" id="success" />
+                        <svg class="input__icon input__icon_success" width="24" height="24">
+                          <use href="./assets/images/icons.svg#success" />
+                        </svg>
+                        <svg class="input__icon input__icon_error" width="24" height="24">
+                          <use href="./assets/images/icons.svg#error" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="input input_invalid">
+                      <label class="input__label" for="error">Error</label>
+                      <div class="input__wrapper">
+                        <input type="text" class="input__control" placeholder="Placeholder" value="Error" id="error" />
+                        <svg class="input__icon input__icon_success" width="24" height="24">
+                          <use href="./assets/images/icons.svg#success" />
+                        </svg>
+                        <svg class="input__icon input__icon_error" width="24" height="24">
+                          <use href="./assets/images/icons.svg#error" />
+                        </svg>
+                      </div>
+                    </div>
+                
+                    <div class="input">
+                      <label class="input__label" for="disabled">Disabled</label>
+                      <div class="input__wrapper">
+                        <input type="text" class="input__control" placeholder="Placeholder" value="Disabled" disabled id="disabled" />
+                        <svg class="input__icon input__icon_success" width="24" height="24">
+                          <use href="./assets/images/icons.svg#success" />
+                        </svg>
+                        <svg class="input__icon input__icon_error" width="24" height="24">
+                          <use href="./assets/images/icons.svg#error" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="display: grid; 
+                grid-template-columns: repeat(3, auto) ; gap: 16px">
+                    <div style="display: flex; flex-direction: column; gap: 20px">
+                      <label class="checkbox ">
+                        <input type="checkbox" class="checkbox__input" />
+                        <div class="checkbox__state">
+                          <div class="checkbox__control">
+                            <svg class="checkbox__icon" width="15" height="13">
+                              <use href="./assets/images/icons.svg#check" />
+                            </svg>
+                          </div>
+                          <p class="checkbox__label">Default</p>
+                        </div>
+                      </label>
+                      <label class="checkbox ">
+                        <input type="checkbox" class="checkbox__input" checked />
+                        <div class="checkbox__state">
+                          <div class="checkbox__control">
+                            <svg class="checkbox__icon" width="15" height="13">
+                              <use href="./assets/images/icons.svg#check" />
+                            </svg>
+                          </div>
+                          <p class="checkbox__label">Checked</p>
+                        </div>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input" disabled />
+                        <div class="checkbox__state">
+                          <div class="checkbox__control">
+                            <svg class="checkbox__icon" width="15" height="13">
+                              <use href="./assets/images/icons.svg#check" />
+                            </svg>
+                          </div>
+                          <p class="checkbox__label">Disabled</p>
+                        </div>
+                      </label>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 20px">
+                      <label class="radio ">
+                        <input type="radio" name="radio" id="1" class="radio__input" />
+                        <div class="radio__state">
+                          <div class="radio__control">
+                            <div class="radio__control-inner"></div>
+                          </div>
+                          <p class="radio__label">Default</p>
+                        </div>
+                      </label>
+                      <label class="radio ">
+                        <input type="radio" name="radio" id="2" class="radio__input" checked />
+                        <div class="radio__state">
+                          <div class="radio__control">
+                            <div class="radio__control-inner"></div>
+                          </div>
+                          <p class="radio__label">Selected</p>
+                        </div>
+                      </label>
+                      <label class="radio">
+                        <input type="radio" name="radio" id="3" class="radio__input" disabled />
+                        <div class="radio__state">
+                          <div class="radio__control">
+                            <div class="radio__control-inner"></div>
+                          </div>
+                          <p class="radio__label">Disabled</p>
+                        </div>
+                      </label>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 20px">
+                      <label class="toggle">
+                        <input type="checkbox" class="toggle__input" />
+                        <div class="toggle__state">
+                          <div class="toggle__control">
+                            <div class="toggle__control-inner"></div>
+                          </div>
+                          <p class="toggle__label">Off</p>
+                        </div>
+                      </label>
+                
+                      <label class="toggle">
+                        <input type="checkbox" class="toggle__input" checked />
+                        <div class="toggle__state">
+                          <div class="toggle__control">
+                            <div class="toggle__control-inner"></div>
+                          </div>
+                          <p class="toggle__label">On</p>
+                        </div>
+                      </label>
+                
+                      <label class="toggle">
+                        <input type="checkbox" class="toggle__input" disabled />
+                        <div class="toggle__state">
+                          <div class="toggle__control">
+                            <div class="toggle__control-inner"></div>
+                          </div>
+                          <p class="toggle__label">Disabled</p>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>              </div>
+            </div>
+<div class="tabs">
+  <input type="radio" class="tabs__input" name="tabs" id="tab1" checked />
+  <input type="radio" class="tabs__input" name="tabs" id="tab2"  />
+
+  <nav class="tabs__nav">
+    <div class="container container_inner-page-content">
+      <ul class="tabs__menu">
+
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab1">HTML</label>
+        </li>
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab2">CSS</label>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <div class="tabs__divider"></div>
+  <section>
+    <div class="container container_inner-page-content">
+      <div class="tabs__tab tabs__tab-1">
+        <pre class="tabs__pre"><code class="tabs__code html">
+&lt;div style&#x3D;&quot;display: flex; flex-direction: column; gap:16px&quot;&gt;
+  &lt;div style&#x3D;&quot;display: grid; 
+grid-template-columns: repeat(2, auto);
+grid-template-rows: repeat(2, 1fr);
+ gap: 16px&quot;&gt;
+    &lt;div class&#x3D;&quot;input&quot;&gt;
+      &lt;label class&#x3D;&quot;input__label&quot; for&#x3D;&quot;default&quot;&gt;Label&lt;/label&gt;
+      &lt;div class&#x3D;&quot;input__wrapper&quot;&gt;
+        &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;default&quot; class&#x3D;&quot;input__control&quot; placeholder&#x3D;&quot;Placeholder&quot; /&gt;
+        &lt;svg class&#x3D;&quot;input__icon input__icon_success&quot; width&#x3D;&quot;24&quot; height&#x3D;&quot;24&quot;&gt;
+          &lt;use href&#x3D;&quot;./assets/images/icons.svg#success&quot; /&gt;
+        &lt;/svg&gt;
+        &lt;svg class&#x3D;&quot;input__icon input__icon_error&quot; width&#x3D;&quot;24&quot; height&#x3D;&quot;24&quot;&gt;
+          &lt;use href&#x3D;&quot;./assets/images/icons.svg#error&quot; /&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;input input_success&quot;&gt;
+      &lt;label class&#x3D;&quot;input__label&quot; for&#x3D;&quot;success&quot;&gt;Success&lt;/label&gt;
+      &lt;div class&#x3D;&quot;input__wrapper&quot;&gt;
+        &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;input__control&quot; placeholder&#x3D;&quot;Placeholder&quot; value&#x3D;&quot;Success&quot; id&#x3D;&quot;success&quot; /&gt;
+        &lt;svg class&#x3D;&quot;input__icon input__icon_success&quot; width&#x3D;&quot;24&quot; height&#x3D;&quot;24&quot;&gt;
+          &lt;use href&#x3D;&quot;./assets/images/icons.svg#success&quot; /&gt;
+        &lt;/svg&gt;
+        &lt;svg class&#x3D;&quot;input__icon input__icon_error&quot; width&#x3D;&quot;24&quot; height&#x3D;&quot;24&quot;&gt;
+          &lt;use href&#x3D;&quot;./assets/images/icons.svg#error&quot; /&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;input input_invalid&quot;&gt;
+      &lt;label class&#x3D;&quot;input__label&quot; for&#x3D;&quot;error&quot;&gt;Error&lt;/label&gt;
+      &lt;div class&#x3D;&quot;input__wrapper&quot;&gt;
+        &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;input__control&quot; placeholder&#x3D;&quot;Placeholder&quot; value&#x3D;&quot;Error&quot; id&#x3D;&quot;error&quot; /&gt;
+        &lt;svg class&#x3D;&quot;input__icon input__icon_success&quot; width&#x3D;&quot;24&quot; height&#x3D;&quot;24&quot;&gt;
+          &lt;use href&#x3D;&quot;./assets/images/icons.svg#success&quot; /&gt;
+        &lt;/svg&gt;
+        &lt;svg class&#x3D;&quot;input__icon input__icon_error&quot; width&#x3D;&quot;24&quot; height&#x3D;&quot;24&quot;&gt;
+          &lt;use href&#x3D;&quot;./assets/images/icons.svg#error&quot; /&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;input&quot;&gt;
+      &lt;label class&#x3D;&quot;input__label&quot; for&#x3D;&quot;disabled&quot;&gt;Disabled&lt;/label&gt;
+      &lt;div class&#x3D;&quot;input__wrapper&quot;&gt;
+        &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;input__control&quot; placeholder&#x3D;&quot;Placeholder&quot; value&#x3D;&quot;Disabled&quot; disabled id&#x3D;&quot;disabled&quot; /&gt;
+        &lt;svg class&#x3D;&quot;input__icon input__icon_success&quot; width&#x3D;&quot;24&quot; height&#x3D;&quot;24&quot;&gt;
+          &lt;use href&#x3D;&quot;./assets/images/icons.svg#success&quot; /&gt;
+        &lt;/svg&gt;
+        &lt;svg class&#x3D;&quot;input__icon input__icon_error&quot; width&#x3D;&quot;24&quot; height&#x3D;&quot;24&quot;&gt;
+          &lt;use href&#x3D;&quot;./assets/images/icons.svg#error&quot; /&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style&#x3D;&quot;display: grid; 
+grid-template-columns: repeat(3, auto) ; gap: 16px&quot;&gt;
+    &lt;div style&#x3D;&quot;display: flex; flex-direction: column; gap: 20px&quot;&gt;
+      &lt;label class&#x3D;&quot;checkbox &quot;&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;checkbox__input&quot; /&gt;
+        &lt;div class&#x3D;&quot;checkbox__state&quot;&gt;
+          &lt;div class&#x3D;&quot;checkbox__control&quot;&gt;
+            &lt;svg class&#x3D;&quot;checkbox__icon&quot; width&#x3D;&quot;15&quot; height&#x3D;&quot;13&quot;&gt;
+              &lt;use href&#x3D;&quot;./assets/images/icons.svg#check&quot; /&gt;
+            &lt;/svg&gt;
+          &lt;/div&gt;
+          &lt;p class&#x3D;&quot;checkbox__label&quot;&gt;Default&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;checkbox &quot;&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;checkbox__input&quot; checked /&gt;
+        &lt;div class&#x3D;&quot;checkbox__state&quot;&gt;
+          &lt;div class&#x3D;&quot;checkbox__control&quot;&gt;
+            &lt;svg class&#x3D;&quot;checkbox__icon&quot; width&#x3D;&quot;15&quot; height&#x3D;&quot;13&quot;&gt;
+              &lt;use href&#x3D;&quot;./assets/images/icons.svg#check&quot; /&gt;
+            &lt;/svg&gt;
+          &lt;/div&gt;
+          &lt;p class&#x3D;&quot;checkbox__label&quot;&gt;Checked&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;checkbox&quot;&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;checkbox__input&quot; disabled /&gt;
+        &lt;div class&#x3D;&quot;checkbox__state&quot;&gt;
+          &lt;div class&#x3D;&quot;checkbox__control&quot;&gt;
+            &lt;svg class&#x3D;&quot;checkbox__icon&quot; width&#x3D;&quot;15&quot; height&#x3D;&quot;13&quot;&gt;
+              &lt;use href&#x3D;&quot;./assets/images/icons.svg#check&quot; /&gt;
+            &lt;/svg&gt;
+          &lt;/div&gt;
+          &lt;p class&#x3D;&quot;checkbox__label&quot;&gt;Disabled&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div style&#x3D;&quot;display: flex; flex-direction: column; gap: 20px&quot;&gt;
+      &lt;label class&#x3D;&quot;radio &quot;&gt;
+        &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;radio&quot; id&#x3D;&quot;1&quot; class&#x3D;&quot;radio__input&quot; /&gt;
+        &lt;div class&#x3D;&quot;radio__state&quot;&gt;
+          &lt;div class&#x3D;&quot;radio__control&quot;&gt;
+            &lt;div class&#x3D;&quot;radio__control-inner&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;p class&#x3D;&quot;radio__label&quot;&gt;Default&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;radio &quot;&gt;
+        &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;radio&quot; id&#x3D;&quot;2&quot; class&#x3D;&quot;radio__input&quot; checked /&gt;
+        &lt;div class&#x3D;&quot;radio__state&quot;&gt;
+          &lt;div class&#x3D;&quot;radio__control&quot;&gt;
+            &lt;div class&#x3D;&quot;radio__control-inner&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;p class&#x3D;&quot;radio__label&quot;&gt;Selected&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;radio&quot;&gt;
+        &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;radio&quot; id&#x3D;&quot;3&quot; class&#x3D;&quot;radio__input&quot; disabled /&gt;
+        &lt;div class&#x3D;&quot;radio__state&quot;&gt;
+          &lt;div class&#x3D;&quot;radio__control&quot;&gt;
+            &lt;div class&#x3D;&quot;radio__control-inner&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;p class&#x3D;&quot;radio__label&quot;&gt;Disabled&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div style&#x3D;&quot;display: flex; flex-direction: column; gap: 20px&quot;&gt;
+      &lt;label class&#x3D;&quot;toggle&quot;&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;toggle__input&quot; /&gt;
+        &lt;div class&#x3D;&quot;toggle__state&quot;&gt;
+          &lt;div class&#x3D;&quot;toggle__control&quot;&gt;
+            &lt;div class&#x3D;&quot;toggle__control-inner&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;p class&#x3D;&quot;toggle__label&quot;&gt;Off&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/label&gt;
+
+      &lt;label class&#x3D;&quot;toggle&quot;&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;toggle__input&quot; checked /&gt;
+        &lt;div class&#x3D;&quot;toggle__state&quot;&gt;
+          &lt;div class&#x3D;&quot;toggle__control&quot;&gt;
+            &lt;div class&#x3D;&quot;toggle__control-inner&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;p class&#x3D;&quot;toggle__label&quot;&gt;On&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/label&gt;
+
+      &lt;label class&#x3D;&quot;toggle&quot;&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;toggle__input&quot; disabled /&gt;
+        &lt;div class&#x3D;&quot;toggle__state&quot;&gt;
+          &lt;div class&#x3D;&quot;toggle__control&quot;&gt;
+            &lt;div class&#x3D;&quot;toggle__control-inner&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;p class&#x3D;&quot;toggle__label&quot;&gt;Disabled&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container container_inner-page-content">
+      <div class="tabs__tab tabs__tab-2">
+        <pre class="tabs__pre"><code class="tabs__code css">
+.checkbox {
+  display: inline-block;
+  position: relative;
+}
+
+.checkbox__input {
+  position: absolute;
+  opacity: 0;
+  left: -100vw;
+}
+
+.checkbox__state {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkbox__control {
+  width: 28px;
+  height: 28px;
+  box-sizing: border-box;
+  background: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox__label {
+  font-family: &#x27;Inter&#x27;, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+  margin: 0;
+}
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__control {
+  background: var(--blue-2);
+  border-color: var(--blue-2);
+}
+
+.checkbox__input:focus ~ .checkbox__state .checkbox__label {
+  text-decoration: underline;
+}
+
+.checkbox__input:disabled ~ .checkbox__state .checkbox__control {
+  background: var(--grey-2);
+}
+
+.checkbox__input:disabled ~ .checkbox__state .checkbox__label {
+  color: var(--grey-2);
+}
+ .radio {
+  display: inline-block;
+  position: relative;
+}
+
+.radio__input {
+  position: absolute;
+  opacity: 0;
+  left: -100vw;
+}
+
+.radio__state {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.radio__control {
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  background: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio__label {
+  font-family: &#x27;Inter&#x27;, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+  margin: 0;
+}
+
+.radio__input:checked ~ .radio__state .radio__control {
+  border: 2px solid var(--blue-2);
+}
+
+.radio__input:checked ~ .radio__state .radio__control-inner {
+  width: 18px;
+  height: 18px;
+  background: var(--blue-2);
+  border-radius: 50%;
+}
+
+.radio__input:focus ~ .radio__state .radio__label {
+  text-decoration: underline;
+}
+
+.radio__input:disabled ~ .radio__state .radio__control {
+  background: var(--grey-2);
+}
+
+.radio__input:disabled ~ .radio__state .radio__label {
+  color: var(--grey-2);
+}
+ .toogle {
+  display: inline-block;
+  position: relative;
+}
+
+.toggle__input {
+  position: absolute;
+  opacity: 90;
+  left: -100vw;
+}
+
+.toggle__state {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggle__control {
+  box-sizing: border-box;
+  width: 52px;
+  height: 28px;
+  background: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 14px;
+  padding: 1px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.toggle__control-inner {
+  width: 24px;
+  height: 24px;
+  background: var(--grey-2);
+  border-radius: 50%;
+}
+
+.toggle__label {
+  font-family: &#x27;Inter&#x27;, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+  margin: 0;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__control {
+  background: var(--blue-2);
+  border-color: var(--blue-2);
+  justify-content: flex-end;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__control-inner {
+  background: var(--white);
+}
+
+.toggle__input:focus ~ .toggle__state .toggle__label {
+  text-decoration: underline;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__control {
+  background: var(--grey-2);
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__control-inner {
+  background: var(--grey-3);
+}
+ .input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: &#x27;Inter&#x27;, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.input__label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-3);
+}
+
+.input__wrapper {
+  position: relative;
+}
+
+.input__control {
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--grey-4);
+  padding: 17px 24px 13px;
+}
+
+.input__control::placeholder {
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--grey-2);
+}
+
+.input:focus .input__control {
+  border-color: var(--blue-2);
+  box-shadow: 0px 1px 1px var(--blue-6);
+}
+
+.input_invalid .input__control {
+  padding-right: 56px;
+  border-color: var(--red);
+  box-shadow: 0px 1px 1px var(--red-3);
+}
+
+.input_success .input__control {
+  padding-right: 56px;
+}
+
+.input__icon {
+  display: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.input_success .input__icon_success,
+.input_invalid .input__icon_error {
+  display: block;
+}
+
+.input__control:disabled {
+  color: var(--grey-2);
+}
+</code></pre>
+      </div>
+    </div>
+  </section>
+</div>          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer_inner-page">
+      <div class="container">
+        <a class="footer__link" href="#"> Reusable component library </a>
+      </div>
+    </footer>
+  </div>
+  <script>hljs.highlightAll();</script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+.tabs {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+
+  &__nav {
+    background: var(--white);
+    overflow: hidden;
+    &_preview {
+      width: 100vw;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    overflow-x: scroll;
+    height: 29px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__input {
+    position: absolute;
+    left: -100vw;
+    opacity: 0;
+  }
+
+  &__menu-item {
+    margin-right: 24px;
+    @include respond(desktop) {
+      margin-right: 40px;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__control {
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    transition: 250ms all;
+    white-space: nowrap;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+  }
+
+  &__control::after {
+    content: '';
+    cursor: pointer;
+    display: block;
+    height: 5px;
+    background-color: var(--black);
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  &__control:hover {
+    color: var(--black);
+  }
+
+  &__control:hover::after {
+    transform: scaleX(1);
+  }
+
+  #tab1:checked ~ &__nav label[for='tab1'],
+  #tab2:checked ~ &__nav label[for='tab2'],
+  #tab3:checked ~ &__nav label[for='tab3'],
+  #tab4:checked ~ &__nav label[for='tab4'] {
+    color: var(--black);
+  }
+
+  #tab1:checked ~ &__nav label[for='tab1']::after,
+  #tab2:checked ~ &__nav label[for='tab2']::after,
+  #tab3:checked ~ &__nav label[for='tab3']::after,
+  #tab4:checked ~ &__nav label[for='tab4']::after {
+    transform: scaleX(1);
+  }
+
+  &__tab {
+    display: none;
+    width: 100vw;
+  }
+
+  #tab1:checked ~ section &__tab-1,
+  #tab2:checked ~ section &__tab-2,
+  #tab3:checked ~ section &__tab-3,
+  #tab4:checked ~ section &__tab-4 {
+    display: block;
+  }
+
+  &__divider {
+    width: 100%;
+    height: 1px;
+    background: var(--grey-2);
+  }
+
+  &__pre {
+    overflow-x: auto;
+    margin: 0;
+    padding-top: 22px;
+    padding-bottom: 15px;
+
+    @include respond(desktop) {
+      padding: 50px 0;
+    }
+  }
+
+  &__code {
+    padding: 0 !important;
+    background-color: transparent !important;
+  }
+}
