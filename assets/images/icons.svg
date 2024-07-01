@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <symbol id="arrow">
+    <symbol id="arrow" viewBox="0 0 26 26">
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
@@ -30,7 +30,7 @@
       />
     </symbol>
 
-    <symbol id="close">
+    <symbol id="close"  viewBox="0 0 24 24">
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"

@@ -11,32 +11,42 @@ const innerPages = JSON.parse(
   readFileSync('./data/inner-page/data.json', 'utf8'),
 );
 
+const previewTabs = JSON.parse(
+  readFileSync('./data/preview/data.json', 'utf8'),
+);
+
 const components = innerPages.map((item) => item.url);
 
 pageTypes.forEach((pageType) => {
   components.forEach((component) => {
-    gulp.task(`${pageType}-${component}`, function () {
-      let data = {};
-      if (['histogram', 'calendar'].includes(component)) {
-        data = JSON.parse(
-          readFileSync(`./data/${component}/data.json`, 'utf8'),
-        );
-      }
-      data[pageType] = pageType;
-      const options = {};
-      return gulp
-        .src(`./views/template/${component}.hbs`)
-        .pipe(handlebars(data, options))
-        .pipe(rename(`${pageType}-${component}.hbs`))
-        .pipe(gulp.dest('./views/partials'));
+    // костыль для selected радио-кнопок на превью
+    const suffixes =
+      component === 'custom-form-elements' && pageType === 'preview'
+        ? ['-1', '-2', '-3']
+        : [''];
+    suffixes.forEach((suffix) => {
+      gulp.task(`${pageType}-${component}${suffix}`, function () {
+        let data = {};
+        if (['histogram', 'calendar'].includes(component)) {
+          data = JSON.parse(
+            readFileSync(`./data/${component}/data.json`, 'utf8'),
+          );
+        }
+        data[pageType] = pageType;
+        data['suffix'] = suffix;
+        const options = {};
+        return gulp
+          .src(`./views/template/${component}.hbs`)
+          .pipe(handlebars(data, options))
+          .pipe(rename(`${pageType}-${component}${suffix}.hbs`))
+          .pipe(gulp.dest('./views/partials'));
+      });
     });
   });
 });
 
 gulp.task('preview-tabs', function () {
-  const data = JSON.parse(readFileSync('./data/preview/data.json', 'utf8'))[
-    'tabs'
-  ];
+  const data = previewTabs['tabs'];
   const options = {
     batch: ['./views/partials'],
   };
@@ -116,7 +126,15 @@ innerPages.forEach((item) => {
   });
 });
 
-const previewComponentsTasks = components.map((item) => `preview-${item}`);
+const previewComponentsTasks = [];
+components.forEach((component) => {
+  // костыль для радио-кнопок на превью
+  const suffixes =
+    component === 'custom-form-elements' ? ['-1', '-2', '-3'] : [''];
+  suffixes.forEach((suffix) => {
+    previewComponentsTasks.push(`preview-${component}${suffix}`);
+  });
+});
 
 gulp.task(
   'default',

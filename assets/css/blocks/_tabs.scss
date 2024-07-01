@@ -1,19 +1,23 @@
 .tabs {
   position: relative;
+  width: 100%;
+  max-width: 100%;
 
   &__nav {
     background: var(--white);
-    overflow-x: hidden;
+    overflow: hidden;
+    &_preview {
+      width: 100vw;
+    }
   }
 
   &__menu {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 40px;
-    padding: 0 0 5px;
-    margin: 0;
-    overflow-x: visible;
+    overflow-x: scroll;
+    height: 29px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__input {
@@ -23,7 +27,13 @@
   }
 
   &__menu-item {
-    list-style-type: none;
+    margin-right: 24px;
+    @include respond(desktop) {
+      margin-right: 40px;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 
   &__control {
@@ -77,6 +87,7 @@
 
   &__tab {
     display: none;
+    width: 100vw;
   }
 
   #tab1:checked ~ section &__tab-1,

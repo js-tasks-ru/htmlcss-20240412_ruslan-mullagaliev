@@ -9,6 +9,10 @@
   &_preview {
     font-size: 8px;
     line-height: 12px;
+    @include respond(desktop) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   &__item {
@@ -22,6 +26,11 @@
     margin-bottom: 4px;
     border-radius: 4px;
     padding: 12px 16px;
+    @include respond(desktop) {
+      margin-bottom: 8px;
+      border-radius: 8px;
+      padding: 24px 32px;
+    }
   }
 
   &__item[open] {
@@ -30,6 +39,9 @@
 
   &_preview &__item[open] {
     padding-bottom: 16px;
+    @include respond(desktop) {
+      padding-bottom: 32px;
+    }
   }
 
   &__item:last-child {
@@ -64,6 +76,20 @@
     top: 0;
     right: 0;
     cursor: pointer;
+  }
+
+  &__arrow svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  &_preview &__arrow svg {
+    width: 13px;
+    height: 13px;
+    @include respond(desktop) {
+      width: 26px;
+      height: 26px;
+    }
   }
 
   &__item[open] &__arrow {
