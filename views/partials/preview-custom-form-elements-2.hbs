@@ -1,0 +1,49 @@
+<div style="display: flex; flex-direction: column; gap:16px">
+  <div style="display: grid; 
+grid-template-columns: repeat(2, auto); gap: 16px">
+    <div style="display: flex; flex-direction: column; gap: 20px">
+      <label class="checkbox checkbox_preview">
+        <input type="checkbox" class="checkbox__input" />
+        <div class="checkbox__state">
+          <div class="checkbox__control">
+            <svg class="checkbox__icon" width="15" height="13">
+              <use href="./assets/images/icons.svg#check" />
+            </svg>
+          </div>
+          <p class="checkbox__label">Default</p>
+        </div>
+      </label>
+      <label class="checkbox checkbox_preview">
+        <input type="checkbox" class="checkbox__input" checked />
+        <div class="checkbox__state">
+          <div class="checkbox__control">
+            <svg class="checkbox__icon" width="15" height="13">
+              <use href="./assets/images/icons.svg#check" />
+            </svg>
+          </div>
+          <p class="checkbox__label">Checked</p>
+        </div>
+      </label>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 20px">
+      <label class="radio radio_preview">
+        <input type="radio" name="radio-2" id="1" class="radio__input" />
+        <div class="radio__state">
+          <div class="radio__control">
+            <div class="radio__control-inner"></div>
+          </div>
+          <p class="radio__label">Default</p>
+        </div>
+      </label>
+      <label class="radio radio_preview">
+        <input type="radio" name="radio-2" id="2" class="radio__input" checked />
+        <div class="radio__state">
+          <div class="radio__control">
+            <div class="radio__control-inner"></div>
+          </div>
+          <p class="radio__label">Selected</p>
+        </div>
+      </label>
+    </div>
+  </div>
+</div>

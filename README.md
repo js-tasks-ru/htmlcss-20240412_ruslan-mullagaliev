@@ -6,4 +6,10 @@ https://learn.javascript.ru/courses/htmlcss
 
 # Собрать проект:
 
-`npx gulp`
+- `npx postcss assets/css/main.scss -o build/style.css` - собрать стили
+- `npx gulp` - собрать index.html
+- `npx gulp inner-pages` - собрать страницы компонентов
+
+# Посмотреть собранный проект на github-pages:
+
+[https://ruslannm.github.io/htmlcss-20240412/](https://ruslannm.github.io/htmlcss-20240412/)

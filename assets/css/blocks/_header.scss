@@ -1,0 +1,67 @@
+.header {
+  background-color: var(--white);
+  padding: 16px 0 32px;
+
+  @include respond(desktop) {
+    padding: 24px 0 40px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    @include respond(desktop) {
+      justify-content: start;
+    }
+  }
+
+  &__burger-button {
+    position: absolute;
+    display: inline-flex;
+    left: 0;
+    right: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+
+    @include respond(desktop) {
+      display: none;
+    }
+  }
+
+  &_inner-page {
+    background-color: var(--grey-5);
+    padding: 16px 0;
+  }
+
+  &__logo {
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--grey-4);
+    margin-top: 48px;
+    margin-bottom: 0;
+
+    @include respond(desktop) {
+      font-weight: 500;
+      font-size: 50px;
+      line-height: 64px;
+      color: var(--black);
+      margin-top: 38px;
+    }
+  }
+
+  &__title_inner-page {
+    display: none;
+  }
+}

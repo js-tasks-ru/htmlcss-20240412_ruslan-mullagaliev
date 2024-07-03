@@ -1,0 +1,30 @@
+<div class="tabs">
+  {{#each this}}
+  <input type="radio" class="tabs__input" name="tabs" id="tab{{controlNumber}}" {{#if checked}}checked{{/if}} />
+  {{/each}}
+
+  <nav class="tabs__nav">
+    <div class="container container_inner-page-content">
+      <ul class="tabs__menu">
+
+        {{#each this}}
+        <li class="tabs__menu-item">
+          <label class="tabs__control" for="tab{{controlNumber}}">{{controlName}}</label>
+        </li>
+        {{/each}}
+
+      </ul>
+    </div>
+  </nav>
+  <div class="tabs__divider"></div>
+  {{#each this}}
+  <section>
+    <div class="container container_inner-page-content">
+      <div class="tabs__tab tabs__tab-{{controlNumber}}">
+        <pre class="tabs__pre"><code class="tabs__code {{language}}">
+{{code}}</code></pre>
+      </div>
+    </div>
+  </section>
+  {{/each}}
+</div>

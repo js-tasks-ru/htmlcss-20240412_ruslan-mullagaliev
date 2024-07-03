@@ -1,0 +1,318 @@
+[
+  {
+    "name": "Button",
+    "url": "button",
+    "image": "inner-page-button",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/inner-page-button.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": "03-lection1/01-button/button.css"
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button", "active": true },
+      { "name": "Accordion", "path": "accordion" },
+      { "name": "Histogram", "path": "histogram" },
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      },
+      { "name": "Avatar", "path": "avatar" }
+    ]
+  },
+  {
+    "name": "Accordion",
+    "url": "accordion",
+    "image": "inner-page-accordion",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/inner-page-accordion.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": "03-lection1/02-accordion/accordion.css"
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button" },
+      { "name": "Accordion", "path": "accordion", "active": true },
+      { "name": "Histogram", "path": "histogram" },
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      },
+      { "name": "Avatar", "path": "avatar" }
+    ]
+  },
+  {
+    "name": "Histogram",
+    "url": "histogram",
+    "image": "inner-page-histogram",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/inner-page-histogram.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": "04-lection2/01-histogram/histogram.css"
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button" },
+      { "name": "Accordion", "path": "accordion" },
+      { "name": "Histogram", "path": "histogram", "active": true },
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      },
+      { "name": "Avatar", "path": "avatar" }
+    ]
+  },
+  {
+    "name": "Skeleton",
+    "url": "skeleton",
+    "image": "inner-page-skeleton",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/inner-page-skeleton.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": "04-lection2/02-skeleton/skeleton.css"
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button" },
+      { "name": "Accordion", "path": "accordion" },
+      { "name": "Histogram", "path": "histogram" },
+      { "name": "Skeleton", "path": "skeleton", "active": true },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      },
+      { "name": "Avatar", "path": "avatar" }
+    ]
+  },
+  {
+    "name": "Tooltip",
+    "url": "tooltip",
+    "image": "inner-page-tooltip",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/inner-page-tooltip.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": "05-lection3/01-tooltip/tooltip.css"
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button" },
+      { "name": "Accordion", "path": "accordion" },
+      { "name": "Histogram", "path": "histogram" },
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip", "active": true },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      },
+      { "name": "Avatar", "path": "avatar" }
+    ]
+  },
+  {
+    "name": "Modal",
+    "url": "modal",
+    "image": "inner-page-modal",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/inner-page-modal.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": "05-lection3/02-modal/modal.css"
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button" },
+      { "name": "Accordion", "path": "accordion" },
+      { "name": "Histogram", "path": "histogram" },
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal", "active": true },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      },
+      { "name": "Avatar", "path": "avatar" }
+    ]
+  },
+  {
+    "name": "Calendar",
+    "url": "calendar",
+    "image": "inner-page-calendar",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/inner-page-calendar.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": "05-lection3/03-calendar/calendar.css"
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button" },
+      { "name": "Accordion", "path": "accordion" },
+      { "name": "Histogram", "path": "histogram" },
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar", "active": true },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      },
+      { "name": "Avatar", "path": "avatar" }
+    ]
+  },
+  {
+    "name": "Custom form elements",
+    "url": "custom-form-elements",
+    "image": "inner-page-custom-form-elements",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/inner-page-custom-form-elements.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": [
+          "07-lection5/01-checkbox/checkbox.css",
+          "07-lection5/02-radio/radio.css",
+          "07-lection5/03-toggler/toggler.css",
+          "07-lection5/04-input/input.css"
+        ]
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button" },
+      { "name": "Accordion", "path": "accordion" },
+      { "name": "Histogram", "path": "histogram" },
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements",
+        "active": true
+      },
+      { "name": "Avatar", "path": "avatar" }
+    ]
+  },
+  {
+    "name": "Avatar",
+    "url": "avatar",
+    "image": "inner-page-avatar",
+    "tabs": [
+      {
+        "controlNumber": 1,
+        "controlName": "HTML",
+        "checked": true,
+        "language": "html",
+        "codePath": "views/partials/inner-page-avatar.hbs"
+      },
+      {
+        "controlNumber": 2,
+        "controlName": "CSS",
+        "language": "css",
+        "codePath": "06-lection4/01-avatar/avatar.css"
+      }
+    ],
+    "sidebar": [
+      { "name": "Button", "path": "button" },
+      { "name": "Accordion", "path": "accordion" },
+      { "name": "Histogram", "path": "histogram" },
+      { "name": "Skeleton", "path": "skeleton" },
+      { "name": "Tooltip", "path": "tooltip" },
+      { "name": "Modal", "path": "modal" },
+      { "name": "Calendar", "path": "calendar" },
+      {
+        "name": "Custom form elements",
+        "path": "custom-form-elements"
+      },
+      {
+        "name": "Avatar",
+        "path": "avatar",
+        "active": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+.inner-page {
+  background: var(--white);
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  color: var(--grey-4);
+  overflow-x: hidden;
+
+  &_burger-menu {
+    background: var(--grey-5);
+  }
+
+  @include respond(desktop) {
+    background: var(--grey-5);
+    padding: 36px 0;
+  }
+
+  &__wrapper {
+    height: 100%;
+
+    @include respond(desktop) {
+      display: grid;
+      grid-template-columns: 285px 1fr;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    background: var(--white);
+    padding: 32px 0;
+    overflow-x: hidden;
+
+    @include respond(desktop) {
+      box-shadow: 0 2px 4px var(--black-2);
+      border-radius: 12px;
+      padding: 32px 0;
+    }
+  }
+
+  &__content-title {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 20px;
+
+    @include respond(desktop) {
+      font-size: 28px;
+      line-height: 38px;
+      margin: 0 0 24px;
+    }
+  }
+
+  &__content-component {
+    margin: 0 0 20px;
+
+    @include respond(desktop) {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__preview {
+    width: 300px;
+    height: 157px;
+  }
+}
