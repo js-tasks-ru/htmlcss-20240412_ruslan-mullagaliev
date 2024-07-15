@@ -18,7 +18,7 @@
     box-sizing: border-box;
     width: 52px;
     height: 28px;
-    background: var(--white);
+    background: var(--bg-primary);
     border: 1px solid var(--grey-2);
     border-radius: 14px;
     padding: 1px;
@@ -40,7 +40,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: var(--grey-4);
+    color: var(--text-muted);
     margin: 0;
   }
 
@@ -59,8 +59,13 @@
   }
 
   &__input:disabled ~ &__state &__control {
-    background: var(--grey-2);
+    background: var(--bg-disabled);
   }
+
+  &__input:disabled ~ &__state &__label {
+    color: var(--text-disabled);
+  }
+
 
   &__input:disabled ~ &__state &__control-inner {
     background: var(--grey-3);

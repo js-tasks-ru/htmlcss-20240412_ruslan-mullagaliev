@@ -81,6 +81,9 @@
   &__arrow svg {
     width: 26px;
     height: 26px;
+    [fill='var(--text-primary)'] {
+      fill: var(--text-primary);
+    }
   }
 
   &_preview &__arrow svg {

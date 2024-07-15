@@ -7,6 +7,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script defer src="../assets/js/burger-menu.js"></script>
   <script defer src="../assets/js/modal.js"></script>
+  <script defer src="../assets/js/theme-changer.js"></script>
   <link rel="stylesheet" href="../build/style.css" />
   <title>Skeleton</title>
 </head>
@@ -17,7 +18,7 @@
       <div class="container">
         <div class="header__inner">
           <button class="header__burger-button" id="burger-menu-open">
-            <svg width="24" height="24">
+            <svg>
               <use href="../assets/images/icons.svg#menu" />
             </svg>
           </button>
@@ -26,6 +27,22 @@
             <div class="logo__circle"></div>
             <div class="logo__triangle"></div>
           </a>
+          <div class="header__theme-changer">
+            <label class="toggle theme-changer">
+              <input type="checkbox" class="toggle__input" id="theme-changer" />
+              <svg class="theme-changer__icon">
+                <use href="../assets/images/icons.svg#sun" />
+              </svg>
+              <div class="toggle__state">
+                <div class="toggle__control">
+                  <div class="toggle__control-inner"></div>
+                </div>
+              </div>
+              <svg class="theme-changer__icon">
+                <use href="../assets/images/icons.svg#moon" />
+              </svg>
+            </label>
+          </div>
         </div>
         <h1 class="header__title header__title_inner-page">Reusable component library</h1>
       </div>
@@ -35,7 +52,7 @@
           <div class="container">
             <div class="header__inner">
               <button class="burger-menu__close" id="burger-menu-close">
-                <svg width="24" height="24">
+                <svg>
                   <use href="../assets/images/icons.svg#close" />
                 </svg>
               </button>

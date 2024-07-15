@@ -1,11 +1,10 @@
 .footer {
   display: none;
-
   @include respond(desktop) {
     display: block;
     padding: 71px 0 136px;
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     font-family: Inter, sans-serif;
     font-style: normal;
     text-align: center;
@@ -14,7 +13,7 @@
 
   &_inner-page {
     padding: 56px 0;
-    background: var(--grey-5);
+    background: var(--bg-secondary);
   }
 
   &__title {

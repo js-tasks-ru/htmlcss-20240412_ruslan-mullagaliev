@@ -1,22 +1,20 @@
 .typography {
   font-family: Inter, sans-serif;
   font-style: normal;
-  color: var(--black);
+  font-weight: 400;
+  color: var(--text-primary);
   margin: 0;
+  font-size: 8px;
+  line-height: 12px;
+  @include respond(desktop) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   &_p {
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 12px;
-    color: var(--grey-4);
-
-    &-disabled {
-      color: var(--grey-2);
-    }
-
-    @include respond(desktop) {
-      font-size: 16px;
-      line-height: 24px;
+    color: var(--text-muted);
+    &[data-disabled] {
+      opacity: 0.5;
     }
   }
 

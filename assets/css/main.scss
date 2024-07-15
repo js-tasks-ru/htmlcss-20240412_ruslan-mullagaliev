@@ -37,3 +37,14 @@ body {
   height: 100%;
   font-size: 16px;
 }
+
+html[data-theme-dark] {
+  --bg-primary: var(--black);
+  --bg-secondary: var(--grey-4); //+
+  --text-primary: var(--white);
+  --text-secondary: var(--grey-3);
+  --text-muted: var(--grey-3); /* label. modal*/
+  --text-info: var(--blue-5); /* modal calendar title*/
+  --text-disabled: var(--grey-4);
+  --bg-disabled: var(--grey-4);
+}

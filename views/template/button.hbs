@@ -11,7 +11,7 @@
   {{#unless preview}}<button class="button button_secondary">Secondary</button>{{/unless}}
   <button class="button button_alternate {{#if preview}} button_preview{{/if}}">Alternate</button>
   {{#unless preview}}<div></div>{{/unless}}
-  {{#unless preview}}<p class="typography typography_p-disabled typography_upper">disabled</p>{{/unless}}
+  {{#unless preview}}<p class="typography typography_p typography_upper" data-disabled>disabled</p>{{/unless}}
   <button class="button button_primary {{#if preview}} button_preview{{/if}}" disabled>Primary</button>
   {{#unless preview}}<button class="button button_secondary" disabled>Secondary</button>{{/unless}}
   <button class="button button_alternate {{#if preview}} button_preview{{/if}}" disabled>Alternate</button>
