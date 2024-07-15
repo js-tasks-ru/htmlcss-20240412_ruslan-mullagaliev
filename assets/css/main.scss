@@ -40,11 +40,11 @@ body {
 
 html[data-theme-dark] {
   --bg-primary: var(--black);
-  --bg-secondary: var(--grey-4); //+
+  --bg-secondary: var(--grey-4);
   --text-primary: var(--white);
   --text-secondary: var(--grey-3);
-  --text-muted: var(--grey-3); /* label. modal*/
-  --text-info: var(--blue-5); /* modal calendar title*/
+  --text-muted: var(--grey-3);
+  --text-info: var(--blue-5);
   --text-disabled: var(--grey-4);
   --bg-disabled: var(--grey-4);
 }
