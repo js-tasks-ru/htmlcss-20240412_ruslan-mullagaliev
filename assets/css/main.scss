@@ -48,3 +48,13 @@ html[data-theme-dark] {
   --text-disabled: var(--grey-4);
   --bg-disabled: var(--grey-4);
 }
+
+.preload * {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  animation-duration: none !important;
+  -webkit-animation-duration: none !important;
+}
