@@ -26,6 +26,9 @@
   --grey-9: #90a0b7;
   --grey-10: rgb(196 196 196 / 50%);
   --grey-11: rgba(255, 255, 255, 0.46);
+  --grey-12: #6b767b;
+  --grey-13: #647676;
+  --grey-14: #6b767e;
   --error: var(--red);
   --success: var(--blue);
   --primary: var(--blue);
@@ -40,4 +43,7 @@
   --text-info: var(--blue-4);
   --text-disabled: var(--grey-2);
   --bg-disabled: var(--grey-2);
+  --skeleton-1: var(--grey-6);
+  --skeleton-2: var(--grey-7);
+  --skeleton-3: var(--grey-8);
 }

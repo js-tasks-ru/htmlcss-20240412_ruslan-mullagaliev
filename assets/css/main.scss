@@ -47,6 +47,9 @@ html[data-theme-dark] {
   --text-info: var(--blue-5);
   --text-disabled: var(--grey-4);
   --bg-disabled: var(--grey-4);
+  --skeleton-1: var(--grey-12);
+  --skeleton-2: var(--grey-13);
+  --skeleton-3: var(--grey-14);
 }
 
 .preload * {
