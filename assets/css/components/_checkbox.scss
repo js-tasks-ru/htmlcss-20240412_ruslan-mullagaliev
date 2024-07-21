@@ -95,9 +95,14 @@
     opacity: 1;
   }
 
+  &__icon {
+    width: 15px;
+    height: 13px;
+  }
+
   &_preview &__icon {
-    width: 8px;
-    height: 6px;
+    width: 7.5px;
+    height: 6.5px;
     @include respond(desktop) {
       width: 15px;
       height: 13px;

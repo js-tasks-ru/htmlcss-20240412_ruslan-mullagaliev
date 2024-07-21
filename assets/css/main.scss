@@ -40,6 +40,7 @@ body {
 
 html[data-theme-dark] {
   --bg-primary: var(--black);
+  --bg-primary-inversed: var(--white);
   --bg-secondary: var(--grey-4);
   --text-primary: var(--white);
   --text-secondary: var(--grey-3);

@@ -11,7 +11,7 @@
     line-height: 24px;
   }
 
-  &_p {
+  &_text {
     color: var(--text-muted);
     &[data-disabled] {
       opacity: 0.5;
