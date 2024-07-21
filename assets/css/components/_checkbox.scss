@@ -18,7 +18,7 @@
     width: 28px;
     height: 28px;
     box-sizing: border-box;
-    background: var(--white);
+    background: var(--bg-primary);
     border: 1px solid var(--grey-2);
     border-radius: 4px;
     display: flex;
@@ -46,7 +46,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: var(--grey-4);
+    color: var(--text-muted);
     margin: 0;
   }
 
@@ -63,6 +63,7 @@
   &__input:checked ~ &__state &__control {
     background: var(--blue-2);
     border-color: var(--blue-2);
+    animation: pulse 0.25s;
   }
 
   &__input:focus ~ &__state &__label {
@@ -70,10 +71,50 @@
   }
 
   &__input:disabled ~ &__state &__control {
-    background: var(--grey-2);
+    background: var(--bg-disabled);
   }
 
   &__input:disabled ~ &__state &__label {
-    color: var(--grey-2);
+    color: var(--text-disabled);
+  }
+
+  &__icon {
+    opacity: 0;
+    [stroke='var(--bg-primary)'] {
+      stroke: var(--bg-primary);
+    }
+  }
+
+  &__input:disabled ~ &__state &__control &__icon {
+    [stroke='var(--bg-primary)'] {
+      stroke: var(--bg-disabled);
+    }
+  }
+
+  &__input:checked ~ &__state &__control &__icon {
+    opacity: 1;
+  }
+
+  &__icon {
+    width: 15px;
+    height: 13px;
+  }
+
+  &_preview &__icon {
+    width: 7.5px;
+    height: 6.5px;
+    @include respond(desktop) {
+      width: 15px;
+      height: 13px;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--grey-9);
+    }
+    100% {
+      box-shadow: 0 0 0 1em var(--grey-10);
+    }
   }
 }

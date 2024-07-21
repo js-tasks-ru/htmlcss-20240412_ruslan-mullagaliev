@@ -22,20 +22,20 @@
   &__control {
     box-sizing: border-box;
     width: 100%;
-    background: var(--white);
+    background: var(--bg-primary);
     border: 1px solid var(--grey-2);
     border-radius: 8px;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: var(--grey-4);
+    color: var(--text-muted);
     padding: 17px 24px 13px;
   }
 
   &__control::placeholder {
     font-size: 20px;
     line-height: 26px;
-    color: var(--grey-2);
+    color: var(--text-disabled);
   }
 
   &:focus &__control {
@@ -58,6 +58,8 @@
     position: absolute;
     top: 16px;
     right: 16px;
+    width: 24px;
+    height: 24px;
   }
 
   &_success &__icon_success,
@@ -66,6 +68,6 @@
   }
 
   &__control:disabled {
-    color: var(--grey-2);
+    color: var(--text-disabled);
   }
 }

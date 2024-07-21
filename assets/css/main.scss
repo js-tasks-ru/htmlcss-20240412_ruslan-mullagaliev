@@ -26,6 +26,7 @@
 @import url('./components/radio');
 @import url('./components/toggler');
 @import url('./components/avatar');
+@import url('./components/theme-changer');
 
 body {
   font-family: Roboto, sans-serif;
@@ -35,4 +36,29 @@ html,
 body {
   height: 100%;
   font-size: 16px;
+}
+
+html[data-theme-dark] {
+  --bg-primary: var(--black);
+  --bg-primary-inversed: var(--white);
+  --bg-secondary: var(--grey-4);
+  --text-primary: var(--white);
+  --text-secondary: var(--grey-3);
+  --text-muted: var(--grey-3);
+  --text-info: var(--blue-5);
+  --text-disabled: var(--grey-4);
+  --bg-disabled: var(--grey-4);
+  --skeleton-1: var(--grey-12);
+  --skeleton-2: var(--grey-13);
+  --skeleton-3: var(--grey-14);
+}
+
+.preload * {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  animation-duration: none !important;
+  -webkit-animation-duration: none !important;
 }

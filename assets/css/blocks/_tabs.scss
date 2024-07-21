@@ -4,7 +4,7 @@
   max-width: 100%;
 
   &__nav {
-    background: var(--white);
+    background: var(--bg-primary);
     overflow: hidden;
     &_preview {
       width: 100vw;
@@ -55,7 +55,7 @@
     cursor: pointer;
     display: block;
     height: 5px;
-    background-color: var(--black);
+    background-color: var(--text-primary);
     position: absolute;
     width: 100%;
     top: 100%;
@@ -64,7 +64,7 @@
   }
 
   &__control:hover {
-    color: var(--black);
+    color: var(--text-primary);
   }
 
   &__control:hover::after {
@@ -75,7 +75,7 @@
   #tab2:checked ~ &__nav label[for='tab2'],
   #tab3:checked ~ &__nav label[for='tab3'],
   #tab4:checked ~ &__nav label[for='tab4'] {
-    color: var(--black);
+    color: var(--text-primary);
   }
 
   #tab1:checked ~ &__nav label[for='tab1']::after,

@@ -1,0 +1,13 @@
+.theme-changer {
+  display: inline-flex;
+  column-gap: 12px;
+  &__icon {
+    width: 24px;
+    height: 24px;
+    color: var(--grey-3);
+    display: none;
+    @include respond(desktop) {
+      display: block;
+    }
+  }
+}

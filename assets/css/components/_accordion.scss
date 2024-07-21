@@ -51,9 +51,13 @@
   &__summary {
     list-style: none;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__summary-text {
+    color: var(--text-primary);
     margin: 0;
   }
 
@@ -72,23 +76,20 @@
   }
 
   &__arrow {
-    position: absolute;
-    top: 0;
-    right: 0;
     cursor: pointer;
+    width: 24px;
+    height: 24px;
+    [fill='var(--text-primary)'] {
+      fill: var(--text-primary);
+    }
   }
 
-  &__arrow svg {
-    width: 26px;
-    height: 26px;
-  }
-
-  &_preview &__arrow svg {
-    width: 13px;
-    height: 13px;
+  &_preview &__arrow {
+    width: 12px;
+    height: 12px;
     @include respond(desktop) {
-      width: 26px;
-      height: 26px;
+      width: 24px;
+      height: 24px;
     }
   }
 

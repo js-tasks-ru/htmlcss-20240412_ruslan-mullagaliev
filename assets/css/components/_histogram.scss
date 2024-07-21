@@ -21,7 +21,7 @@
   }
 
   &__title {
-    color: var(--black);
+    color: var(--text-primary);
     opacity: 0.8;
     margin: 0;
   }
@@ -33,33 +33,43 @@
   }
 
   &__total {
-    color: var(--black);
+    color: var(--text-primary);
     font-size: 10px;
     line-height: 14px;
-    margin: 0 0 3px;
+    margin-bottom: 20px;
 
     @include respond(desktop) {
       font-size: 20px;
       line-height: 26px;
-      margin: 0 0 6px;
+      margin-bottom: 39px;
     }
   }
 
   &__chart {
     height: 50px;
     display: flex;
-    flex-flow: row nowrap;
-    overflow: hidden;
     justify-content: flex-start;
-    gap: 1px;
     align-items: flex-end;
+    flex-wrap: nowrap;
+    gap: 1px;
+    animation: appear 0.6s ease-out;
+  }
+
+  @keyframes appear {
+    0% {
+      transform: scaleY(0);
+      transform-origin: bottom center;
+    }
+    100% {
+      transform: scaleY(1);
+      transform-origin: bottom center;
+    }
   }
 
   &__chart-item {
-    flex: none;
     background-color: var(--blue-2);
     color: var(--blue-2);
-    flex-basis: 5px;
+    flex: 1 0 auto;
 
     @include respond(desktop) {
       flex-basis: 9px;

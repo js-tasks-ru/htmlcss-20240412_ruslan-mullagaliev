@@ -7,17 +7,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script defer src="../assets/js/burger-menu.js"></script>
   <script defer src="../assets/js/modal.js"></script>
+  <script defer src="../assets/js/theme-changer.js"></script>
+  <script defer src="../assets/js/preload.js"></script>
   <link rel="stylesheet" href="../build/style.css" />
   <title>Accordion</title>
 </head>
 
-<body>
+<body class="preload">
   <div class="page">
     <header class="header header_inner-page">
       <div class="container">
         <div class="header__inner">
           <button class="header__burger-button" id="burger-menu-open">
-            <svg width="24" height="24">
+            <svg>
               <use href="../assets/images/icons.svg#menu" />
             </svg>
           </button>
@@ -26,6 +28,22 @@
             <div class="logo__circle"></div>
             <div class="logo__triangle"></div>
           </a>
+          <div class="header__theme-changer">
+            <label class="toggle theme-changer">
+              <input type="checkbox" class="toggle__input" id="theme-changer" />
+              <svg class="theme-changer__icon">
+                <use href="../assets/images/icons.svg#sun" />
+              </svg>
+              <div class="toggle__state">
+                <div class="toggle__control">
+                  <div class="toggle__control-inner"></div>
+                </div>
+              </div>
+              <svg class="theme-changer__icon">
+                <use href="../assets/images/icons.svg#moon" />
+              </svg>
+            </label>
+          </div>
         </div>
         <h1 class="header__title header__title_inner-page">Reusable component library</h1>
       </div>
@@ -35,7 +53,7 @@
           <div class="container">
             <div class="header__inner">
               <button class="burger-menu__close" id="burger-menu-close">
-                <svg width="24" height="24">
+                <svg>
                   <use href="../assets/images/icons.svg#close" />
                 </svg>
               </button>
@@ -45,10 +63,20 @@
                 <div class="logo__triangle"></div>
               </a>
             </div>
+            <div class="header__theme-changer header__theme-changer_burger-menu">
+              <p>Dark mode</p>
+              <label class="toggle theme-changer">
+                <input type="checkbox" class="toggle__input" id="theme-changer-burger-menu" />
+                <div class="toggle__state">
+                  <div class="toggle__control">
+                    <div class="toggle__control-inner"></div>
+                  </div>
+                </div>
+              </label>
+            </div>
           </div>
         </header>
         <div class="container burger-menu__body">
-          <div class="burger-menu__divider"></div>
           <aside class="sidebar sidebar_burger-menu">
             <h4 class="sidebar__title burger-menu__title ">Components</h4>
             <nav class="sidebar__content burger-menu__content ">
@@ -112,11 +140,9 @@
                   <details class="accordion__item" open >
                     <summary class="accordion__summary">
                       <p class="accordion__summary-text">Accordion item 1</p>
-                      <div class="accordion__arrow">
-                        <svg viewBox="0 0 26 26">
-                          <use href="../assets/images/icons.svg#arrow" />
-                        </svg>
-                      </div>
+                      <svg class="accordion__arrow" viewBox="0 0 26 26">
+                        <use href="../assets/images/icons.svg#arrow" />
+                      </svg>
                     </summary>
                     <p class="accordion__text">
                       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -127,22 +153,18 @@
                   <details class="accordion__item">
                     <summary class="accordion__summary">
                       <p class="accordion__summary-text">Accordion item 2</p>
-                      <div class="accordion__arrow">
-                        <svg viewBox="0 0 26 26">
-                          <use href="../assets/images/icons.svg#arrow" />
-                        </svg>
-                      </div>
+                      <svg class="accordion__arrow" viewBox="0 0 26 26">
+                        <use href="../assets/images/icons.svg#arrow" />
+                      </svg>
                     </summary>
                     <p class="accordion__text">hidden_text</p>
                   </details>
                   <details class="accordion__item">
                     <summary class="accordion__summary">
                       <p class="accordion__summary-text">Accordion item 3</p>
-                      <div class="accordion__arrow">
-                        <svg viewBox="0 0 26 26">
-                          <use href="../assets/images/icons.svg#arrow" />
-                        </svg>
-                      </div>
+                      <svg class="accordion__arrow" viewBox="0 0 26 26">
+                        <use href="../assets/images/icons.svg#arrow" />
+                      </svg>
                     </summary>
                     <p class="accordion__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit
@@ -179,11 +201,9 @@
   &lt;details class&#x3D;&quot;accordion__item&quot; open &gt;
     &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
       &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 1&lt;/p&gt;
-      &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
-        &lt;svg viewBox&#x3D;&quot;0 0 26 26&quot;&gt;
-          &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
-        &lt;/svg&gt;
-      &lt;/div&gt;
+      &lt;svg class&#x3D;&quot;accordion__arrow&quot; viewBox&#x3D;&quot;0 0 26 26&quot;&gt;
+        &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
+      &lt;/svg&gt;
     &lt;/summary&gt;
     &lt;p class&#x3D;&quot;accordion__text&quot;&gt;
       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -194,22 +214,18 @@
   &lt;details class&#x3D;&quot;accordion__item&quot;&gt;
     &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
       &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 2&lt;/p&gt;
-      &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
-        &lt;svg viewBox&#x3D;&quot;0 0 26 26&quot;&gt;
-          &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
-        &lt;/svg&gt;
-      &lt;/div&gt;
+      &lt;svg class&#x3D;&quot;accordion__arrow&quot; viewBox&#x3D;&quot;0 0 26 26&quot;&gt;
+        &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
+      &lt;/svg&gt;
     &lt;/summary&gt;
     &lt;p class&#x3D;&quot;accordion__text&quot;&gt;hidden_text&lt;/p&gt;
   &lt;/details&gt;
   &lt;details class&#x3D;&quot;accordion__item&quot;&gt;
     &lt;summary class&#x3D;&quot;accordion__summary&quot;&gt;
       &lt;p class&#x3D;&quot;accordion__summary-text&quot;&gt;Accordion item 3&lt;/p&gt;
-      &lt;div class&#x3D;&quot;accordion__arrow&quot;&gt;
-        &lt;svg viewBox&#x3D;&quot;0 0 26 26&quot;&gt;
-          &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
-        &lt;/svg&gt;
-      &lt;/div&gt;
+      &lt;svg class&#x3D;&quot;accordion__arrow&quot; viewBox&#x3D;&quot;0 0 26 26&quot;&gt;
+        &lt;use href&#x3D;&quot;../assets/images/icons.svg#arrow&quot; /&gt;
+      &lt;/svg&gt;
     &lt;/summary&gt;
     &lt;p class&#x3D;&quot;accordion__text&quot;&gt;
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit
@@ -291,7 +307,8 @@
       </div>
     </footer>
   </div>
-  <script>hljs.highlightAll();</script>
+  <script>  hljs.highlightAll(); </script>
+
 </body>
 
 </html>

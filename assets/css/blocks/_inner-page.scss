@@ -1,5 +1,5 @@
 .inner-page {
-  background: var(--white);
+  background: var(--bg-primary);
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -8,11 +8,11 @@
   overflow-x: hidden;
 
   &_burger-menu {
-    background: var(--grey-5);
+    background: var(--bg-secondary);
   }
 
   @include respond(desktop) {
-    background: var(--grey-5);
+    background: var(--bg-secondary);
     padding: 36px 0;
   }
 
@@ -27,7 +27,7 @@
 
   &__content {
     height: 100%;
-    background: var(--white);
+    background: var(--bg-primary);
     padding: 32px 0;
     overflow-x: hidden;
 
