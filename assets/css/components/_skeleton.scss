@@ -24,7 +24,6 @@
   &__image {
     width: 32px;
     height: 32px;
-    background-color: var(--grey-2);
     border-radius: 50%;
 
     @include respond(desktop) {
@@ -46,14 +45,6 @@
 
   &__text {
     height: 10px;
-    background: linear-gradient(
-      92.51deg,
-      var(--grey-2) 6.44%,
-      var(--grey-6) 38.47%,
-      var(--grey-7) 56.48%,
-      var(--grey-8) 77.5%,
-      var(--grey-2) 102.52%
-    );
 
     @include respond(desktop) {
       height: 20px;
@@ -66,5 +57,33 @@
 
   &__text_middle {
     width: 59%;
+  }
+
+  &__image,
+  &__text {
+    background: linear-gradient(
+      92.51deg,
+      var(--bg-disabled) 6.44%,
+      var(--skeleton-1) 38.47%,
+      var(--skeleton-2) 56.48%,
+      var(--skeleton-3) 77.5%,
+      var(--bg-disabled) 102.52%
+    );
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: backgroundMovement;
+    animation-timing-function: linear;
+    background-size: 200%;
+  }
+
+  @keyframes backgroundMovement {
+    0% {
+      background-position: 100%;
+    }
+
+    100% {
+      background-position: -100%;
+    }
   }
 }

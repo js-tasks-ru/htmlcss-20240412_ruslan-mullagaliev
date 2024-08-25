@@ -1,18 +1,32 @@
 <header class="header {{#if inner-page}}header_inner-page{{/if}}">
   <div class="container">
     <div class="header__inner">
-      {{!-- {{#if sidebar}} --}}
       <button class="header__burger-button" id="burger-menu-open">
-        <svg width="24" height="24">
+        <svg>
           <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#menu" />
         </svg>
       </button>
-      {{!-- {{/if}} --}}
       <a href="{{#if inner-page}}.{{/if}}./index.html" class="header__logo logo">
         <div class="logo__box"></div>
         <div class="logo__circle"></div>
         <div class="logo__triangle"></div>
       </a>
+      <div class="header__theme-changer">
+        <label class="toggle theme-changer">
+          <input type="checkbox" class="toggle__input" id="theme-changer" />
+          <svg class="theme-changer__icon">
+            <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#sun" />
+          </svg>
+          <div class="toggle__state">
+            <div class="toggle__control">
+              <div class="toggle__control-inner"></div>
+            </div>
+          </div>
+          <svg class="theme-changer__icon">
+            <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#moon" />
+          </svg>
+        </label>
+      </div>
     </div>
     <h1 class="header__title {{#if inner-page}}header__title_inner-page{{/if}}">Reusable component library</h1>
   </div>
@@ -22,7 +36,7 @@
       <div class="container">
         <div class="header__inner">
           <button class="burger-menu__close" id="burger-menu-close">
-            <svg width="24" height="24">
+            <svg>
               <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#close" />
             </svg>
           </button>
@@ -32,10 +46,20 @@
             <div class="logo__triangle"></div>
           </a>
         </div>
+        <div class="header__theme-changer header__theme-changer_burger-menu">
+          <p>Dark mode</p>
+          <label class="toggle theme-changer">
+            <input type="checkbox" class="toggle__input" id="theme-changer-burger-menu" />
+            <div class="toggle__state">
+              <div class="toggle__control">
+                <div class="toggle__control-inner"></div>
+              </div>
+            </div>
+          </label>
+        </div>
       </div>
     </header>
     <div class="container burger-menu__body">
-      <div class="burger-menu__divider"></div>
       {{>sidebar this burger='burger'}}
     </div>
   </div>

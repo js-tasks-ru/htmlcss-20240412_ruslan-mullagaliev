@@ -8,19 +8,19 @@
   &__box {
     width: 30px;
     height: 30px;
-    background: var(--black);
+    background: var(--bg-primary-inversed);
   }
 
   &__circle {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: var(--black);
+    background: var(--bg-primary-inversed);
   }
 
   &__triangle {
     border: 16px solid transparent;
-    border-bottom: 16px solid var(--black);
-    border-left: 16px solid var(--black);
+    border-bottom: 16px solid var(--bg-primary-inversed);
+    border-left: 16px solid var(--bg-primary-inversed);
   }
 }

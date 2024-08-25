@@ -8,11 +8,11 @@ grid-template-rows: repeat(2, 1fr);
       <label class="input__label" for="default">Label</label>
       <div class="input__wrapper">
         <input type="text" id="default" class="input__control" placeholder="Placeholder" />
-        <svg class="input__icon input__icon_success" width="24" height="24">
-          <use href="{{#if innerPage}}.{{/if}}./assets/images/icons.svg#success" />
+        <svg class="input__icon input__icon_success">
+          <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#success" />
         </svg>
-        <svg class="input__icon input__icon_error" width="24" height="24">
-          <use href="{{#if innerPage}}.{{/if}}./assets/images/icons.svg#error" />
+        <svg class="input__icon input__icon_error">
+          <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#error" />
         </svg>
       </div>
     </div>
@@ -20,11 +20,11 @@ grid-template-rows: repeat(2, 1fr);
       <label class="input__label" for="success">Success</label>
       <div class="input__wrapper">
         <input type="text" class="input__control" placeholder="Placeholder" value="Success" id="success" />
-        <svg class="input__icon input__icon_success" width="24" height="24">
-          <use href="{{#if innerPage}}.{{/if}}./assets/images/icons.svg#success" />
+        <svg class="input__icon input__icon_success">
+          <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#success" />
         </svg>
-        <svg class="input__icon input__icon_error" width="24" height="24">
-          <use href="{{#if innerPage}}.{{/if}}./assets/images/icons.svg#error" />
+        <svg class="input__icon input__icon_error">
+          <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#error" />
         </svg>
       </div>
     </div>
@@ -32,11 +32,11 @@ grid-template-rows: repeat(2, 1fr);
       <label class="input__label" for="error">Error</label>
       <div class="input__wrapper">
         <input type="text" class="input__control" placeholder="Placeholder" value="Error" id="error" />
-        <svg class="input__icon input__icon_success" width="24" height="24">
-          <use href="{{#if innerPage}}.{{/if}}./assets/images/icons.svg#success" />
+        <svg class="input__icon input__icon_success">
+          <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#success" />
         </svg>
-        <svg class="input__icon input__icon_error" width="24" height="24">
-          <use href="{{#if innerPage}}.{{/if}}./assets/images/icons.svg#error" />
+        <svg class="input__icon input__icon_error">
+          <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#error" />
         </svg>
       </div>
     </div>
@@ -45,11 +45,11 @@ grid-template-rows: repeat(2, 1fr);
       <label class="input__label" for="disabled">Disabled</label>
       <div class="input__wrapper">
         <input type="text" class="input__control" placeholder="Placeholder" value="Disabled" disabled id="disabled" />
-        <svg class="input__icon input__icon_success" width="24" height="24">
-          <use href="{{#if innerPage}}.{{/if}}./assets/images/icons.svg#success" />
+        <svg class="input__icon input__icon_success">
+          <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#success" />
         </svg>
-        <svg class="input__icon input__icon_error" width="24" height="24">
-          <use href="{{#if innerPage}}.{{/if}}./assets/images/icons.svg#error" />
+        <svg class="input__icon input__icon_error">
+          <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#error" />
         </svg>
       </div>
     </div>
@@ -62,8 +62,8 @@ grid-template-columns: {{#if preview}}repeat(2, auto){{/if}}{{#unless preview}}r
         <input type="checkbox" class="checkbox__input" />
         <div class="checkbox__state">
           <div class="checkbox__control">
-            <svg class="checkbox__icon" width="15" height="13">
-              <use href="{{#if innerPage}}.{{/if}}./assets/images/icons.svg#check" />
+            <svg class="checkbox__icon" viewBox="0 0 15 13">
+              <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#check" />
             </svg>
           </div>
           <p class="checkbox__label">Default</p>
@@ -73,8 +73,8 @@ grid-template-columns: {{#if preview}}repeat(2, auto){{/if}}{{#unless preview}}r
         <input type="checkbox" class="checkbox__input" checked />
         <div class="checkbox__state">
           <div class="checkbox__control">
-            <svg class="checkbox__icon" width="15" height="13">
-              <use href="{{#if innerPage}}.{{/if}}./assets/images/icons.svg#check" />
+            <svg class="checkbox__icon" viewBox="0 0 15 13">
+              <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#check" />
             </svg>
           </div>
           <p class="checkbox__label">Checked</p>
@@ -85,8 +85,8 @@ grid-template-columns: {{#if preview}}repeat(2, auto){{/if}}{{#unless preview}}r
         <input type="checkbox" class="checkbox__input" disabled />
         <div class="checkbox__state">
           <div class="checkbox__control">
-            <svg class="checkbox__icon" width="15" height="13">
-              <use href="{{#if innerPage}}.{{/if}}./assets/images/icons.svg#check" />
+            <svg class="checkbox__icon" viewBox="0 0 15 13">
+              <use href="{{#if inner-page}}.{{/if}}./assets/images/icons.svg#check" />
             </svg>
           </div>
           <p class="checkbox__label">Disabled</p>

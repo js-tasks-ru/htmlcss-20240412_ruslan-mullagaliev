@@ -27,7 +27,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: var(--white);
+    background: var(--bg-primary);
     border-radius: 8px;
     padding: 30px 40px 33px;
 
@@ -56,6 +56,9 @@
   &__close svg {
     width: 12px;
     height: 12px;
+    [fill='var(--text-primary)'] {
+      fill: var(--text-primary);
+    }
     @include respond(desktop) {
       width: 24px;
       height: 24px;
@@ -66,7 +69,7 @@
     font-weight: 600;
     font-size: 10px;
     line-height: 12px;
-    color: var(--blue-4);
+    color: var(--text-info);
     margin: 0 0 14px;
 
     @include respond(desktop) {
@@ -79,7 +82,7 @@
     font-weight: 400;
     font-size: 8px;
     line-height: 12px;
-    color: var(--grey-4);
+    color: var(--text-muted);
 
     @include respond(desktop) {
       font-size: 16px;

@@ -6,7 +6,7 @@
   transition: transform 250ms linear;
   width: 100vw;
   height: 100vh;
-  background: var(--grey-5);
+  background: var(--bg-secondary);
   z-index: 1;
   visibility: hidden;
 
@@ -20,8 +20,9 @@
   }
 
   &__header {
-    background: var(--grey-5);
+    background: var(--bg-secondary);
     position: relative;
+    padding-bottom: 24px;
   }
 
   &__close {
@@ -37,14 +38,17 @@
     border: none;
   }
 
-  &__title {
-    color: var(--grey-3);
+  &__close svg {
+    width: 24px;
+    height: 24px;
+    --text-primary: var(--black);
+    [fill='var(--text-primary)'] {
+      fill: var(--text-primary);
+    }
   }
 
-  &__divider {
-    background-color: var(--grey-2);
-    height: 1px;
-    margin-bottom: 24px;
+  &__title {
+    color: var(--grey-3);
   }
 
   &__content {
